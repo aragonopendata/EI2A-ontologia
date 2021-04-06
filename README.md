@@ -1,12 +1,12 @@
 # EI2A. Estructura de Información Interoperable de Aragón
 
- - [Introducción](#introducción)
- - Vocabularios
- - Diagrama de alto nivel
- - Diagrama UML
- - Mantenimiento del modelo ontológico
- - Descripción de entidades principales
-   - Persona
+[1. Introducción](#introducción)
+2. Vocabularios
+3. Diagrama de alto nivel
+4. Diagrama UML
+5. Mantenimiento del modelo ontológico
+6. Descripción de entidades principales
+6.1. Persona
 
 ## Introducción
 
