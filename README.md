@@ -1088,6 +1088,8 @@ _:bnode1
 ## Anexo A. Organigrama del Gobierno de Aragón
 
 Para la incorporación de la información de las unidades organizativas y cargos que forman parte del Gobierno de Aragón, teniendo en cuenta las diferentes legislaturas con el fin de identificar la relación de sucesión entre ellas, se han utilizado principalmente las entidades de Persona, Puesto, Organización y Legislatura.
+
+![](docs/images/ei2a-diagrama-organigrama.png)
  
 Los datos disponibles que se encuentran ubicados en la siguiente vista https://opendata.aragon.es/datos/catalogo/dataset/organigrama-del-gobierno-de-aragon representan la información de las personas que han ejercido todos los cargos correspondientes a las entidades que han formado parte de todas las legislaturas del Gobierno de Aragón.
 En el archivo de datos “periodo de legislatura.csv” encontramos los periodos de cada legislatura que representamos con la entidad Legislatura que hereda de Evento.
