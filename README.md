@@ -13,6 +13,22 @@
 6. [Descripción de entidades principales](#6-descripción-de-entidades-principales)
 
    6.1. [Persona](#61-persona)
+   6.2. [Organización](#organización)
+   6.3. Lugar
+   6.4. Evento
+   6.5. Legislatura
+   6.6. Documento
+   6.7. Normativa
+   6.8. Contrato
+   6.9. Licitación
+   6.10. Trámite administrativo
+   6.11. Transporte
+   6.12. Tema
+   6.13. DataCube
+   6.14. Sistemas y dispositivos de gestión de agua
+   6.15. Información de Datasets y Procedencia
+   Anexo A. Organigrama del Gobierno de Aragón
+
 
 ## 1. Introducción
 
