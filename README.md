@@ -10,9 +10,9 @@
 
 5. [Mantenimiento del modelo ontológico](#mantenimiento-del-modelo-ontológico)
 
-6. Descripción de entidades principales
+6. [Descripción de entidades principales](#6.-descripción-de-entidades-principales)
 
-   6.1. Persona
+   6.1. [Persona](#6.1.-persona)
 
 ## Introducción
 
@@ -89,3 +89,84 @@ Para el mantenimiento del modelo ontológico proponemos usar el presente reposit
 
 Además de la documentación de GitHub, generaremos una documentación HTML mediante WiDoCo, al estilo de la existente actualmente, en la que se describirán las entidades, atributos, propiedades y relaciones de todos los objetos.
 
+## 6. Descripción de las entidades principales
+
+### 6.1. Persona
+
+#### 6.1.1 Descripción de vocabulario y entidad seleccionada
+
+Para modelar a las personas utilizamos dos vocabularios:
+
+- **_FOAF_**. Datos públicos de filiación y relación con su puesto en una organización, si lo tiene.
+- **_ORG_**. Puesto ocupado por la persona en una organización. El puesto puede contar con fechas de vigencia y está relacionado con un rol.
+- **_BIO_**. Biografía en formato texto de la persona.
+
+#### 6.1.2. Diagrama de la entidad
+
+
+
+#### 6.1.3. Definición avanzada de los atributos
+
+Persona
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|Person|dc:identifier|Identificador de la persona|String|0..1|
+| |foaf:name|Nombre completo|String|1|
+| |foaf:givenName|Nombre |String|1|
+| |foaf:familyName|Apellidos |String|1|
+| |foaf:phone|Teléfono|String|0..1|
+| |bio:biography|Biografía|String|0..1|
+| |foaf:mbox|Email|String|0..1|
+| |foaf:homepage|Página web|String|0..1|
+| |foaf:img|Foto|String|0..1|
+| |org:holds|Enlace con el puesto|org:Post|0..*|
+|org:Post|dc:identifier|Identificador el puesto|String|1|
+| |ei2a:order|Orden|Int|1|
+| |org:role|Enlace con Rol|org:Role|1|
+| |time:hasBeginning|Fecha de inicio|Date|0..1|
+| |time:hasEnd|Fecha de Final|Date|0..1|
+| |org:postIn|Enlace con Organización|org:Organization|1|
+| |org:heldBy|Inversa de org:holds|org:Person|1|
+
+
+Rol
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|Rol|dc:identifier|Identificador del rol|String|1|
+| |dc:title|Nombre del rol|String|1|
+
+
+#### 6.1.4. Casos de uso
+
+Las vistas más destacadas relacionadas con las personas son las siguientes:
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|160|Cargos|GA_OD_CORE|BANCO_DATOS|555|19/03/2020|
+|3|Pleno municipio|GA_OD_CORE|BANCO_DATOS|190|19/03/2020|
+|69|Registro de Guías de Turismo|GA_OD_CORE|BANCO_DATOS|180|19/03/2020|
+|4|Pleno Comarca|GA_OD_CORE|BANCO_DATOS|90|19/03/2020|
+|51|Composicion del Pleno de Consorcios|GA_OD_CORE| | | |
+|52|Composicion del Pleno de Entidades Menores|GA_OD_CORE| | | |
+|53|Composicion del Pleno de Mancomunidades|GA_OD_CORE| | | |
+|54|Composicion del Pleno de Organismos Autónomos|GA_OD_CORE| | | |
+|56|Composicion del Pleno de Villas y Tierras|GA_OD_CORE| | | |
+
+
+En la representación de una persona destaca la vista _160 – Cargos_ donde, además de ser los datos más visitados, podemos ver un ejemplo de vinculación con otras entidades como son las Organizaciones a las que pertenecen y el Cargo que ejercen en ellas.
+
+El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|NOMBRE|foaf:Person|foaf:name| | |
+|TELEFONO|foaf:Person|foaf:phone| | |
+|BIOGRAFIA|foaf:Person|bio:biography| | |
+|FOTO_PATH|foaf:Person|foaf:img| | |
+|EMAIL|foaf:Person|foaf:mbox| | |
+|PAGINA_WEB|foaf:Person|foaf:homepage| | |
+|ID_CARGO|foaf:Person -> org:Post|dc:identifier| | |
+|ID_ENTIDAD|foaf:Person -> org:Post|org:postIn|org:Organization|dc:identifier|
+|ORDEN|foaf:Person -> org:Post|ei2a:order| | |
+|CARGO|foaf:Person -> org:Post|org:role|org:Role|dc:title|
+|FECHA_INI|foaf:Person -> org:Post|time:hasBeginning| | |
+|FECHA_FIN|foaf:Person -> org:Post|time:hasEnd| | |
+| | | |
