@@ -1,20 +1,20 @@
 # EI2A. Estructura de Información Interoperable de Aragón
 
-1. [Introducción](#introducción)
+1. [Introducción](#1-introducción)
 
-2. [Vocabularios](#vocabularios)
+2. [Vocabularios](#2-vocabularios)
 
-3. [Diagrama de alto nivel](#diagrama-de-alto-nivel)
+3. [Diagrama de alto nivel](#3-diagrama-de-alto-nivel)
 
-4. [Diagrama UML](#diagrama-uml)
+4. [Diagrama UML](#4-diagrama-uml)
 
-5. [Mantenimiento del modelo ontológico](#mantenimiento-del-modelo-ontológico)
+5. [Mantenimiento del modelo ontológico](#5-mantenimiento-del-modelo-ontológico)
 
-6. [Descripción de entidades principales](#6.-descripción-de-entidades-principales)
+6. [Descripción de entidades principales](#6-descripción-de-entidades-principales)
 
-   6.1. [Persona](#6.1.-persona)
+   6.1. [Persona](#61-persona)
 
-## Introducción
+## 1. Introducción
 
 Este repositorio contiene la propuesta de modelo ontológico EI2A, correspondiente al entregable (versión 1), relacionado con el hito de facturación: _[Nº1] 2.2.1 a) Actualización y mejoras de la web de ontologías del Gobierno de Aragón,_ ubicado en el proyecto _Lote 2 (Evolución de la infraestructura semántica de la Aragón Open Data)_.
 
@@ -32,7 +32,7 @@ Los principios que han guiado el diseño del nuevo modelo ontológico han sido:
  - **Integridad**. En el nuevo modelo se especifican las restricciones de una manera más clara (some, only, min, max, exactly), para que los procesos de carga y reutilización puedan gestionar mejor que datos son necesarios en el modelo
  - **Usabilidad**. El uso de las propiedades no seguirá un diseño tipo “_open world_”, sino que se indican explícitamente cuáles son los atributos de cada entidad, para que los reutilizadores sepan con claridad los datos representados en cada caso.
 
-## Vocabularios
+## 2. Vocabularios
 
 En el nuevo modelo se ha descartado la reutilización de algunos vocabularios y ontologías que, a pesar de ser más específicos, ofrecen dudas en cuanto a su mantenimiento o vigencia; y otros que, siendo vigentes y apropiados, resultarían en una mayor complejidad del modelo EI2A sin aportar ventajas en el uso o reutilización.
 
@@ -66,16 +66,16 @@ Durante el proceso de análisis se han descartado los siguientes vocabularios:
 - **_Categorization Ontology:_** Ontología generada para categorizar webs, subdominios o portales del Gobierno de Aragón. Está basada en la categorización de enlinea.aragon.es. Véase [CategorizationOntology.owl](https://opendata.aragon.es/def/ei2a/CategorizationOntology.owl). Se sustituye por una categorización SKOS.
 - **_ISA Programme Person Core Vocabulary:_** Vocabulario que proporciona un conjunto de clases y propiedades para describir personas. Véase [https://www.w3.org/ns/person](https://www.w3.org/ns/person).
 
-## Diagrama de alto nivel
+## 3. Diagrama de alto nivel
 
 En el siguiente diagrama presentamos el modelo de alto nivel y las relaciones de las entidades principales propuestas:
 
 ![](docs/images/ei2a-diagrama-alto-nivel.png)
 
-## Diagrama UML
+## 4. Diagrama UML
 
 
-## Mantenimiento del modelo ontológico
+## 5. Mantenimiento del modelo ontológico
 
 Para el mantenimiento del modelo ontológico proponemos usar el presente repositorio de GitHub (https://github.com/aragonopendata/EI2A-ontologia), del siguiente modo:
 
