@@ -1,6 +1,6 @@
 # EI2A. Estructura de Información Interoperable de Aragón
 
- - [Introducción](Introduccion)
+ - [Introducción](#introducción)
  - Vocabularios
  - Diagrama de alto nivel
  - Diagrama UML
