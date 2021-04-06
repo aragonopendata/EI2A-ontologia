@@ -87,5 +87,5 @@ Para el mantenimiento del modelo ontológico proponemos usar el presente reposit
   - Rama relacionada con el issue cuando se trate de solucionar un error o un cambio menor.
 - Generación de una release correspondiente a cambios mayores.
 
-Además de la documentación de GitHub, generaremos una documentación HTML mediante WiDoCo, al estilo de la existente actualmente, en la que se describen las entidades, atributos, propiedades y relaciones de todos los objetos.
+Además de la documentación de GitHub, generaremos una documentación HTML mediante WiDoCo, al estilo de la existente actualmente, en la que se describirán las entidades, atributos, propiedades y relaciones de todos los objetos.
 
