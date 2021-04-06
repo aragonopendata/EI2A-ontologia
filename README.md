@@ -6,9 +6,9 @@
 
 3. [Diagrama de alto nivel](#diagrama-de-alto-nivel)
 
-4. Diagrama UML
+4. [Diagrama UML](#diagrama-uml)
 
-5. Mantenimiento del modelo ontológico
+5. [Mantenimiento del modelo ontológico](#mantenimiento-del-modelo-ontológico)
 
 6. Descripción de entidades principales
 
@@ -68,4 +68,24 @@ Durante el proceso de análisis se han descartado los siguientes vocabularios:
 
 ## Diagrama de alto nivel
 
+En el siguiente diagrama presentamos el modelo de alto nivel y las relaciones de las entidades principales propuestas:
+
+![](docs/images/ei2a-diagrama-alto-nivel.png)
+
+## Diagrama UML
+
+
+## Mantenimiento del modelo ontológico
+
+Para el mantenimiento del modelo ontológico proponemos usar el presente repositorio de GitHub (https://github.com/aragonopendata/EI2A-ontologia), del siguiente modo:
+
+- Generación de un nuevo proyecto en GitHub para albergar la documentación y el archivo OWL generado.
+- Configuración de GitHub pages para el acceso a la documentación.
+- Uso de issues para gestionar los reportes de errores y las peticiones de cambio.
+- Generación de una rama para trabajar sobre los cambios.
+  - Rama de versión cuando sea un cambio mayor.
+  - Rama relacionada con el issue cuando se trate de solucionar un error o un cambio menor.
+- Generación de una release correspondiente a cambios mayores.
+
+Además de la documentación de GitHub, generaremos una documentación HTML mediante WiDoCo, al estilo de la existente actualmente, en la que se describen las entidades, atributos, propiedades y relaciones de todos los objetos.
 
