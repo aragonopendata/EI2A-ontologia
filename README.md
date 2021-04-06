@@ -150,7 +150,7 @@ Persona
 | |foaf:mbox|Email|String|0..1|
 | |foaf:homepage|Página web|String|0..1|
 | |foaf:img|Foto|String|0..1|
-| |org:holds|Enlace con el puesto|org:Post|0..*|
+| |org:holds|Enlace con el puesto|org:Post|0..* |
 |org:Post|dc:identifier|Identificador el puesto|String|1|
 | |ei2a:order|Orden|Int|1|
 | |org:role|Enlace con Rol|org:Role|1|
@@ -216,203 +216,217 @@ Para modelar a las organizaciones y sus centros utilizamos dos vocabularios:
 
 #### 6.2.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-org:Organization	dc:identifier	Identificador	String	0..1
-	org:identifier	Identificador de la organización	String	1
-	dc:title	Nombre 	String	1
-	org:subOrganizationOf	Enlace con Organización padre	org:Organization	0..1
-	ei2a:legislature	Enlace con legislatura	ei2a:Legislature	1
-	dc:description	Observaciones	String 	0..1
-	ei2a:order	Orden	int	0..1
-	org:hasSite	Enlace con Centro	org:Site	0..*
-	foaf:homepage	Página web	String	0..1
-	ocds:isSupplierFor	Enlace con el contrato	ocds:Contract	0..*
-	ocds:isTendererFor	Enlace con la licitación	ocds:Tender	0..*
-	org:hasPost	Inversa de org:postIn	org:Post	0..*
-	org:classification	Enlace categoría	Skos:Concept	1
-	org:resultedFrom	Enlace a evento  creación de organización	Org:ChangeEvent	0..1
-	org:changedBy	Enlace con evento  modificación de organización	Org:ChangeEvent	0..1
-org:ChangeEvent	org:originalOrganization	Organización que ha sido creada tras un evento, inversa org:resultedFrom	org:Organization	0..1
-	org:resultingOrganization	Organización que ha sido modificada tras un evento, inversa org:changedBy	org:Organization	0..1
-	prov:startedAtTime	Fecha de inicio del cambio	date	1
-	prov:endedAtTime	Fecha de Fin del cambio	date	0..1
+Organización	
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|org:Organization|dc:identifier|Identificador|String|0..1|
+| |org:identifier|Identificador de la organización|String|1|
+| |dc:title|Nombre |String|1|
+| |org:subOrganizationOf|Enlace con Organización padre|org:Organization|0..1|
+| |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|1|
+| |dc:description|Observaciones|String |0..1|
+| |ei2a:order|Orden|int|0..1|
+| |org:hasSite|Enlace con Centro|org:Site|0..* |
+| |foaf:homepage|Página web|String|0..1|
+| |ocds:isSupplierFor|Enlace con el contrato|ocds:Contract|0..* |
+| |ocds:isTendererFor|Enlace con la licitación|ocds:Tender|0..* |
+| |org:hasPost|Inversa de org:postIn|org:Post|0..* |
+| |org:classification|Enlace categoría|Skos:Concept|1|
+| |org:resultedFrom|Enlace a evento  creación de organización|Org:ChangeEvent|0..1|
+| |org:changedBy|Enlace con evento  modificación de organización|Org:ChangeEvent|0..1|
+|org:ChangeEvent|org:originalOrganization|Organización que ha sido creada tras un evento, inversa org:resultedFrom|org:Organization|0..1|
+| |org:resultingOrganization|Organización que ha sido modificada tras un evento, inversa org:changedBy|org:Organization|0..1|
+| |prov:startedAtTime|Fecha de inicio del cambio|date|1|
+| |prov:endedAtTime|Fecha de Fin del cambio|date|0..1|
+| | | |
+| | | |
 
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-org:Site	dc:identifier	Identificador	String	1
-	dc:title	Nombre	string	0..1
-	org:siteAddress	Enlace con lugar	vcard:Location	0..1
-vcard:Location	vcard:fn	Nombre	string	0..1
-	vcard:region	Provincia	string	1
-	vcard:locality	Localidad 	String	1
-	vcard:postal-code	Código postal	int 	1
-	vcard:street-address	Dirección  	String 	1
-	vcard:email	Email	string	0..1
-	vcard:tel	Teléfono	int 	0..1
-	vcard:org	Enlace con organización	org:Organization	1
-	vcard:hasGeo	Enlace con geo	geo	0..*
-	wgs84_pos:lat	Latitud	Double	0..1
-	wgs84_pos:long	Longitud	Double 	0..1
-	org:siteAddress	Enlace con lugar	org:Site	0..1
+Centro y Lugar	
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|org:Site|dc:identifier|Identificador|String|1|
+| |dc:title|Nombre|string|0..1|
+| |org:siteAddress|Enlace con lugar|vcard:Location|0..1|
+|vcard:Location|vcard:fn|Nombre|string|0..1|
+| |vcard:region|Provincia|string|1|
+| |vcard:locality|Localidad |String|1|
+| |vcard:postal-code|Código postal|int |1|
+| |vcard:street-address|Dirección  |String |1|
+| |vcard:email|Email|string|0..1|
+| |vcard:tel|Teléfono|int |0..1|
+| |vcard:org|Enlace con organización|org:Organization|1|
+| |vcard:hasGeo|Enlace con geo|geo|0..* |
+| |wgs84_pos:lat|Latitud|Double|0..1|
+| |wgs84_pos:long|Longitud|Double |0..1|
+| |org:siteAddress|Enlace con lugar|org:Site|0..1|
 
 #### 6.2.4. Casos de uso
 
 Las vistas relacionadas con organización, ordenadas según el interés generado en el banco de datos son:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-104	IAF polígonos industriales	GA_OD_CORE
-BANCO_DATOS
-1493	19/03/2020
-24	Datos de Mancomunidades	GA_OD_CORE
-BANCO_DATOS
-616	19/03/2020
-159	Entidades	GA_OD_CORE
-BANCO_DATOS
-556	19/03/2020
-11	Datos Municipio	GA_OD_CORE
-BANCO_DATOS
-422	19/03/2020
-67	Registro de Cafeterías y Restaurantes	GA_OD_CORE
-BANCO_DATOS
-414	19/03/2020
-65	Registro de Alojamientos hoteleros	GA_OD_CORE
-BANCO_DATOS
-374	19/03/2020
-88	SGT Agricultura, Comarcas agrarias	GA_OD_CORE
-BANCO_DATOS
-366	09/09/2015
-64	Registro de Albergues y Refugios	GA_OD_CORE
-BANCO_DATOS
-324	19/03/2020
-286	IGEAR - Centros de Salud	GA_OD_CORE
-BANCO_DATOS
-316	14/04/2020
-287	IGEAR - Hospitales	GA_OD_CORE
-BANCO_DATOS
-316	14/04/2020
-288	IGEAR - Centros de Salud Mental	GA_OD_CORE
-BANCO_DATOS
-316	14/04/2020
-73	Registro de Alojamientos de Turismo Rural	GA_OD_CORE
-BANCO_DATOS
-301	19/03/2020
-63	Registro de Agencias de Viaje	GA_OD_CORE
-BANCO_DATOS
-268	19/03/2020
-10	Datos Comarca	GA_OD_CORE
-BANCO_DATOS
-252	19/03/2020
-16	Datos de diputación	GA_OD_CORE
-BANCO_DATOS
-244	19/03/2020
-26	Datos de Núcleos	GA_OD_CORE
-BANCO_DATOS
-215	19/03/2020
-89	SGT Agricultura, Oficinas comarcales	GA_OD_CORE
-BANCO_DATOS
-209	10/09/2015
-241	INAGA Terrenos cinegéticos y no cinegéticos de Aragón	GA_OD_CORE
-BANCO_DATOS
-205	01/10/2018
-66	Registro de Apartamentos turísticos	GA_OD_CORE
-BANCO_DATOS
-191	19/03/2020
-68	Registro de Campings Turísticos	GA_OD_CORE
-BANCO_DATOS
-179	19/03/2020
-70	Registro de Oficinas de Turismo	GA_OD_CORE
-BANCO_DATOS
-178	19/03/2020
-167	IGEAR - Centros Educativos	GA_OD_CORE
-BANCO_DATOS
-178	25/11/2020
-282	Bibliotecas - Definición de las bibliotecas	GA_OD_CORE
-BANCO_DATOS
-171	20/02/2020
-72	Registro de Empresas de Turismo Activo	GA_OD_CORE
-BANCO_DATOS
-148	19/03/2020
-17	Direcciones de interés	GA_OD_CORE
-BANCO_DATOS
-143	19/03/2020
-20	Datos de Entidades Singulares	GA_OD_CORE
-BANCO_DATOS
-135	19/03/2020
-12	Agrupación Secretarial	GA_OD_CORE
-BANCO_DATOS
-132	19/03/2020
-22	Datos de Fundaciones	GA_OD_CORE
-BANCO_DATOS
-129	19/03/2020
-71	Registro de Puntos de Información Turística	GA_OD_CORE
-BANCO_DATOS
-129	19/03/2020
-13	Consorcios	GA_OD_CORE
-BANCO_DATOS
-114	19/03/2020
-28	Datos de Organizaciones Complementarias	GA_OD_CORE
-BANCO_DATOS
-102	19/03/2020
-246	Responsable del tratamiento	GA_OD_CORE
-BANCO_DATOS
-92	28/01/2020
-247	Encargado del tratamiento	GA_OD_CORE
-BANCO_DATOS
-92	28/01/2020
-248	Delegado de protección de datos	GA_OD_CORE
-BANCO_DATOS
-92	28/01/2020
-278	Información al ciudadano de protección de datos - 	GA_OD_CORE
-BANCO_DATOS
-92	28/01/2020
-27	Datos de Organismo Autónomo	GA_OD_CORE
-BANCO_DATOS
-85	19/03/2020
-19	Datos de Entidad Menor	GA_OD_CORE
-BANCO_DATOS
-84	19/03/2020
-164	IGEAR - Oficinas del Consumidor	GA_OD_CORE
-BANCO_DATOS
-33	14/05/2018
-34	Datos de Sociedad Mercantil	GA_OD_CORE
-		
-35	Datos de Villas y Tierras	GA_OD_CORE
-		
-57	Relaciones de Comarca	GA_OD_CORE
-		
-58	Relaciones de Entidades Singulares	GA_OD_CORE
-		
-59	Relaciones de Fundaciones	GA_OD_CORE
-		
-60	Relaciones de Mancomunidades	GA_OD_CORE
-		
-61	Relaciones de Villas y Tierras	GA_OD_CORE
-		
-143	CRA - Centros	GA_OD_CORE
-		
-283	Bibliotecas - Definición de las sucursales	GA_OD_CORE
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|104|IAF polígonos industriales|GA_OD_CORE|
+|BANCO_DATOS|
+|1493|19/03/2020|
+|24|Datos de Mancomunidades|GA_OD_CORE|
+|BANCO_DATOS|
+|616|19/03/2020|
+|159|Entidades|GA_OD_CORE|
+|BANCO_DATOS|
+|556|19/03/2020|
+|11|Datos Municipio|GA_OD_CORE|
+|BANCO_DATOS|
+|422|19/03/2020|
+|67|Registro de Cafeterías y Restaurantes|GA_OD_CORE|
+|BANCO_DATOS|
+|414|19/03/2020|
+|65|Registro de Alojamientos hoteleros|GA_OD_CORE|
+|BANCO_DATOS|
+|374|19/03/2020|
+|88|SGT Agricultura, Comarcas agrarias|GA_OD_CORE|
+|BANCO_DATOS|
+|366|09/09/2015|
+|64|Registro de Albergues y Refugios|GA_OD_CORE|
+|BANCO_DATOS|
+|324|19/03/2020|
+|286|IGEAR - Centros de Salud|GA_OD_CORE|
+|BANCO_DATOS|
+|316|14/04/2020|
+|287|IGEAR - Hospitales|GA_OD_CORE|
+|BANCO_DATOS|
+|316|14/04/2020|
+|288|IGEAR - Centros de Salud Mental|GA_OD_CORE|
+|BANCO_DATOS|
+|316|14/04/2020|
+|73|Registro de Alojamientos de Turismo Rural|GA_OD_CORE|
+|BANCO_DATOS|
+|301|19/03/2020|
+|63|Registro de Agencias de Viaje|GA_OD_CORE|
+|BANCO_DATOS|
+|268|19/03/2020|
+|10|Datos Comarca|GA_OD_CORE|
+|BANCO_DATOS|
+|252|19/03/2020|
+|16|Datos de diputación|GA_OD_CORE|
+|BANCO_DATOS|
+|244|19/03/2020|
+|26|Datos de Núcleos|GA_OD_CORE|
+|BANCO_DATOS|
+|215|19/03/2020|
+|89|SGT Agricultura, Oficinas comarcales|GA_OD_CORE|
+|BANCO_DATOS|
+|209|10/09/2015|
+|241|INAGA Terrenos cinegéticos y no cinegéticos de Aragón|GA_OD_CORE|
+|BANCO_DATOS|
+|205|01/10/2018|
+|66|Registro de Apartamentos turísticos|GA_OD_CORE|
+|BANCO_DATOS|
+|191|19/03/2020|
+|68|Registro de Campings Turísticos|GA_OD_CORE|
+|BANCO_DATOS|
+|179|19/03/2020|
+|70|Registro de Oficinas de Turismo|GA_OD_CORE|
+|BANCO_DATOS|
+|178|19/03/2020|
+|167|IGEAR - Centros Educativos|GA_OD_CORE|
+|BANCO_DATOS|
+|178|25/11/2020|
+|282|Bibliotecas - Definición de las bibliotecas|GA_OD_CORE|
+|BANCO_DATOS|
+|171|20/02/2020|
+|72|Registro de Empresas de Turismo Activo|GA_OD_CORE|
+|BANCO_DATOS|
+|148|19/03/2020|
+|17|Direcciones de interés|GA_OD_CORE|
+|BANCO_DATOS|
+|143|19/03/2020|
+|20|Datos de Entidades Singulares|GA_OD_CORE|
+|BANCO_DATOS|
+|135|19/03/2020|
+|12|Agrupación Secretarial|GA_OD_CORE|
+|BANCO_DATOS|
+|132|19/03/2020|
+|22|Datos de Fundaciones|GA_OD_CORE|
+|BANCO_DATOS|
+|129|19/03/2020|
+|71|Registro de Puntos de Información Turística|GA_OD_CORE|
+|BANCO_DATOS|
+|129|19/03/2020|
+|13|Consorcios|GA_OD_CORE|
+|BANCO_DATOS|
+|114|19/03/2020|
+|28|Datos de Organizaciones Complementarias|GA_OD_CORE|
+|BANCO_DATOS|
+|102|19/03/2020|
+|246|Responsable del tratamiento|GA_OD_CORE|
+|BANCO_DATOS|
+|92|28/01/2020|
+|247|Encargado del tratamiento|GA_OD_CORE|
+|BANCO_DATOS|
+|92|28/01/2020|
+|248|Delegado de protección de datos|GA_OD_CORE|
+|BANCO_DATOS|
+|92|28/01/2020|
+|278|Información al ciudadano de protección de datos - |GA_OD_CORE|
+|BANCO_DATOS|
+|92|28/01/2020|
+|27|Datos de Organismo Autónomo|GA_OD_CORE|
+|BANCO_DATOS|
+|85|19/03/2020|
+|19|Datos de Entidad Menor|GA_OD_CORE|
+|BANCO_DATOS|
+|84|19/03/2020|
+|164|IGEAR - Oficinas del Consumidor|GA_OD_CORE|
+|BANCO_DATOS|
+|33|14/05/2018|
+|34|Datos de Sociedad Mercantil|GA_OD_CORE|
+| | | |
+|35|Datos de Villas y Tierras|GA_OD_CORE|
+| | | |
+|57|Relaciones de Comarca|GA_OD_CORE|
+| | | |
+|58|Relaciones de Entidades Singulares|GA_OD_CORE|
+| | | |
+|59|Relaciones de Fundaciones|GA_OD_CORE|
+| | | |
+|60|Relaciones de Mancomunidades|GA_OD_CORE|
+| | | |
+|61|Relaciones de Villas y Tierras|GA_OD_CORE|
+| | | |
+|143|CRA - Centros|GA_OD_CORE|
+| | | |
+|283|Bibliotecas - Definición de las sucursales|GA_OD_CORE|
+| | | |
 		
 
 Para la representación de las organizaciones destaca la vista 159 – Entidades donde encontramos la relación con las entidades de Centro y a su vez, con Lugar. También es posible encontrar la relación jerárquica entre las unidades organizativas y sus organizaciones padre. Por último, cada organización se encuentra ubicada en el tiempo gracias a la relación con la entidad Legislatura.
+
 El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-ID_ENTIDAD	org:Organization	dc:identifier		
-ID_ENTIDAD_PADRE	org:Organization	org:subOrganizationOf	org:Organization	dc:identifier
-ID_LEGISLATURA	org:Organization	ei2a:legislature	ei2a:Legislature	dc:identifier
-ORDEN	org:Organization	ei2a:order		
-NOMBRE	org:Organization	dc:title		
-OBSERVACIONES	org:Organization	dc:description		
-COD_SIU	org:Organization	org:identifier		
-PAGINA_WEB	org:Organization	foaf:homepage		
-EDIFICIO	org:Organization -> org:Site	dc:title		
-DIRECCION	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:street-address
-CP	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:postal-code
-LOCALIDAD	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:locality
-PROVINCIA	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:region
-TELEFONO	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:tel
-EMAIL	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:email
-COOR_X	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	wgs84_pos:lat
-COOR_Y	org:Organization -> org:Site	vcard_siteAddress	vcard:Location	wgs84_pos:long
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|ID_ENTIDAD|org:Organization|dc:identifier| | |
+|ID_ENTIDAD_PADRE|org:Organization|org:subOrganizationOf|org:Organization|dc:identifier|
+|ID_LEGISLATURA|org:Organization|ei2a:legislature|ei2a:Legislature|dc:identifier|
+|ORDEN|org:Organization|ei2a:order| | |
+|NOMBRE|org:Organization|dc:title| | |
+|OBSERVACIONES|org:Organization|dc:description| | |
+|COD_SIU|org:Organization|org:identifier| | |
+|PAGINA_WEB|org:Organization|foaf:homepage| | |
+|EDIFICIO|org:Organization -> org:Site|dc:title| | |
+|DIRECCION|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:street-address|
+|CP|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:postal-code|
+|LOCALIDAD|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:locality|
+|PROVINCIA|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:region|
+|TELEFONO|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:tel|
+|EMAIL|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:email|
+|COOR_X|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|wgs84_pos:lat|
+|COOR_Y|org:Organization -> org:Site|vcard_siteAddress|vcard:Location|wgs84_pos:long|
+
 
 
 ### 6.3. Lugar
@@ -427,41 +441,48 @@ Para modelar los lugares utilizamos un vocabulario:
  
 #### 6.3.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-vcard:Location	vcard:fn	nombre	string	0..1
-	vcard:region	Provincia	string	1
-	vcard:locality	Localidad 	String	1
-	vcard:postal-code	Código postal	int 	1
-	vcard:street-address	Dirección  	String 	1
-	vcard:email	Email	string	0..1
-	vcard:tel	Teléfono	int 	0..1
-	vcard:org	Enlace con organización	org:Organization	1
-	vcard:hasGeo	Enlace con Centro	geo	0..*
-	wgs84_pos:lat	Latitud	Double	0..1
-	wgs84_pos:long	Longitud	Double 	0..1
-	org:siteAddress	Enlace con lugar	org:Site	0..1
+Lugar
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|vcard:Location|vcard:fn|nombre|string|0..1|
+| |vcard:region|Provincia|string|1|
+| |vcard:locality|Localidad |String|1|
+| |vcard:postal-code|Código postal|int |1|
+| |vcard:street-address|Dirección  |String |1|
+| |vcard:email|Email|string|0..1|
+| |vcard:tel|Teléfono|int |0..1|
+| |vcard:org|Enlace con organización|org:Organization|1|
+| |vcard:hasGeo|Enlace con Centro|geo|0..* |
+| |wgs84_pos:lat|Latitud|Double|0..1|
+| |wgs84_pos:long|Longitud|Double |0..1|
+| |org:siteAddress|Enlace con lugar|org:Site|0..1|
+
 
 #### 6.3.4. Casos de uso
 
 Las vistas que podemos relacionar con Lugar son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-102	Turismo de Aragón, Senderos Rutas	GA_OD_CORE
-BANCO_DATOS
-669	19/03/2020
-157	IAA Depuradoras núcleos de población servidos	GA_OD_CORE
-BANCO_DATOS
-255	19/03/2020
-261	Provincias	GA_OD_CORE
-BANCO_DATOS
-93	28/01/2020
-262	Códigos de país	GA_OD_CORE
-BANCO_DATOS
-93	28/01/2020
-142	CRA - Localidades	GA_OD_CORE
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|102|Turismo de Aragón, Senderos Rutas|GA_OD_CORE|
+|BANCO_DATOS|
+|669|19/03/2020|
+|157|IAA Depuradoras núcleos de población servidos|GA_OD_CORE|
+|BANCO_DATOS|
+|255|19/03/2020|
+|261|Provincias|GA_OD_CORE|
+|BANCO_DATOS|
+|93|28/01/2020|
+|262|Códigos de país|GA_OD_CORE|
+|BANCO_DATOS|
+|93|28/01/2020|
+|142|CRA - Localidades|GA_OD_CORE|
+| | | |
+
 		
 
-Se puede obtener una representación en la vista 159 – Entidades donde aunque su entidad principal es Organización, es posible visualizar la vinculación con Lugar.
-El mapeo se puede revisar en el apartado 6.2.4 de este documento.
+Se puede obtener una representación en la vista 159 – Entidades donde aunque su entidad principal es Organización, es posible visualizar la vinculación con Lugar. El mapeo se puede revisar en el apartado 6.2.4 de este documento.
 
 ### 6.4. Evento
 
@@ -473,38 +494,49 @@ Para modelar los lugares utilizamos el vocabulario Schema:
  
 #### 6.4.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-schema:Event	schema:identifier	Identificador del evento	string	0..1
-	schema:name	Nombre del evento	string	1
-	schema:description	Descripción 	string	1
-	schema:startDate	Fecha de inicio	Date 	1
-	schema:endDate	Fecha de fin	Date	0..1
-	schema:eventSchedule	Horario del evento  	string	0..1
-	schema:image	Imagen	string	0..1
-	schema:location	Enlace con lugar del evento	vcard:Location	0..1
+Evento
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|schema:Event|schema:identifier|Identificador del evento|string|0..1|
+| |schema:name|Nombre del evento|string|1|
+| |schema:description|Descripción |string|1|
+| |schema:startDate|Fecha de inicio|Date |1|
+| |schema:endDate|Fecha de fin|Date|0..1|
+| |schema:eventSchedule|Horario del evento  |string|0..1|
+| |schema:image|Imagen|string|0..1|
+| |schema:location|Enlace con lugar del evento|vcard:Location|0..1|
+
 
 #### 6.4.4. Casos de uso
 
 Las vistas más destacadas relacionadas con los eventos son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-62	Registro de llamadas	GA_OD_CORE
-BANCO_DATOS
-335	14/05/2018
-90	DG Relaciones Institucionales, Procesos Electorales	GA_OD_CORE
-BANCO_DATOS
-112	11/11/2020
-15	Datos de cursos	GA_OD_CORE
-		
-32	Datos de Postgrado	GA_OD_CORE
-		
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|62|Registro de llamadas|GA_OD_CORE|
+|BANCO_DATOS|
+|335|14/05/2018|
+|90|DG Relaciones Institucionales, Procesos Electorales|GA_OD_CORE|
+|BANCO_DATOS|
+|112|11/11/2020|
+|15|Datos de cursos|GA_OD_CORE|
+| | | |
+|32|Datos de Postgrado|GA_OD_CORE|
+| | | |
+
 
 En la vista 62 – Registro de llamadas podemos ver un ejemplo de vinculación de Evento con otras entidades como Lugar.
 El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-NUMERO_REG	schema:Event	schema:identifier		
-FECHA_REG	schema:Event	schema:startDate		
-PROVINCIA	schema:Event	schema:location	vcard:location	vcard:region
-LOCALIDAD	schema:Event	schema:location	vcard:location	vcard:locality
+
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|NUMERO_REG|schema:Event|schema:identifier| | |
+|FECHA_REG|schema:Event|schema:startDate| | |
+|PROVINCIA|schema:Event|schema:location|vcard:location|vcard:region|
+|LOCALIDAD|schema:Event|schema:location|vcard:location|vcard:locality|
+| | | |
+
 
 ### 6.5. Legislatura
 
