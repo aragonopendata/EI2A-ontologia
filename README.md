@@ -172,15 +172,15 @@ Rol
 Las vistas más destacadas relacionadas con las personas son las siguientes:
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|160|Cargos|GA_OD_CORE|BANCO_DATOS|555|19/03/2020|
-|3|Pleno municipio|GA_OD_CORE|BANCO_DATOS|190|19/03/2020|
-|69|Registro de Guías de Turismo|GA_OD_CORE|BANCO_DATOS|180|19/03/2020|
-|4|Pleno Comarca|GA_OD_CORE|BANCO_DATOS|90|19/03/2020|
-|51|Composicion del Pleno de Consorcios|GA_OD_CORE| | | |
-|52|Composicion del Pleno de Entidades Menores|GA_OD_CORE| | | |
-|53|Composicion del Pleno de Mancomunidades|GA_OD_CORE| | | |
-|54|Composicion del Pleno de Organismos Autónomos|GA_OD_CORE| | | |
-|56|Composicion del Pleno de Villas y Tierras|GA_OD_CORE| | | |
+|160|Cargos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=160&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/organigrama-del-gobierno-de-aragon)|555|19/03/2020|
+|3|Pleno municipio|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=3&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/composicion-de-plenos-municipales)|190|19/03/2020|
+|69|Registro de Guías de Turismo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=69&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/guias-turisticos-en-la-comunidad-autonoma-de-aragon)|180|19/03/2020|
+|4|Pleno Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=4&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/composicion-de-plenos-comarcales)|90|19/03/2020|
+|51|Composicion del Pleno de Consorcios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=51&_pageSize=100&_page=1)| | | |
+|52|Composicion del Pleno de Entidades Menores|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=52&_pageSize=100&_page=1)| | | |
+|53|Composicion del Pleno de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=53&_pageSize=100&_page=1)| | | |
+|54|Composicion del Pleno de Organismos Autónomos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=54&_pageSize=100&_page=1)| | | |
+|56|Composicion del Pleno de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=56&_pageSize=100&_page=1)| | | |
 
 
 En la representación de una persona destaca la vista _160 – Cargos_ donde, además de ser los datos más visitados, podemos ver un ejemplo de vinculación con otras entidades como son las Organizaciones a las que pertenecen y el Cargo que ejercen en ellas.
