@@ -16,33 +16,33 @@
  
    6.2. [Organización](#organización)
  
-   6.3. Lugar
+   6.3. [Lugar](#lugar)
  
-   6.4. Evento
+   6.4. [Evento](#evento)
  
-   6.5. Legislatura
+   6.5. [Legislatura](#legislatura)
  
-   6.6. Documento
+   6.6. [Documento](#documento)
  
-   6.7. Normativa
+   6.7. [Normativa](#normativa)
  
-   6.8. Contrato
+   6.8. [Contrato](#contrato)
  
-   6.9. Licitación
+   6.9. [Licitación](#licitación)
  
-   6.10. Trámite administrativo
+   6.10. [Trámite administrativo](#trámite-administrativo)
  
-   6.11. Transporte
+   6.11. [Transporte](#transporte)
  
-   6.12. Tema
+   6.12. [Tema](#tema)
  
-   6.13. DataCube
+   6.13. [DataCube](#datacube)
  
-   6.14. Sistemas y dispositivos de gestión de agua
+   6.14. [Sistemas y dispositivos de gestión de agua](#sistemas-y-dispositivos-de-gestión-de-agua)
  
-   6.15. Información de Datasets y Procedencia
+   6.15. [Información de Datasets y Procedencia](#información-de-datasets-y-procedencia)
  
-   Anexo A. Organigrama del Gobierno de Aragón
+   [Anexo A. Organigrama del Gobierno de Aragón](#anexo-a-organigrama-del-gobierno-de-aragón)
 
 
 ## 1. Introducción
@@ -207,8 +207,9 @@ El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los a
 
 #### 6.2.1. Descripción de vocabulario y entidad seleccionada
 Para modelar a las organizaciones y sus centros utilizamos dos vocabularios:
-•	ORG. Modela datos públicos de filiación de la organización y la relación con otras organizaciones (suborganización; antecesora y sucesora mediante ChangeEvent) e incluye relaciones inversas hacia centros, contratos y puestos. La clasificación SKOS permitirá diferenciar varios tipos de organizaciones, desde las unidades administrativas del gobierno a los hoteles rurales.
-•	vCARD. Modela lugares con direcciones y geoposicionamiento, para definir dónde se encuentra un centro.
+
+- ***ORG***. Modela datos públicos de filiación de la organización y la relación con otras organizaciones (suborganización; antecesora y sucesora mediante ChangeEvent) e incluye relaciones inversas hacia centros, contratos y puestos. La clasificación SKOS permitirá diferenciar varios tipos de organizaciones, desde las unidades administrativas del gobierno a los hoteles rurales.
+- ***vCARD***. Modela lugares con direcciones y geoposicionamiento, para definir dónde se encuentra un centro.
 
 #### 6.2.2. Diagrama de la entidad
                   
@@ -347,9 +348,11 @@ El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los a
 ### 6.3. Lugar
 
 #### 6.3.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar los lugares utilizamos un vocabulario:
-•	vCARD. Modela lugares con direcciones y geoposicionamiento.
-•	wGS84_pos. Describe puntos a través de su latitud y longitud, dentro de la especificación WGS84.
+
+- ***vCARD***. Modela lugares con direcciones y geoposicionamiento.
+- ***wGS84_pos***. Describe puntos a través de su latitud y longitud, dentro de la especificación WGS84.
 
 
 #### 6.3.2. Diagrama de la entidad
@@ -391,8 +394,10 @@ Se puede obtener una representación en la vista 159 – Entidades donde aunque 
 ### 6.4. Evento
 
 #### 6.4.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar los lugares utilizamos el vocabulario Schema:
-•	Schema.org. Utilizamos la clase Event con sus atributos relevantes al caso.
+
+- ***Schema.org***. Utilizamos la clase Event con sus atributos relevantes al caso.
 
 #### 6.4.2. Diagrama de la entidad
  
@@ -440,7 +445,8 @@ El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los a
 
 #### 6.5.1. Descripción de vocabulario y entidad seleccionada
 Hemos decidido modelar legislatura a pesar de que sólo se va a cargar la actual, porque pensamos que en un futuro podrían añadirse más. La hemos modelado como una subclase de schema:Event:
-•	Schema.org. El modelado de evento se ajusta a lo que define a una legislatura.
+
+- ***Schema.org***. El modelado de evento se ajusta a lo que define a una legislatura.
 
 #### 6.5.2. Diagrama de la entidad
 
@@ -478,8 +484,10 @@ El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los a
 ### 6.6. Documento
 
 #### 6.6.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar los lugares utilizamos el vocabulario:
-•	Schema.org. Hemos optado por modelar con schema:CreativeWork, explicitando atributos opcionales que se usarán en función del tipo de documento que se quiera representar en el grafo; como expedientes, obras de arte, símbolos municipales o páginas web. Se complementa con algunos términos de ELI y Dublin Core e incluye relaciones con Organización, Centro y Lugar.
+
+- ***Schema.org***. Hemos optado por modelar con schema:CreativeWork, explicitando atributos opcionales que se usarán en función del tipo de documento que se quiera representar en el grafo; como expedientes, obras de arte, símbolos municipales o páginas web. Se complementa con algunos términos de ELI y Dublin Core e incluye relaciones con Organización, Centro y Lugar.
 
 #### 6.6.2. Diagrama de la entidad
  
@@ -559,8 +567,10 @@ Si revisamos en detalle la vista 77 – Planeamiento General , podemos ver un ej
 ### 6.7. Normativa
 
 #### 6.7.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar las normas utilizamos el vocabulario:
-•	ELI. Modela normas y leyes, como las ordenanzas generales y fiscales. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
+
+- ***ELI***. Modela normas y leyes, como las ordenanzas generales y fiscales. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
 
 #### 6.7.2. Diagrama de la entidad
  
@@ -626,8 +636,10 @@ El mapeo correspondiente a la vista 45 - Ordenanzas generales de Diputaciones se
 ### 6.8. Contrato
 
 #### 6.8.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar los contratos y sus procesos utilizamos el vocabulario:
-•	OCDS. Modela contratos y el proceso de contratación. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
+
+- ***OCDS***. Modela contratos y el proceso de contratación. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
 
 #### 6.8.2. Diagrama de la entidad
 
@@ -677,8 +689,10 @@ El mapeo correspondiente a la vista 152 – IAA - Contratos con el nuevo modelo 
 ### 6.9. Licitación
 
 #### 6.9.1. Descripción de vocabulario y entidad seleccionada
+
 Al igual que en Contratos, usamos el siguiente vocabulario:
-•	OCDS. Modela licitaciones. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
+
+- ***OCDS***. Modela licitaciones. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
 
 
 #### 6.9.2. Diagrama de la entidad
@@ -723,8 +737,10 @@ El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los a
 ### 6.10. Trámite administrativo
 
 #### 6.10.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar los lugares utilizamos el vocabulario:
-•	Schema.org. Hemos optado por modelar con schema:ItemList, que permite definir el trámite con sus relaciones y cuenta con un ListItem para modelar los pasos del trámite, tal y como está definido en la web de Aragón.
+
+- ***Schema.org***. Hemos optado por modelar con schema:ItemList, que permite definir el trámite con sus relaciones y cuenta con un ListItem para modelar los pasos del trámite, tal y como está definido en la web de Aragón.
 
 #### 6.10.2. Diagrama de la entidad
  
@@ -756,11 +772,13 @@ Actualmente no disponemos de información de ninguna vista relacionada con trám
 ### 6.11. Transporte
 
 #### 6.11.1. Descripción de vocabulario y entidad seleccionada
+
 Para modelar el transporte utilizamos el vocabulario:
-•	GTFS. Se trata de un vocabulario inspirado en la iniciativa General Transit Feed Specification (GTFS). Se modelan datos de paradas, estaciones, etc. 
-•	WGS84. Coordenadas de la entidad o de cada punto de una ruta expresada como un gtfs:Shape.
-•	vCard. Opcionalmente, org:siteAddress hacia vCard:Location
-•	ORG. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
+
+- ***GTFS***. Se trata de un vocabulario inspirado en la iniciativa General Transit Feed Specification (GTFS). Se modelan datos de paradas, estaciones, etc. 
+- ***WGS84***. Coordenadas de la entidad o de cada punto de una ruta expresada como un gtfs:Shape.
+- ***vCard***. Opcionalmente, org:siteAddress hacia vCard:Location
+- ***ORG***. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
 
 #### 6.11.2. Diagrama de la entidad
  
@@ -864,7 +882,7 @@ El mapeo correspondiente a las vistas 148, 149, 150 y 150 de TRANSPORTE con el n
 
 #### 6.12.1. Descripción de vocabulario y entidad seleccionada
 
-Los temas del Gobierno de Aragón pasan a modelarse con SKOS, en lugar de como una jerarquía de clases, para facilitar el mantenimiento y la reutilización, así como la alineación con las categorías de la NTI. El vocabulario será, por tanto, SKOS.
+Los temas del Gobierno de Aragón pasan a modelarse con SKOS, en lugar de como una jerarquía de clases, para facilitar el mantenimiento y la reutilización, así como la alineación con las categorías de la NTI. El vocabulario será, por tanto, ***SKOS***.
 
 #### 6.12.2. Diagrama de la entidad
   
@@ -898,7 +916,7 @@ Cada categoría SKOS se relacionará con la clase del modelo actual que es susti
 #### 6.13.1. Descripción de vocabulario y entidad seleccionada
 
 Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
-•	Datacube. Este modelo permite añadir datasets muy específicos que se caracterizan por tener datos que podrían considerarse medidas. Este modelo ya se usa en el grafo de Aragopedia y se usará en el grafo del nuevo modelo para recoger los datos del presupuesto de Aragón.
+- ***Datacube***. Este modelo permite añadir datasets muy específicos que se caracterizan por tener datos que podrían considerarse medidas. Este modelo ya se usa en el grafo de Aragopedia y se usará en el grafo del nuevo modelo para recoger los datos del presupuesto de Aragón.
 
 #### 6.13.2. Diagrama de la entidad
 
@@ -957,9 +975,10 @@ A continuación, se define el dataset de presupuesto, con los valores de importe
 #### 6.14.1. Descripción de vocabulario y entidad seleccionada
 
 Para modelar los sistemas y dispositivos de gestión de agua utilizamos el vocabulario SSN (Semantic Sensor Network):
-•	SSN. (Semantic Sensor Network Ontology). Modela sistemas y dispositivos en el ámbito de IoT. Como ya se ha indicado en el apartado de vocabularios, se reducen las clases respecto al uso anterior de WISDOM, lo que simplifica el modelo.
-•	vCard. Opcionalmente, org:siteAddress hacia vCard:Location
-•	ORG. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
+
+- ***SSN***. (Semantic Sensor Network Ontology). Modela sistemas y dispositivos en el ámbito de IoT. Como ya se ha indicado en el apartado de vocabularios, se reducen las clases respecto al uso anterior de WISDOM, lo que simplifica el modelo.
+- ***vCard***. Opcionalmente, org:siteAddress hacia vCard:Location
+- ***ORG***. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
 
 #### 6.14.2. Diagrama de la entidad
  
@@ -1023,8 +1042,6 @@ Por ejemplo, estos triples (en pseudocódigo) asociarían una organización con 
         dcat:keyword “Entidades de población”;
         …
 
-    
- 
 ## Anexo A. Organigrama del Gobierno de Aragón
 
 Para la incorporación de la información de las unidades organizativas y cargos que forman parte del Gobierno de Aragón, teniendo en cuenta las diferentes legislaturas con el fin de identificar la relación de sucesión entre ellas, se han utilizado principalmente las entidades de Persona, Puesto, Organización y Legislatura.
