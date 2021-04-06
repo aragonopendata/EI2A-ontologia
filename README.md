@@ -485,92 +485,76 @@ Para modelar los lugares utilizamos el vocabulario:
  
 #### 6.6.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-schema:CreativeWork	schema:identifier	Identificador	String	1
-	schema:title	Título	String	1
-	org:organization	Enlace con organización	org:Organization	0..1
-	org:hasSite	Enlace con centro	org:Site	0..1
-	org:siteAddress	Enlace con lugar	vcard:Location	0..1
-	eli:first_date_entry_in _force	Fecha de entrada en vigor	Date	0..1
-	eli:date_applicability	Fecha de aplicación	Date	0..1
-	eli:date_publication	Fecha de publicación	Date	0..1
-	schema:abstract	Descripción	String	0..*
-	schema:image	Imagen 	String	0..1
-	schema:license	Licencia 	String	0..1
-	schema:url	url 	String	0..1
-	schema:contributor	Enlace con persona 	Foaf:Person	0..*
-	schema:hasPart	Enlace con documento	schema:CreativeWork	0..1
-	schema:isPartOf	Inversa de schema:hasPart	schema:CreativeWork	0..1
-	schema:material	Material	String	0..1
-	schema:size	Tamaño 	String	0..1
-	schema:temporal	Literal de fecha (año)	String	0..1
-	schema:locationCreated	Enlace con lugar de creación	vcard:Location	0..1
-	schema:citation	Bibliografía	String	0..1
-	dcterm:provenance	Decreto	String	0..1
-	schema:version	Edición	String	0..1
-	schema:publisher	Editorial 	String	0..1
-	schema:creator	Creador	String	0..1
-	schema:inLanguage	Idioma	String	0..1
-	schema:expires	Fecha de suspensión	Date	0..1
+Documento
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|schema:CreativeWork|schema:identifier|Identificador|String|1|
+| |schema:title|Título|String|1|
+| |org:organization|Enlace con organización|org:Organization|0..1|
+| |org:hasSite|Enlace con centro|org:Site|0..1|
+| |org:siteAddress|Enlace con lugar|vcard:Location|0..1|
+| |eli:first_date_entry_in_force|Fecha de entrada en vigor|Date|0..1|
+| |eli:date_applicability|Fecha de aplicación|Date|0..1|
+| |eli:date_publication|Fecha de publicación|Date|0..1|
+| |schema:abstract|Descripción|String|0..* |
+| |schema:image|Imagen |String|0..1|
+| |schema:license|Licencia |String|0..1|
+| |schema:url|url |String|0..1|
+| |schema:contributor|Enlace con persona |Foaf:Person|0..* |
+| |schema:hasPart|Enlace con documento|schema:CreativeWork|0..1|
+| |schema:isPartOf|Inversa de schema:hasPart|schema:CreativeWork|0..1|
+| |schema:material|Material|String|0..1|
+| |schema:size|Tamaño |String|0..1|
+| |schema:temporal|Literal de fecha (año)|String|0..1|
+| |schema:locationCreated|Enlace con lugar de creación|vcard:Location|0..1|
+| |schema:citation|Bibliografía|String|0..1|
+| |dcterm:provenance|Decreto|String|0..1|
+| |schema:version|Edición|String|0..1|
+| |schema:publisher|Editorial |String|0..1|
+| |schema:creator|Creador|String|0..1|
+| |schema:inLanguage|Idioma|String|0..1|
+| |schema:expires|Fecha de suspensión|Date|0..1|
+
 
 #### 6.6.4. Casos de uso
 
 Las vistas más destacadas relacionadas con los documentos son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-77	Planeamiento General	GA_OD_CORE
-BANCO_DATOS
-304	25/11/2020
-75	Modificaciones de Planeamiento General	GA_OD_CORE
-BANCO_DATOS
-255	06/11/2020
-76	Planeamiento de Desarrollo	GA_OD_CORE
-BANCO_DATOS
-147	19/03/2020
-74	Modificaciones de Planeamiento de Desarrollo	GA_OD_CORE
-BANCO_DATOS
-132	19/03/2020
-237	ENERGIA - Cert. Data	GA_OD_CORE
-BANCO_DATOS
-129	06/06/2018
-260	Meta datos estado	GA_OD_CORE
-BANCO_DATOS
-94	28/01/2020
-103	DG Cultura y Patrimonio, Colecciones de Museos de Aragon	GA_OD_CORE
-BANCO_DATOS
-93	25/11/2020
-265	Dominios	GA_OD_CORE
-BANCO_DATOS
-72	30/10/2019
-280	Bibliotecas - Títulos existentes	GA_OD_CORE
-		
-281	Bibliotecas - Ejemplares	GA_OD_CORE
-		
-25	Datos de Noticias	GA_OD_CORE
-		
-30	Datos de Planeamiento	GA_OD_CORE
-		
-31	Datos de Plantillas	GA_OD_CORE
-		
-145	DARA	GA_OD_CORE
-		
-2	Símbolos	GA_OD_CORE
-		
 
-Si revisamos en detalle la vista 77 – Planeamiento General , podemos ver un ejemplo de vinculación con otra entidad como la Organización.
-El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|77|Planeamiento General|GA_OD_CORE|BANCO_DATOS|304|25/11/2020|
+|75|Modificaciones de Planeamiento General|GA_OD_CORE|BANCO_DATOS|255|06/11/2020|
+|76|Planeamiento de Desarrollo|GA_OD_CORE|BANCO_DATOS|147|19/03/2020|
+|74|Modificaciones de Planeamiento de Desarrollo|GA_OD_CORE|BANCO_DATOS|132|19/03/2020|
+|237|ENERGIA - Cert. Data|GA_OD_CORE|BANCO_DATOS|129|06/06/2018|
+|260|Meta datos estado|GA_OD_CORE|BANCO_DATOS|94|28/01/2020|
+|103|DG Cultura y Patrimonio, Colecciones de Museos de Aragon|GA_OD_CORE|BANCO_DATOS|93|25/11/2020|
+|265|Dominios|GA_OD_CORE|BANCO_DATOS|72|30/10/2019|
+|280|Bibliotecas - Títulos existentes|GA_OD_CORE| | | |
+|281|Bibliotecas - Ejemplares|GA_OD_CORE| | | |
+|25|Datos de Noticias|GA_OD_CORE| | | |
+|30|Datos de Planeamiento|GA_OD_CORE| | | |
+|31|Datos de Plantillas|GA_OD_CORE| | | |
+|145|DARA|GA_OD_CORE| | | |
+|2|Símbolos|GA_OD_CORE| | | |
 
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-NUM_EXPTE	schema:CreativeWork	schema:identifier		
-TITULO	schema:CreativeWork	schema:title		
-MUNICIPIO_EXPEDIENTE	org:Organization	dc:identifier		
-PROVINCIA_EXPEDIENTE	org:Organization	dc:identifier		
-NOMBRE_MUNICIPIO	org:Organization	dc:title		
-F_ACUERDO	eli:LegalResource	eli:date_applicability		
-FECHA_ENTRADA	eli:LegalResource	eli:first_date_entry_in_force		
-F_PUB_ACUERDO	eli:LegalResource	eli:date_publication		
-TELEFONO	schema:CreativeWork	foaf:phone		
-TELEFONO	schema:CreativeWork	foaf:phone		
-TELEFONO	schema:CreativeWork	foaf:phone		
+Si revisamos en detalle la vista 77 – Planeamiento General , podemos ver un ejemplo de vinculación con otra entidad como la Organización. El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
+
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|NUM_EXPTE|schema:CreativeWork|schema:identifier| | |
+|TITULO|schema:CreativeWork|schema:title| | |
+|MUNICIPIO_EXPEDIENTE|org:Organization|dc:identifier| | |
+|PROVINCIA_EXPEDIENTE|org:Organization|dc:identifier| | |
+|NOMBRE_MUNICIPIO|org:Organization|dc:title| | |
+|F_ACUERDO|eli:LegalResource|eli:date_applicability| | |
+|FECHA_ENTRADA|eli:LegalResource|eli:first_date_entry_in_force| | |
+|F_PUB_ACUERDO|eli:LegalResource|eli:date_publication| | |
+|TELEFONO|schema:CreativeWork|foaf:phone| | |
+|TELEFONO|schema:CreativeWork|foaf:phone| | |
+|TELEFONO|schema:CreativeWork|foaf:phone| | |
+		
 
 ### 6.7. Normativa
 
@@ -582,76 +566,61 @@ Para modelar las normas utilizamos el vocabulario:
  
 #### 6.7.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-eli:LegalResource	eli:number	Identificador de la normativa	String	0..1
-	eli:description	Texto	String	1
-	eli:id_local	Tipo	String	1
-	eli:date_applicability	Fecha de aplicación	Date	0..1
-	eli:first_date_entry_in_force	Fecha de acuerdo 	Date	1
-	eli:date_publication	Fecha de aplicación	Date	1
-	eli:passed_by	Enlace con agente	eli:Agent	1
-	eli:amends	Enlace con normativa a la cual modifica	eli:LegalResource	0..1
-	eli:amended_by	Enlace inversa con normativa que modifica	eli:LegalResource	0..1
-	eli:type_document	Enlace con tipo documento	eli:ResourceType	1
-eli:ResourceType	skos:inScheme	Tipo de documento	string	1
-eli:Agent	org:organization	Enlace con organización	org:Organizacion	1
+Normativa
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|eli:LegalResource|eli:number|Identificador de la normativa|String|0..1|
+| |eli:description|Texto|String|1|
+| |eli:id_local|Tipo|String|1|
+| |eli:date_applicability|Fecha de aplicación|Date|0..1|
+| |eli:first_date_entry_in_force|Fecha de acuerdo |Date|1|
+| |eli:date_publication|Fecha de aplicación|Date|1|
+| |eli:passed_by|Enlace con agente|eli:Agent|1|
+| |eli:amends|Enlace con normativa a la cual modifica|eli:LegalResource|0..1|
+| |eli:amended_by|Enlace inversa con normativa que modifica|eli:LegalResource|0..1|
+| |eli:type_document|Enlace con tipo documento|eli:ResourceType|1|
+|eli:ResourceType|skos:inScheme|Tipo de documento|string|1|
+|eli:Agent|org:organization|Enlace con organización|org:Organizacion|1|
 
 
 #### 6.7.4. Casos de uso
 
 Las vistas más destacadas relacionadas con la normativa son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-7	Ordenanzas Fiscales Municipio	GA_OD_CORE
-BANCO_DATOS
-221	19/03/2020
-5	Ordenanzas Generales Municipio	GA_OD_CORE
-BANCO_DATOS
-202	19/03/2020
-6	Ordenanzas Generales Comarca	GA_OD_CORE
-BANCO_DATOS
-98	19/03/2020
-8	Ordenanzas Fiscales Comarca	GA_OD_CORE
-BANCO_DATOS
-76	19/03/2020
-38	Ordenanzas fiscales de Consorcios	GA_OD_CORE
-		
-39	Ordenanzas fiscales de Diputación	GA_OD_CORE
-		
-40	Ordenanzas fiscales de Entidad Menor	GA_OD_CORE
-		
-41	Ordenanzas fiscales de Mancomunidades	GA_OD_CORE
-		
-42	Ordenanzas fiscales de Organismos Autónomos	GA_OD_CORE
-		
-43	Ordenanzas fiscales de Villas y Tierras	GA_OD_CORE
-		
-44	Ordenanzas generales de Consorcios	GA_OD_CORE
-		
-45	Ordenanzas generales de Diputaciones	GA_OD_CORE
-		
-46	Ordenanzas generales de Entidades Menores	GA_OD_CORE
-		
-47	Ordenanzas generales de Mancomunidades	GA_OD_CORE
-		
-48	Ordenanzas generales de Núcleos	GA_OD_CORE
-		
-49	Ordenanzas generales de Organismos Autónomos	GA_OD_CORE
-		
-50	Ordenanzas generales de Villas y Tierras	GA_OD_CORE
-		
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|7|Ordenanzas Fiscales Municipio|GA_OD_CORE|BANCO_DATOS|221|19/03/2020|
+|5|Ordenanzas Generales Municipio|GA_OD_CORE|BANCO_DATOS|202|19/03/2020|
+|6|Ordenanzas Generales Comarca|GA_OD_CORE|BANCO_DATOS|98|19/03/2020|
+|8|Ordenanzas Fiscales Comarca|GA_OD_CORE|BANCO_DATOS|76|19/03/2020|
+|38|Ordenanzas fiscales de Consorcios|GA_OD_CORE| | | |
+|39|Ordenanzas fiscales de Diputación|GA_OD_CORE| | | |
+|40|Ordenanzas fiscales de Entidad Menor|GA_OD_CORE| | | |
+|41|Ordenanzas fiscales de Mancomunidades|GA_OD_CORE| | | |
+|42|Ordenanzas fiscales de Organismos Autónomos|GA_OD_CORE| | | |
+|43|Ordenanzas fiscales de Villas y Tierras|GA_OD_CORE| | | |
+|44|Ordenanzas generales de Consorcios|GA_OD_CORE| | | |
+|45|Ordenanzas generales de Diputaciones|GA_OD_CORE| | | |
+|46|Ordenanzas generales de Entidades Menores|GA_OD_CORE| | | |
+|47|Ordenanzas generales de Mancomunidades|GA_OD_CORE| | | |
+|48|Ordenanzas generales de Núcleos|GA_OD_CORE| | | |
+|49|Ordenanzas generales de Organismos Autónomos|GA_OD_CORE| | | |
+|50|Ordenanzas generales de Villas y Tierras|GA_OD_CORE| | | |
 
 El mapeo correspondiente a la vista 45 - Ordenanzas generales de Diputaciones se relaciona con la entidad Normativa y además con la entidad Organización de la siguiente forma (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-DIPUTACION_ID	eli:Agent	org:organization	org:Organization	dc:identifier
-DENOMINACION	eli:Agent	org:organization	org:Organization	dc:title
-TIPO	eli:LegalResource	eli:type_document		
-TEXTO	eli:LegalResource	eli:description		
-ORDYREG_ID	eli:LegalResource	eli:id_local		
-CLOB_ID	eli:LegalResource	eli:number		
-F_ACUERDO_APRO_INI	eli:LegalResource	eli:date_applicability		
-F_ACUERDO_APRO_DEF	eli:LegalResource	eli:first_date_entry_in_force		
-F_PUBLICACION_APRO_DEF	eli:LegalResource	eli:date_publication		
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|DIPUTACION_ID|eli:Agent|org:organization|org:Organization|dc:identifier|
+|DENOMINACION|eli:Agent|org:organization|org:Organization|dc:title|
+|TIPO|eli:LegalResource|eli:type_document| | |
+|TEXTO|eli:LegalResource|eli:description| | |
+|ORDYREG_ID|eli:LegalResource|eli:id_local| | |
+|CLOB_ID|eli:LegalResource|eli:number| | |
+|F_ACUERDO_APRO_INI|eli:LegalResource|eli:date_applicability| | |
+|F_ACUERDO_APRO_DEF|eli:LegalResource|eli:first_date_entry_in_force| | |
+|F_PUBLICACION_APRO_DEF|eli:LegalResource|eli:date_publication| | |
 
 
 ### 6.8. Contrato
@@ -666,44 +635,44 @@ Para modelar los contratos y sus procesos utilizamos el vocabulario:
 
 #### 6.8.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-ocds:Contract	ocds:id	Identificador	Int	1
-	ocds:description	Descripción	string	1
-	org:organization	Enlace con Organización	org:Organization	1
-	dc:title	Título	string	1
-	ocds:hasContractPeriod	Enlace con Periodo	ocds:Period	0..* 
-ocds:Period	ocds:startDate	Fecha de inicio	Date	1
-	ocds:endDate	Fecha de final	Date	0..1
+Contrato
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|ocds:Contract|ocds:id|Identificador|Int|1|
+| |ocds:description|Descripción|string|1|
+| |org:organization|Enlace con Organización|org:Organization|1|
+| |dc:title|Título|string|1|
+| |ocds:hasContractPeriod|Enlace con Periodo|ocds:Period|0..* |
+|ocds:Period|ocds:startDate|Fecha de inicio|Date|1|
+| |ocds:endDate|Fecha de final|Date|0..1|
 
 #### 6.8.4. Casos de uso
 
 Las vistas más destacadas relacionadas con los contratos son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-147	Transporte - Concesiones	GA_OD_CORE
-BANCO_DATOS
-718	19/03/2020
-152	IAA - Contratos	GA_OD_CORE
-BANCO_DATOS
-253	19/03/2020
-153	IAA - Contratos gastos anuales	GA_OD_CORE
-BANCO_DATOS
-253	19/03/2020
-154	IAA - Contratos depuradoras incluidas	GA_OD_CORE
-BANCO_DATOS
-253	19/03/2020
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|147|Transporte - Concesiones|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
+|152|IAA - Contratos|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
+|153|IAA - Contratos gastos anuales|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
+|154|IAA - Contratos depuradoras incluidas|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
+
 
 El mapeo correspondiente a la vista 152 – IAA - Contratos con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-CONTRATO	ocds:Contract	ocds:id		
-TITULO	ocds:Contract	dc:title		
-FECHA_INICIO	ocds:Contract	ocds:hasContractPeriod	ocds:Period	ocds:startDate
-FECHA_FIN	ocds:Contract	ocds:hasContractPeriod	ocds:Period	ocds:endDate
-EMPRESA	ocds:Contract -> org:organization	dc:title		
-DIRECCION	ocds:Contract -> org:organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:street-address
-CODIGO_POSTAL	ocds:Contract -> org:organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:postal-code
-MUNICIPIO	ocds:Contract -> org:organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:locality
-PROVINCIA	ocds:Contract -> org:organization -> org:Site	vcard_siteAddress	vcard:Location	vcard:region
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|CONTRATO|ocds:Contract|ocds:id| | |
+|TITULO|ocds:Contract|dc:title| | |
+|FECHA_INICIO|ocds:Contract|ocds:hasContractPeriod|ocds:Period|ocds:startDate|
+|FECHA_FIN|ocds:Contract|ocds:hasContractPeriod|ocds:Period|ocds:endDate|
+|EMPRESA|ocds:Contract -> org:organization|dc:title| | |
+|DIRECCION|ocds:Contract -> org:organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:street-address|
+|CODIGO_POSTAL|ocds:Contract -> org:organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:postal-code|
+|MUNICIPIO|ocds:Contract -> org:organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:locality|
+|PROVINCIA|ocds:Contract -> org:organization -> org:Site|vcard_siteAddress|vcard:Location|vcard:region|
+
 
 ### 6.9. Licitación
 
@@ -716,32 +685,39 @@ Al igual que en Contratos, usamos el siguiente vocabulario:
   
 #### 6.9.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-ocds:Tender	ocds:id	Identificador	Int	1
-	dc:title	Título	string	1
-	ocds:description	Descripción	string	1
-	org:organization	Enlace con Organización	org:Organization	1
-	ocds:hasTenderPeriod	Enlace con Periodo	ocds:Period	0..* 
-ocds:Period	ocds:startDate	Fecha de inicio	Date	1
-	ocds:endDate	Fecha de final	Date	0..1
+Licitación
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|ocds:Tender|ocds:id|Identificador|Int|1|
+| |dc:title|Título|string|1|
+| |ocds:description|Descripción|string|1|
+| |org:organization|Enlace con Organización|org:Organization|1|
+| |ocds:hasTenderPeriod|Enlace con Periodo|ocds:Period|0..* |
+|ocds:Period|ocds:startDate|Fecha de inicio|Date|1|
+| |ocds:endDate|Fecha de final|Date|0..1|
+
 
 #### 6.9.4. Casos de uso
 
 La vista relacionada con Licitación es la siguiente:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-284	Contratación - Licitaciones publicadas	GA_OD_CORE
-BANCO_DATOS
-408	11/03/2021
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|284|Contratación - Licitaciones publicadas|GA_OD_CORE|BANCO_DATOS|408|11/03/2021|
+
 
 El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
-Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-FECHAPUBLICACION	ocds:Tender	ocds:hasTenderPeriod	ocds:Period	ocds:startDate
-ORGANISMCODEGG	ocds:Tender	org:organization	org:Organization	org:identifier
-NOMBREGG	ocds:Tender	org:organization	org:Organization	dc:title
-IDEXPEDIENTEPLACSP	ocds:Tender	ocds:id		
-ORGANISMCODEOC	ocds:Tender	org:organization	org:Organization	org:identifier
-NOMBREOC	ocds:Tender	org:organization	org:Organization	dc:title
-OBJETOCONTRATO	ocds:Tender	dc:title		
+
+|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|
+|FECHAPUBLICACION|ocds:Tender|ocds:hasTenderPeriod|ocds:Period|ocds:startDate|
+|ORGANISMCODEGG|ocds:Tender|org:organization|org:Organization|org:identifier|
+|NOMBREGG|ocds:Tender|org:organization|org:Organization|dc:title|
+|IDEXPEDIENTEPLACSP|ocds:Tender|ocds:id| | |
+|ORGANISMCODEOC|ocds:Tender|org:organization|org:Organization|org:identifier|
+|NOMBREOC|ocds:Tender|org:organization|org:Organization|dc:title|
+|OBJETOCONTRATO|ocds:Tender|dc:title| | |
 
 
 ### 6.10. Trámite administrativo
@@ -754,20 +730,24 @@ Para modelar los lugares utilizamos el vocabulario:
  
 #### 6.10.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-schema:ItemList	schema:identifier	Identificador 	string	0..1
-	schema:title	Título	string	1
-	schema:abstract	Descripción 	string	1
-	schema:itemListElement	Enlace con el  paso del tramite	schema:ListItem	1..*
-	skos:concept	Enlace con categoría	skos:Concept	0..1
-	org:organization	Enlace con organización	org:Organization	0..*
-	eli:related_to	Enlace con normativa	eli:LegalResouce	0..*
-schema:ListItem	schema:identifier	Identificador 	string	0..1
-	schema:title	Título del paso 	string	1
-	schema:abstract	Descripción del paso	string	1
-	schema:nextItem	Enlace con siguiente paso del tramite	schema:ListItem	0..1
-	schema:previousItem	Enlace con el paso previo del tramite	schema:ListItem	0..1
-	schema:position	Posición	int	1
+Trámite administrativo
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|schema:ItemList|schema:identifier|Identificador |string|0..1|
+| |schema:title|Título|string|1|
+| |schema:abstract|Descripción |string|1|
+| |schema:itemListElement|Enlace con el  paso del tramite|schema:ListItem|1..* |
+| |skos:concept|Enlace con categoría|skos:Concept|0..1|
+| |org:organization|Enlace con organización|org:Organization|0..* |
+| |eli:related_to|Enlace con normativa|eli:LegalResouce|0..* |
+|schema:ListItem|schema:identifier|Identificador |string|0..1|
+| |schema:title|Título del paso |string|1|
+| |schema:abstract|Descripción del paso|string|1|
+| |schema:nextItem|Enlace con siguiente paso del tramite|schema:ListItem|0..1|
+| |schema:previousItem|Enlace con el paso previo del tramite|schema:ListItem|0..1|
+| |schema:position|Posición|int|1|
+
 
 #### 6.10.4. Casos de uso
 
@@ -786,87 +766,98 @@ Para modelar el transporte utilizamos el vocabulario:
  
 #### 6.11.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-gtfs:Route	dc:identifier	Identificador de la ruta	String	0..1
-	dc:title	Nombre de la ruta	String	0..1
-	gtfs:originStop	Parada de origen	gtfs:Stop	1
-	gtfs:destinationStop	Parada de destino	gtfs:Stop	1
-	gtfs:routeType	Tipo de ruta	gtfs:Bus	1
-	gtfs:agency	Enlace con la agencia	gtfs:Agency	0..1
+Ruta
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-gtfs:Stop	dc:title	Nombre de la parada	string	1
-	dc:identifier	Identificador de la parada	String	1
-	wgs84_pos:long	Longitud	double	1
-	wgs84_pos:lat	Latitud	double	1
-	org:siteAddress	Lugar	vcard:Location	1
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|gtfs:Route|dc:identifier|Identificador de la ruta|String|0..1|
+| |dc:title|Nombre de la ruta|String|0..1|
+| |gtfs:originStop|Parada de origen|gtfs:Stop|1|
+| |gtfs:destinationStop|Parada de destino|gtfs:Stop|1|
+| |gtfs:routeType|Tipo de ruta|gtfs:Bus|1|
+| |gtfs:agency|Enlace con la agencia|gtfs:Agency|0..1|
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-gtfs:Trip	dc:identifier	Identificador del viaje	string	1
-	dc:description	descripción	string	0..1
-	gtfd:route	Enlace con la ruta	gtfs:Route	1
-	dc:date	Fecha del viaje	date	0..1
+Parada
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-gtfs:StopTime	dc:identifier	Identifica un viaje	string	0..1
-	gtfs:stopSequence	Identifica el destino del viaje	int	1
-	gtfs:arrivalTime	Hora de llegada	date	0..1
-	gtfs:trip	Enlace con el viaje	gtfs:Trip	1
-	gtfs:stop	Enlace con la parada	gtfs:Stop	1
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|gtfs:Stop|dc:title|Nombre de la parada|string|1|
+| |dc:identifier|Identificador de la parada|String|1|
+| |wgs84_pos:long|Longitud|double|1|
+| |wgs84_pos:lat|Latitud|double|1|
+| |org:siteAddress|Lugar|vcard:Location|1|
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-gtfs:Agency	dc:identifier	Identificador de la Agencia	string	1
-	dc:title	Nombre de la Agencia	string	1
-	rdfs:subClassOf	label	org:Organization	1
-	foaf:name	Nombre organizacion	string	1
-	schema:startDate	Fecha de inicio	Date	1
-	schema:endDate	Fecha de fin	Date 	0..1
-	org:organization	Enlace con organización	org:Organization	1
+Itinerario
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|gtfs:Trip|dc:identifier|Identificador del viaje|string|1|
+| |dc:description|descripción|string|0..1|
+| |gtfd:route|Enlace con la ruta|gtfs:Route|1|
+| |dc:date|Fecha del viaje|date|0..1|
+
+Horario de parada
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|gtfs:StopTime|dc:identifier|Identifica un viaje|string|0..1|
+| |gtfs:stopSequence|Identifica el destino del viaje|int|1|
+| |gtfs:arrivalTime|Hora de llegada|date|0..1|
+| |gtfs:trip|Enlace con el viaje|gtfs:Trip|1|
+| |gtfs:stop|Enlace con la parada|gtfs:Stop|1|
+
+Agencia de transporte
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|gtfs:Agency|dc:identifier|Identificador de la Agencia|string|1|
+| |dc:title|Nombre de la Agencia|string|1|
+| |rdfs:subClassOf|label|org:Organization|1|
+| |foaf:name|Nombre organizacion|string|1|
+| |schema:startDate|Fecha de inicio|Date|1|
+| |schema:endDate|Fecha de fin|Date |0..1|
+| |org:organization|Enlace con organización|org:Organization|1|
+
 
 #### 6.11.4. Casos de uso
 
 Las vistas relacionadas con Transporte son las siguientes:
-Id de vista	Descripción	Datos	Conjunto de datos 	Nº de accesos	Última act.
-148	TRANSPORTE - Expediciones	GA_OD_CORE
-BANCO_DATOS
-718	19/03/2020
-149	TRANSPORTE - Expedición Parada Horario	GA_OD_CORE
-BANCO_DATOS
-718	19/03/2020
-150	TRANSPORTE - Paradas	GA_OD_CORE
-BANCO_DATOS
-718	19/03/2020
-151	TRANSPORTE - Rutas	GA_OD_CORE
-BANCO_DATOS
-718	19/03/2020
-140	CRA - Datos de itinerarios de las rutas	GA_OD_CORE
-		
-141	CRA - Paradas	GA_OD_CORE
-		
-144	CRA - Datos de las rutas	GA_OD_CORE
-		
+
+|Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
+|:----|:----|:----|:----|:----|:----|
+|148|TRANSPORTE - Expediciones|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
+|149|TRANSPORTE - Expedición Parada Horario|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
+|150|TRANSPORTE - Paradas|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
+|151|TRANSPORTE - Rutas|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
+|140|CRA - Datos de itinerarios de las rutas|GA_OD_CORE| | | |
+|141|CRA - Paradas|GA_OD_CORE| | | |
+|144|CRA - Datos de las rutas|GA_OD_CORE| | | |
 
 El mapeo correspondiente a las vistas 148, 149, 150 y 150 de TRANSPORTE con el nuevo modelo donde se identifican las expediciones, rutas y paradas con sus horarios es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
-Id	Atributo de origen	Entidad principal	Propiedad 	Entidad relacionada	Propiedad
-148	COD_EXP	gtfs:Trip	dc:identifier		
-148	FRECUENCIA	gtfs:Trip	dc:description		
-					
-149	COD_EXPEDICION	gtfs:StopTime	gtfs:trip	gtfs:Trip	dc:identifier
-149	ORDEN_PARADA	gtfs:StopTime	gtfs:stopSequence		
-149	COD_PARADA	gtfs:StopTime	gtfs:stop	gtfs:Stop	dc:identifier
-149	HORARIO	gtfs:StopTime	gtfs:arrivalTime		
-					
-150	COD_PARADA	gtfs:Stop	dc:identifier		
-150	DENO_DIRECCIÓN	gtfs:Stop	dc:title		
-150	NUCLEO	gtfs:Stop	org:siteAdress	vcard:Location	vcard:locality
-150	X	gtfs:Stop	wgs84_pos:lat 		
-150	Y	gtfs:Stop	wgs84_pos:long		
-					
-151	COD_CONCESION	ocds:Contract	ocds:id		
-151	COD_RUTA	gtfs:Route	dc:identifier		
-151	DENO_RUTA	gtfs:Route	dc:title		
-151	ORIGEN	gtfs:Route	gtfs:originStop	gtfs:Stop	dc:title
-151	DESTINO	gtfs:Route	gtfs:destinationStop	gtfs:Stop	dc:title
+
+|Id|Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
+|:----|:----|:----|:----|:----|:----|
+|148|COD_EXP|gtfs:Trip|dc:identifier| | |
+|148|FRECUENCIA|gtfs:Trip|dc:description| | |
+| | | | | | |
+|149|COD_EXPEDICION|gtfs:StopTime|gtfs:trip|gtfs:Trip|dc:identifier|
+|149|ORDEN_PARADA|gtfs:StopTime|gtfs:stopSequence| | |
+|149|COD_PARADA|gtfs:StopTime|gtfs:stop|gtfs:Stop|dc:identifier|
+|149|HORARIO|gtfs:StopTime|gtfs:arrivalTime| | |
+| | | | | | |
+|150|COD_PARADA|gtfs:Stop|dc:identifier| | |
+|150|DENO_DIRECCIÓN|gtfs:Stop|dc:title| | |
+|150|NUCLEO|gtfs:Stop|org:siteAdress|vcard:Location|vcard:locality|
+|150|X|gtfs:Stop|wgs84_pos:lat | | |
+|150|Y|gtfs:Stop|wgs84_pos:long| | |
+| | | | | | |
+|151|COD_CONCESION|ocds:Contract|ocds:id| | |
+|151|COD_RUTA|gtfs:Route|dc:identifier| | |
+|151|DENO_RUTA|gtfs:Route|dc:title| | |
+|151|ORIGEN|gtfs:Route|gtfs:originStop|gtfs:Stop|dc:title|
+|151|DESTINO|gtfs:Route|gtfs:destinationStop|gtfs:Stop|dc:title|
+| | | |
+
 
 
 ### 6.12. Tema
@@ -879,22 +870,27 @@ Los temas del Gobierno de Aragón pasan a modelarse con SKOS, en lugar de como u
   
 #### 6.12.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-skos:Concept	skos:prefLabel	Etiqueta	String	1
-	dc:identifier	Identificador	String	1
-	skos:broader	Enlace al concept padre	skos:Concept	1..*
-	skos:narrower	Elementos hijos	skos:Concept	1
-	skos:related	Enlace con concept relacionado	skos:Concept	1
-	dc:source	Origen	string	1
-	skos:symbol	Nivel	string	1
-skos:Collection
-	dc:source	Fuente	string	1
-	skos:scopeNote	Nota de alcance	string	1
-	skos:member	Relación con los miembros	skos:Concept	1..*
+Tema
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|skos:Concept|skos:prefLabel|Etiqueta|String|1|
+| |dc:identifier|Identificador|String|1|
+| |skos:broader|Enlace al concept padre|skos:Concept|1..* |
+| |skos:narrower|Elementos hijos|skos:Concept|1|
+| |skos:related|Enlace con concept relacionado|skos:Concept|1|
+| |dc:source|Origen|string|1|
+| |skos:symbol|Nivel|string|1|
+|skos:Collection|dc:source|Fuente|string|1|
+| |skos:scopeNote|Nota de alcance|string|1|
+| |skos:member|Relación con los miembros|skos:Concept|1..* |
+
 
 #### 6.12.4. Gestión y sincronización de temas
 
+TODO: Cambiar este párrafo.
 En el documento de Análisis de Situación se explica que se propone, inicialmente, la realización de una aplicación que permitiría gestionar el tesauro de temas modelado en SKOS en el nuevo grafo y servir esta información al resto de sistemas y usuarios del Gobierno de Aragón.
+
 Cada categoría SKOS se relacionará con la clase del modelo actual que es sustituida por el nuevo tesauro. Para ello se añadirá un triple skos:Concept en cada clase del modelo actual, apuntando hacia una categoría SKOS.
 
 ### 6.13. DataCube
@@ -910,48 +906,50 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
 #### 6.13.3. Casos de uso
 
 Los datos del presupuesto de Aragón se modelarían del siguiente modo. En primer lugar, definimos la estructura de datos, que sería (en pseudocódigo):
-<capitulo> a qb:DimensionProperty
-	rdfs:Label “Capítulo”;
-	qb:Concept <skos_concepto>;
-<articulo> a qb:DimensionProperty
-	rdfs:Label “Artículo”;
-	qb:Concept <skos_concepto>;
-<concepto> a qb:DimensionProperty
-	rdfs:Label “Concepto”;
-	qb:Concept <skos_concepto>;
-<subconcepto> a qb:DimensionProperty
-	rdfs:Label “Subconcepto”;
-	qb:Concept <skos_concepto>;
-<importe> a qb:MeasureProperty
-	rdfs:Label “Importe”;
-	rdfs:Range xsd:decimal;
-<estructura> a qb:DataStructureDefinition
-	qb:component [qb:dimension <capitulo>; qb:order 1];
-	qb:component [qb:dimension <articulo>; qb:order 2];
-	qb:component [qb:dimension <concepto>; qb:order 3];
-	qb:component [qb:dimension <subconcepto>; qb:order 4];
-	qb:component [qb:measure <importe>];
-	qb:component [qb:ComponentAttachment <presupuesto2021>];
 
+    <capitulo> a qb:DimensionProperty
+    	rdfs:Label “Capítulo”;
+    	qb:Concept <skos_concepto>;
+    <articulo> a qb:DimensionProperty
+    	rdfs:Label “Artículo”;
+    	qb:Concept <skos_concepto>;
+    <concepto> a qb:DimensionProperty
+    	rdfs:Label “Concepto”;
+    	qb:Concept <skos_concepto>;
+    <subconcepto> a qb:DimensionProperty
+    	rdfs:Label “Subconcepto”;
+    	qb:Concept <skos_concepto>;
+    <importe> a qb:MeasureProperty
+    	rdfs:Label “Importe”;
+    	rdfs:Range xsd:decimal;
+    <estructura> a qb:DataStructureDefinition
+    	qb:component [qb:dimension <capitulo>; qb:order 1];
+    	qb:component [qb:dimension <articulo>; qb:order 2];
+    	qb:component [qb:dimension <concepto>; qb:order 3];
+    	qb:component [qb:dimension <subconcepto>; qb:order 4];
+    	qb:component [qb:measure <importe>];
+    	qb:component [qb:ComponentAttachment <presupuesto2021>];
+	
 A continuación, se define el dataset de presupuesto, con los valores de importes correspondientes, por ejemplo, para el dato de gastos de personal y altos cargos, sería:
-< presupuesto2021> a qb:Dataset
-	qb:Structure <estructura>;
-<100000> a qb:Observation
-	qb:Dataset < presupuesto2021>;
-	<capitulo> <1>;
-	<articulo> <10>;
-	<concepto> <100>;
-	<subconcepto> <100000>;
-	<importe> 2678824.40;
-	<centrogesco> <1010>;
-	<funcional> <1111>;
-	<financiacion> <91002>;
-<1> a skos:Concept
-	rdfs:Label “Gasto de personal”;
-	skos:Narrower <10>, <11>, …, <18>;
-<10> a skos:Concept
-	rdfs:Label “Altos cargos”;
-	skos:Narrower <100>, <101>;
+
+    < presupuesto2021> a qb:Dataset
+    	qb:Structure <estructura>;
+    <100000> a qb:Observation
+    	qb:Dataset < presupuesto2021>;
+    	<capitulo> <1>;
+    	<articulo> <10>;
+    	<concepto> <100>;
+    	<subconcepto> <100000>;
+    	<importe> 2678824.40;
+    	<centrogesco> <1010>;
+    	<funcional> <1111>;
+    	<financiacion> <91002>;
+    <1> a skos:Concept
+    	rdfs:Label “Gasto de personal”;
+    	skos:Narrower <10>, <11>, ..., <18>;
+    <10> a skos:Concept
+    	rdfs:Label “Altos cargos”;
+    	skos:Narrower <100>, <101>;
 
 
 ### 6.14. Sistemas y dispositivos de gestión de agua
@@ -967,58 +965,64 @@ Para modelar los sistemas y dispositivos de gestión de agua utilizamos el vocab
  
 #### 6.14.3. Definición avanzada de los atributos
 
-Entidad	Atributo	Descriptor	Tipo	Multiplicidad
-sosa:Featureofinterest	dc:identifier	Identificador	String	1
-	dc:title	Nombre	String	1
-	dc:date	Fecha 	Date	1
-	org:siteAddress	Enlace con lugar	Vcard:Location	1
-	sosa:ObservableProperty	Enlace con el valor observable 	Sosa:Observation	1
-sosa:Observation 	rdfs:comment	Definición 	string	1
-	sosa:hasFeatureOfInterest	Inversa de sosa:ObservableProperty	sosa:Featureofinterest	1
-	sosa:hasResult	valor	string	1
+Dispositivo
+
+|Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
+|:----|:----|:----|:----|:----|
+|sosa:Featureofinterest|dc:identifier|Identificador|String|1|
+| |dc:title|Nombre|String|1|
+| |dc:date|Fecha |Date|1|
+| |org:siteAddress|Enlace con lugar|Vcard:Location|1|
+| |sosa:ObservableProperty|Enlace con el valor observable |Sosa:Observation|1|
+|sosa:Observation|rdfs:comment|Definición|string|1|
+| |sosa:hasFeatureOfInterest|Inversa de sosa:ObservableProperty|sosa:Featureofinterest|1|
+| |sosa:hasResult|valor|string|1|
+
 
 #### 6.14.4. Casos de uso
 
 Por ejemplo, los datos de un Ramal (vista 106) se representarían (en pseudocódigo):
-<49340> a sosa:FeatureOfInterest
-	dc:identifier 869908;
-	dc:date “"06/08/2013 11:58:16";
-	org:siteAddress <poblacion-50130>;
-	sosa:ObservableProperty <observacion-49340>;
-<observacion-49340> a sosa:Observation
-	rdfs:comment “Longitud”;
-	sosa:HasResult 56,19;
+
+    <49340> a sosa:FeatureOfInterest
+    	dc:identifier 869908;
+    	dc:date “"06/08/2013 11:58:16";
+    	org:siteAddress <poblacion-50130>;
+    	sosa:ObservableProperty <observacion-49340>;
+    <observacion-49340> a sosa:Observation
+    	rdfs:comment “Longitud”;
+    	sosa:HasResult 56,19;
 
 #### 6.15. Información de Datasets y Procedencia
 
 #### 6.15.1. Descripción de vocabularios y entidades seleccionadas
 
-Agrupamos en esta sección los vocabularios que permiten la definición de los Datasets y declarar la procedencia de los datos cargados:
-•	DCAT. (Data Catalog Vocabulary). Se trata de una recomendación del W3C para facilitar la interoperabilidad de entre catálogos de datos publicados en la web y permite la descripción de datasets y servicios de datos. En el ámbito del proyecto se usará, además, para mostrar información explicativa del dato y su procedencia, enlazando con los metadatos declarados mediante PROV-O.
-•	PROV-O. (The PROV Ontology). El proceso de carga en el grafo correspondiente a este nuevo modelo ontológico va a generar información de procedencia para cada entidad, modelando mediante esta recomendación del W3C. Cada entidad cargada o actualizada incorporará un triple informando del proceso de carga del que proviene y enlazará con el Dataset de procedencia.
+ - ***DCAT***. (Data Catalog Vocabulary). Se trata de una recomendación del W3C para facilitar la interoperabilidad de entre catálogos de datos publicados en la web y permite la descripción de datasets y servicios de datos. En el ámbito del proyecto se usará, además, para mostrar información explicativa del dato y su procedencia, enlazando con los metadatos declarados mediante PROV-O.
+ - ***PROV-O***. (The PROV Ontology).  El proceso de carga en el grafo correspondiente a este nuevo modelo ontológico va a generar información de procedencia para cada entidad, modelando mediante esta recomendación del W3C. Cada entidad cargada o actualizada incorporará un triple informando del proceso de carga del que proviene y enlazará con el Dataset de procedencia.
 
 #### 6.15.2. Casos de uso
 
 Cada entidad cargada o actualizada incorporaría un triple informando del proceso de carga del que proviene (entidad actividad); y se generaría una entidad de tipo prov:Activity con información de dicho proceso. 
 Además, la actividad se enlazaría con el dataset mediante el atributo prov:wasAssociatedWith, lo que permitiría utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Este uso necesita que el servicio CKAN de Aragón Open Data se configure para guardar los metadatos de los datasets como triples en el mismo servidor de Virtuoso en el que se almacene el grafo generado según el nuevo modelo ontológico.
 Por ejemplo, estos triples (en pseudocódigo) asociarían una organización con el dataset de municipios y el proceso de carga del que provienen sus datos:
-<organizacion_1> a org:Organization
-<organizacion_1> prov:wasUsedBy _:bnode1.
-_:bnode1
-    a prov:Activity;
-    prov:startedAtTime "2021-04-25T01:30:00Z"^^xsd:dateTime;
-    prov:endedAtTime "2021-04-25T03:40:00Z"^^xsd:dateTime;
-    prov:wasAssociatedWith <proceso_de_carga>;        
-    prov:wasAssociatedWith <dcat:municipio>;
-<proceso_de_carga>
-    a prov:SoftwareAgent;
-    foaf:name "Proceso de carga del grafo de Aragón Open Data";
-<dcat:municipio>
-    a dcat:Dataset;
-    dct:description “Dataset con los municipios de Aragón”;
-    dcat:keyword “Núcleo”;
-    dcat:keyword “Entidades de población”;
-    …
+
+    <organizacion_1> a org:Organization
+    <organizacion_1> prov:wasUsedBy _:bnode1.
+    _:bnode1
+        a prov:Activity;
+        prov:startedAtTime "2021-04-25T01:30:00Z"^^xsd:dateTime;
+        prov:endedAtTime "2021-04-25T03:40:00Z"^^xsd:dateTime;
+        prov:wasAssociatedWith <proceso_de_carga>;        
+        prov:wasAssociatedWith <dcat:municipio>;
+    <proceso_de_carga>
+        a prov:SoftwareAgent;
+        foaf:name "Proceso de carga del grafo de Aragón Open Data";
+    <dcat:municipio>
+        a dcat:Dataset;
+        dct:description “Dataset con los municipios de Aragón”;
+        dcat:keyword “Núcleo”;
+        dcat:keyword “Entidades de población”;
+        …
+
     
  
 ## Anexo A. Organigrama del Gobierno de Aragón
