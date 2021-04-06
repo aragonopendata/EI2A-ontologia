@@ -12,7 +12,7 @@
 
 6. Descripción de entidades principales
 
-6.1. Persona
+   6.1. Persona
 
 ## Introducción
 
