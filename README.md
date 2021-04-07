@@ -105,6 +105,7 @@ En el siguiente diagrama presentamos el modelo de alto nivel y las relaciones de
 
 ## 4. Diagrama UML
 
+![](docs/images/AODP.jpg)
 
 ## 5. Mantenimiento del modelo ontológico
 
