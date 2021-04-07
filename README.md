@@ -786,8 +786,6 @@ Actualmente no disponemos de información de ninguna vista relacionada con trám
 
 ### 6.11. Transporte
 
-![](docs/images/ei2a-diagrama-Transporte.jpg) 
-
 #### 6.11.1. Descripción de vocabulario y entidad seleccionada
 
 Para modelar el transporte utilizamos el vocabulario:
@@ -798,6 +796,8 @@ Para modelar el transporte utilizamos el vocabulario:
 - ***ORG***. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
 
 #### 6.11.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-Transporte.jpg) 
  
 #### 6.11.3. Definición avanzada de los atributos
 
