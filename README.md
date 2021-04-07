@@ -105,7 +105,7 @@ En el siguiente diagrama presentamos el modelo de alto nivel y las relaciones de
 
 ## 4. Diagrama UML
 
-![](docs/images/AODP.jpg)
+![](docs/images/ei2a-diagrama.jpg)
 
 ## 5. Mantenimiento del modelo ontológico
 
@@ -135,7 +135,7 @@ Para modelar a las personas utilizamos dos vocabularios:
 
 #### 6.1.2. Diagrama de la entidad
 
-
+![](docs/images/ei2a-diagrama-Person.jpg)
 
 #### 6.1.3. Definición avanzada de los atributos
 
@@ -213,7 +213,8 @@ Para modelar a las organizaciones y sus centros utilizamos dos vocabularios:
 - ***vCARD***. Modela lugares con direcciones y geoposicionamiento, para definir dónde se encuentra un centro.
 
 #### 6.2.2. Diagrama de la entidad
-                  
+
+![](docs/images/ei2a-diagrama-Organization.jpg)                 
 
 
 #### 6.2.3. Definición avanzada de los atributos
@@ -358,6 +359,8 @@ Para modelar los lugares utilizamos un vocabulario:
 
 #### 6.3.2. Diagrama de la entidad
  
+![](docs/images/ei2a-diagrama-Location.jpg) 
+
 #### 6.3.3. Definición avanzada de los atributos
 
 Lugar
@@ -400,7 +403,9 @@ Para modelar los lugares utilizamos el vocabulario Schema:
 
 - ***Schema.org***. Utilizamos la clase Event con sus atributos relevantes al caso.
 
-#### 6.4.2. Diagrama de la entidad
+#### 6.4.2. Diagrama de la entidad 
+
+![](docs/images/ei2a-diagrama-Event.jpg) 
  
 #### 6.4.3. Definición avanzada de los atributos
 
@@ -451,7 +456,7 @@ Hemos decidido modelar legislatura a pesar de que sólo se va a cargar la actual
 
 #### 6.5.2. Diagrama de la entidad
 
-  
+![](docs/images/ei2a-diagrama-Legislature.jpg)   
 
 #### 6.5.3. Definición avanzada de los atributos
 
@@ -491,6 +496,8 @@ Para modelar los lugares utilizamos el vocabulario:
 - ***Schema.org***. Hemos optado por modelar con schema:CreativeWork, explicitando atributos opcionales que se usarán en función del tipo de documento que se quiera representar en el grafo; como expedientes, obras de arte, símbolos municipales o páginas web. Se complementa con algunos términos de ELI y Dublin Core e incluye relaciones con Organización, Centro y Lugar.
 
 #### 6.6.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-CreativeWork.jpg) 
  
 #### 6.6.3. Definición avanzada de los atributos
 
@@ -574,6 +581,8 @@ Para modelar las normas utilizamos el vocabulario:
 - ***ELI***. Modela normas y leyes, como las ordenanzas generales y fiscales. En este caso se opta por un vocabulario específico que incluye atributos más ajustados.
 
 #### 6.7.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-LegalResource.jpg) 
  
 #### 6.7.3. Definición avanzada de los atributos
 
@@ -644,6 +653,7 @@ Para modelar los contratos y sus procesos utilizamos el vocabulario:
 
 #### 6.8.2. Diagrama de la entidad
 
+![](docs/images/ei2a-diagrama-Contract.jpg) 
   
 
 #### 6.8.3. Definición avanzada de los atributos
@@ -697,6 +707,8 @@ Al igual que en Contratos, usamos el siguiente vocabulario:
 
 
 #### 6.9.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-Tender.jpg) 
   
 #### 6.9.3. Definición avanzada de los atributos
 
@@ -744,6 +756,8 @@ Para modelar los lugares utilizamos el vocabulario:
 - ***Schema.org***. Hemos optado por modelar con schema:ItemList, que permite definir el trámite con sus relaciones y cuenta con un ListItem para modelar los pasos del trámite, tal y como está definido en la web de Aragón.
 
 #### 6.10.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-ItemList.jpg) 
  
 #### 6.10.3. Definición avanzada de los atributos
 
@@ -771,6 +785,8 @@ Trámite administrativo
 Actualmente no disponemos de información de ninguna vista relacionada con trámites administrativos por lo que tendremos que incorporar un origen de estos datos para poder alinearlo con el nuevo modelo. 
 
 ### 6.11. Transporte
+
+![](docs/images/ei2a-diagrama-Transporte.jpg) 
 
 #### 6.11.1. Descripción de vocabulario y entidad seleccionada
 
@@ -886,6 +902,8 @@ El mapeo correspondiente a las vistas 148, 149, 150 y 150 de TRANSPORTE con el n
 Los temas del Gobierno de Aragón pasan a modelarse con SKOS, en lugar de como una jerarquía de clases, para facilitar el mantenimiento y la reutilización, así como la alineación con las categorías de la NTI. El vocabulario será, por tanto, ***SKOS***.
 
 #### 6.12.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-Concept.jpg) 
   
 #### 6.12.3. Definición avanzada de los atributos
 
@@ -921,6 +939,7 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
 
 #### 6.13.2. Diagrama de la entidad
 
+![](docs/images/ei2a-diagrama-qb.jpg) 
  
 #### 6.13.3. Casos de uso
 
@@ -982,6 +1001,8 @@ Para modelar los sistemas y dispositivos de gestión de agua utilizamos el vocab
 - ***ORG***. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
 
 #### 6.14.2. Diagrama de la entidad
+
+![](docs/images/ei2a-diagrama-Featureofinterest.jpg) 
  
 #### 6.14.3. Definición avanzada de los atributos
 
