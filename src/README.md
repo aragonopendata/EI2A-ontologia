@@ -1,1 +1,1 @@
-EI2A en formato OWL
+Modelo ontológico EI2A en formato OWL
