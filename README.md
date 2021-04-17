@@ -925,10 +925,13 @@ Tema
 
 #### 6.12.4. Gestión y sincronización de temas
 
-TODO: Cambiar este párrafo.
-En el documento de Análisis de Situación se explica que se propone, inicialmente, la realización de una aplicación que permitiría gestionar el tesauro de temas modelado en SKOS en el nuevo grafo y servir esta información al resto de sistemas y usuarios del Gobierno de Aragón.
+Los temas se sincronizaránn con los indicados en la vista 161 de GA_OD_CORE. Cada concepto SKOS estará relacionado con uno de los temas principales de la recomendación NTI, mediante `skos:broadMatch`. Por ejemplo:
 
-Cada categoría SKOS se relacionará con la clase del modelo actual que es sustituida por el nuevo tesauro. Para ello se añadirá un triple skos:Concept en cada clase del modelo actual, apuntando hacia una categoría SKOS.
+    ei2a:kos/subvencion-medio-ambiente skos:broadMatch <http://datos.gob.es/kos/sector-publico/sector/medio-ambiente>
+
+Cada categoría SKOS se relacionará con la clase del modelo actual que es sustituida por el nuevo tesauro. Para ello se añadirá un triple `rdfs:isDefinedBy` en cada clase del modelo actual, apuntando hacia una categoría SKOS. Por ejemplo:
+
+    <http://opendata.aragon.es/def/ei2a/categorization#EnvironmentSubsidy> rdfs:isDefinedBy ei2a:kos/subvencion-medio-ambiente
 
 ### 6.13. DataCube
 
@@ -945,49 +948,51 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
 
 Los datos del presupuesto de Aragón se modelarían del siguiente modo. En primer lugar, definimos la estructura de datos, que sería (en pseudocódigo):
 
-    <capitulo> a qb:DimensionProperty
+    ei2a:recurso/dsd/presupuesto2021 a qb:DataStructureDefinition
+    	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
+    	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
+    	qb:component [qb:dimension ei2a:recurso/dimension/articulo; qb:order 2];
+    	qb:component [qb:dimension ei2a:recurso/dimension/concepto; qb:order 3];
+    	qb:component [qb:dimension ei2a:recurss/dimension/subconcepto; qb:order 4];
+    	qb:component [qb:measure ei2a:recurso/measure/importe];
+    ei2a:recurso/dimension/capitulo a qb:DimensionProperty
     	rdfs:Label “Capítulo”;
-    	qb:Concept <skos_concepto>;
-    <articulo> a qb:DimensionProperty
+    	rdfs:range skos:concept;
+	rdfs:isDefinedBy ei2a:kos/capitulo;
+     ei2a:recurso/dimension/articulo a qb:DimensionProperty
     	rdfs:Label “Artículo”;
-    	qb:Concept <skos_concepto>;
-    <concepto> a qb:DimensionProperty
+	rdfs:range skos:concept;
+    	rdfs:isDefinedBy ei2a:kos/articulo;
+     ei2a:recurso/dimension/concepto a qb:DimensionProperty
     	rdfs:Label “Concepto”;
-    	qb:Concept <skos_concepto>;
-    <subconcepto> a qb:DimensionProperty
+	rdfs:range skos:concept;
+    	rdfs:isDefinedBy ei2a:kos/concepto;
+     ei2a:recurso/dimension/subconcepto a qb:DimensionProperty
     	rdfs:Label “Subconcepto”;
-    	qb:Concept <skos_concepto>;
-    <importe> a qb:MeasureProperty
+	rdfs:range skos:concept;
+    	rdfs:isDefinedBy ei2a:kos/subconcepto;
+     ei2a:recurso/measure/importe a qb:MeasureProperty
     	rdfs:Label “Importe”;
     	rdfs:Range xsd:decimal;
-    <estructura> a qb:DataStructureDefinition
-    	qb:component [qb:dimension <capitulo>; qb:order 1];
-    	qb:component [qb:dimension <articulo>; qb:order 2];
-    	qb:component [qb:dimension <concepto>; qb:order 3];
-    	qb:component [qb:dimension <subconcepto>; qb:order 4];
-    	qb:component [qb:measure <importe>];
-    	qb:component [qb:ComponentAttachment <presupuesto2021>];
 	
 A continuación, se define el dataset de presupuesto, con los valores de importes correspondientes, por ejemplo, para el dato de gastos de personal y altos cargos, sería:
 
-    < presupuesto2021> a qb:Dataset
-    	qb:Structure <estructura>;
-    <100000> a qb:Observation
-    	qb:Dataset < presupuesto2021>;
-    	<capitulo> <1>;
-    	<articulo> <10>;
-    	<concepto> <100>;
-    	<subconcepto> <100000>;
-    	<importe> 2678824.40;
-    	<centrogesco> <1010>;
-    	<funcional> <1111>;
-    	<financiacion> <91002>;
-    <1> a skos:Concept
+    ei2a:recurso/dataset/presupuesto2021 a qb:Dataset
+        dct:title "Presupuesto del Gobierno de Aragón 2021";
+    	qb:structure ei2a:recurso/dsd/presupuesto2021;
+    ei2a:recurso/observacion/100000 a qb:Observation
+    	qb:Dataset ei2a:recurso/dataset/presupuesto2021;
+    	ei2a:recurso/dimension/capitulo ei2a:kos/capitulo-1;
+    	ei2a:recurso/dimension/articulo ei2a:kos/articulo-10;
+    	ei2a:recurso/dimension/concepto ei2a:kos/concepto-100;
+    	ei2a:recurso/dimension/subconcepto ei2a:kos/subconcepto-100000;
+    	ei2a:recurso/medida/importe 2678824.40;
+    ei2a:kos/capitulo-1 a skos:Concept
     	rdfs:Label “Gasto de personal”;
-    	skos:Narrower <10>, <11>, ..., <18>;
-    <10> a skos:Concept
+    	skos:Narrower ei2a:kos/articulo-10, ei2a:kos/articulo-11, ..., ei2a:kos/articulo-18;
+    ei2a:kos/articulo-10 a skos:Concept
     	rdfs:Label “Altos cargos”;
-    	skos:Narrower <100>, <101>;
+    	skos:Narrower ei2a:kos/concepto-100, ei2a:kos/concepto-101;
 
 
 ### 6.14. Sistemas y dispositivos de gestión de agua
@@ -1024,12 +1029,12 @@ Dispositivo
 
 Por ejemplo, los datos de un Ramal (vista 106) se representarían (en pseudocódigo):
 
-    <49340> a sosa:FeatureOfInterest
+    ei2a:recurso/medio-ambiente/ramal/49340 a sosa:FeatureOfInterest
     	dc:identifier 869908;
     	dc:date “"06/08/2013 11:58:16";
-    	org:siteAddress <poblacion-50130>;
-    	sosa:ObservableProperty <observacion-49340>;
-    <observacion-49340> a sosa:Observation
+    	org:siteAddress ei2a:recurso/sector-publico/lugar/poblacion/50130>;
+    	sosa:ObservableProperty ei2a:recurso/medio-ambiente/observacion/ramal/49340;
+    ei2a:recurso/medio-ambiente/observacion/ramal/49340 a sosa:Observation
     	rdfs:comment “Longitud”;
     	sosa:HasResult 56,19;
 
