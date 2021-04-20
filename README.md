@@ -958,27 +958,27 @@ Los datos del presupuesto de Aragón se modelarían del siguiente modo. En prime
     ei2a:recurso/dimension/capitulo a qb:DimensionProperty
     	rdfs:Label “Capítulo”;
     	rdfs:range skos:concept;
-	qb:concept ei2a:kos/capitulo;
-     ei2a:recurso/dimension/articulo a qb:DimensionProperty
+    	qb:concept ei2a:kos/capitulo;
+    ei2a:recurso/dimension/articulo a qb:DimensionProperty
     	rdfs:Label “Artículo”;
-	rdfs:range skos:concept;
+    	rdfs:range skos:concept;
     	qb:concept ei2a:kos/articulo;
-     ei2a:recurso/dimension/concepto a qb:DimensionProperty
+    ei2a:recurso/dimension/concepto a qb:DimensionProperty
     	rdfs:Label “Concepto”;
-	rdfs:range skos:concept;
+    	rdfs:range skos:concept;
     	qb:concept ei2a:kos/concepto;
-     ei2a:recurso/dimension/subconcepto a qb:DimensionProperty
+    ei2a:recurso/dimension/subconcepto a qb:DimensionProperty
     	rdfs:Label “Subconcepto”;
-	rdfs:range skos:concept;
+    	rdfs:range skos:concept;
     	qb:concept ei2a:kos/subconcepto;
-     ei2a:recurso/measure/importe a qb:MeasureProperty
+    ei2a:recurso/measure/importe a qb:MeasureProperty
     	rdfs:Label “Importe”;
     	rdfs:Range xsd:decimal;
 	
 A continuación, se define el dataset de presupuesto, con los valores de importes correspondientes, por ejemplo, para el dato de gastos de personal y altos cargos, sería:
 
     ei2a:recurso/dataset/presupuesto2021 a qb:Dataset
-        dct:title "Presupuesto del Gobierno de Aragón 2021";
+    	dct:title "Presupuesto del Gobierno de Aragón 2021";
     	qb:structure ei2a:recurso/dsd/presupuesto2021;
     ei2a:recurso/observacion/100000 a qb:Observation
     	qb:Dataset ei2a:recurso/dataset/presupuesto2021;
