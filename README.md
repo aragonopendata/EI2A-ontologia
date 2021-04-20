@@ -958,19 +958,19 @@ Los datos del presupuesto de Aragón se modelarían del siguiente modo. En prime
     ei2a:recurso/dimension/capitulo a qb:DimensionProperty
     	rdfs:Label “Capítulo”;
     	rdfs:range skos:concept;
-	rdfs:isDefinedBy ei2a:kos/capitulo;
+	qb:concept ei2a:kos/capitulo;
      ei2a:recurso/dimension/articulo a qb:DimensionProperty
     	rdfs:Label “Artículo”;
 	rdfs:range skos:concept;
-    	rdfs:isDefinedBy ei2a:kos/articulo;
+    	qb:concept ei2a:kos/articulo;
      ei2a:recurso/dimension/concepto a qb:DimensionProperty
     	rdfs:Label “Concepto”;
 	rdfs:range skos:concept;
-    	rdfs:isDefinedBy ei2a:kos/concepto;
+    	qb:concept ei2a:kos/concepto;
      ei2a:recurso/dimension/subconcepto a qb:DimensionProperty
     	rdfs:Label “Subconcepto”;
 	rdfs:range skos:concept;
-    	rdfs:isDefinedBy ei2a:kos/subconcepto;
+    	qb:concept ei2a:kos/subconcepto;
      ei2a:recurso/measure/importe a qb:MeasureProperty
     	rdfs:Label “Importe”;
     	rdfs:Range xsd:decimal;
