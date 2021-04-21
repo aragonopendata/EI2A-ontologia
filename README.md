@@ -1033,10 +1033,16 @@ Por ejemplo, los datos de un Ramal (vista 106) se representarían (en pseudocód
     	dc:identifier 869908;
     	dc:date “"06/08/2013 11:58:16";
     	org:siteAddress ei2a:recurso/sector-publico/lugar/poblacion/50130>;
-    	sosa:ObservableProperty ei2a:recurso/medio-ambiente/observacion/ramal/49340;
-    ei2a:recurso/medio-ambiente/observacion/ramal/49340 a sosa:Observation
+    	sosa:ObservableProperty ei2a:recurso/medio-ambiente/observacion/ramal/49340-1;
+	sosa:ObservableProperty ei2a:recurso/medio-ambiente/observacion/ramal/49340-2;
+    ei2a:recurso/medio-ambiente/observacion/ramal/49340-1 a sosa:Observation
     	rdfs:comment “Longitud”;
-    	sosa:HasResult 56,19;
+    	sosa:HasResult 56.19;
+	sosa:phenomenonTime "2021-04-09T12:00:00Z"^^xsd:dateTimeStamp;
+    ei2a:recurso/medio-ambiente/observacion/ramal/49340-2 a sosa:Observation
+    	rdfs:comment “Caudal en m3/s”;
+    	sosa:HasResult 0.5;
+	sosa:phenomenonTime "2021-04-09T12:00:00Z"^^xsd:dateTimeStamp;
 
 #### 6.15. Información de Datasets y Procedencia
 
