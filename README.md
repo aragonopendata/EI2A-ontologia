@@ -1023,6 +1023,7 @@ Dispositivo
 |sosa:Observation|rdfs:comment|Definición|string|1|
 | |sosa:hasFeatureOfInterest|Inversa de sosa:ObservableProperty|sosa:Featureofinterest|1|
 | |sosa:hasResult|valor|string|1|
+| |sosa:phenomenonTime|valor|dateTimeStamp|0..1|
 
 
 #### 6.14.4. Casos de uso
