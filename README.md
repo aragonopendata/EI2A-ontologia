@@ -995,7 +995,7 @@ A continuación, se define el dataset de presupuesto, con los valores de importe
     	skos:Narrower ei2a:kos/concepto-100, ei2a:kos/concepto-101;
 
 
-### 6.14. Sistemas y dispositivos de gestión de agua
+### 6.14. IoT. Sistemas y dispositivos de gestión de agua
 
 #### 6.14.1. Descripción de vocabulario y entidad seleccionada
 
@@ -1004,6 +1004,8 @@ Para modelar los sistemas y dispositivos de gestión de agua utilizamos el vocab
 - ***SSN***. (Semantic Sensor Network Ontology). Modela sistemas y dispositivos en el ámbito de IoT. Como ya se ha indicado en el apartado de vocabularios, se reducen las clases respecto al uso anterior de WISDOM, lo que simplifica el modelo.
 - ***vCard***. Opcionalmente, org:siteAddress hacia vCard:Location
 - ***ORG***. Opcionalmente, enlace hacia una organización (municipio), org:organization hacia org:Organization.
+
+Este modelo podría usarse para modelar dispositivos y sus mediciones en el ámbito de IoT (Internet Of Things).
 
 #### 6.14.2. Diagrama de la entidad
 
