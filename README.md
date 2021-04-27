@@ -946,14 +946,14 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
  
 #### 6.13.3. Casos de uso
 
-Los datos del presupuesto de Aragón se modelarían del siguiente modo. En primer lugar, definimos la estructura de datos, que sería (en pseudocódigo):
+Los datos del presupuesto de Aragón se modelarían del siguiente modo. En primer lugar, definimos la estructura de datos, que sería:
 
     ei2a:recurso/dsd/presupuesto2021 a qb:DataStructureDefinition
     	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
     	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
     	qb:component [qb:dimension ei2a:recurso/dimension/articulo; qb:order 2];
     	qb:component [qb:dimension ei2a:recurso/dimension/concepto; qb:order 3];
-    	qb:component [qb:dimension ei2a:recurss/dimension/subconcepto; qb:order 4];
+    	qb:component [qb:dimension ei2a:recurso/dimension/subconcepto; qb:order 4];
     	qb:component [qb:measure ei2a:recurso/measure/importe];
     ei2a:recurso/dimension/capitulo a qb:DimensionProperty
     	rdfs:Label “Capítulo”;
