@@ -38,7 +38,7 @@
  
    6.13. [DataCube](#613-datacube)
  
-   6.14. [Dispositivo. Internet de las Cosas. IoT](#614-dispositivo.-internet-de-las-cosas.-iot)
+   6.14. [Dispositivo. Internet de las Cosas. IoT](#614-dispositivo-internet-de-las-cosas-iot)
  
    6.15. [Información de Datasets y Procedencia](#615-información-de-datasets-y-procedencia)
  
