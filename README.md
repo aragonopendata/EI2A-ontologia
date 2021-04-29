@@ -698,10 +698,10 @@ Las vistas más destacadas relacionadas con los contratos son las siguientes:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|147|Transporte - Concesiones|GA_OD_CORE|BANCO_DATOS|718|19/03/2020|
-|152|IAA - Contratos|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
-|153|IAA - Contratos gastos anuales|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
-|154|IAA - Contratos depuradoras incluidas|GA_OD_CORE|BANCO_DATOS|253|19/03/2020|
+147|Transporte - Concesiones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=147&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
+152|IAA - Contratos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=152&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/depuradoras-de-agua-residual-gestionadas-o-financiadas-por-la-c-a-de-aragon)|253|19/03/2020|
+153|IAA - Contratos gastos anuales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=153&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/depuradoras-de-agua-residual-gestionadas-o-financiadas-por-la-c-a-de-aragon)|253|19/03/2020|
+154|IAA - Contratos depuradoras incluidas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=154&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/depuradoras-de-agua-residual-gestionadas-o-financiadas-por-la-c-a-de-aragon)|253|19/03/2020|
 
 
 El mapeo correspondiente a la vista 152 – IAA - Contratos con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
