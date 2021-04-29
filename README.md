@@ -1062,7 +1062,7 @@ Dispositivo
 
 #### 6.14.4. Casos de uso
 
-Por ejemplo, los datos de un Ramal (vista 106) se representarían (en pseudocódigo):
+Por ejemplo, los datos de un Ramal (vista 106) se representarían:
 
     ei2a:recurso/medio-ambiente/ramal/49340 a sosa:FeatureOfInterest
     	dc:identifier 869908;
