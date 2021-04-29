@@ -272,53 +272,53 @@ Las vistas relacionadas con organización, ordenadas según el interés generado
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|104|IAF polígonos industriales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=104&_pageSize=100&_page=1)|BANCO_DATOS|1493|19/03/2020|
-|24|Datos de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=24&_pageSize=100&_page=1)|BANCO_DATOS|616|19/03/2020|
-|159|Entidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=159&_pageSize=100&_page=1)|BANCO_DATOS|556|19/03/2020|
-|11|Datos Municipio|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=11&_pageSize=100&_page=1)|BANCO_DATOS|422|19/03/2020|
-|67|Registro de Cafeterías y Restaurantes|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=67&_pageSize=100&_page=1)|BANCO_DATOS|414|19/03/2020|
-|65|Registro de Alojamientos hoteleros|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=65&_pageSize=100&_page=1)|BANCO_DATOS|374|19/03/2020|
-|88|SGT Agricultura, Comarcas agrarias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=88&_pageSize=100&_page=1)|BANCO_DATOS|366|09/09/2015|
-|64|Registro de Albergues y Refugios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=64&_pageSize=100&_page=1)|BANCO_DATOS|324|19/03/2020|
-|286|IGEAR - Centros de Salud|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=286&_pageSize=100&_page=1)|BANCO_DATOS|316|14/04/2020|
-|287|IGEAR - Hospitales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=287&_pageSize=100&_page=1)|BANCO_DATOS|316|14/04/2020|
-|288|IGEAR - Centros de Salud Mental|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=288&_pageSize=100&_page=1)|BANCO_DATOS|316|14/04/2020|
-|73|Registro de Alojamientos de Turismo Rural|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=73&_pageSize=100&_page=1)|BANCO_DATOS|301|19/03/2020|
-|63|Registro de Agencias de Viaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=63&_pageSize=100&_page=1)|BANCO_DATOS|268|19/03/2020|
-|10|Datos Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=10&_pageSize=100&_page=1)|BANCO_DATOS|252|19/03/2020|
-|16|Datos de diputación|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=16&_pageSize=100&_page=1)|BANCO_DATOS|244|19/03/2020|
-|26|Datos de Núcleos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=26&_pageSize=100&_page=1)|BANCO_DATOS|215|19/03/2020|
-|89|SGT Agricultura, Oficinas comarcales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=89&_pageSize=100&_page=1)|BANCO_DATOS|209|10/09/2015|
-|241|INAGA Terrenos cinegéticos y no cinegéticos de Aragón|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=241&_pageSize=100&_page=1)|BANCO_DATOS|205|01/10/2018|
-|66|Registro de Apartamentos turísticos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=66&_pageSize=100&_page=1)|BANCO_DATOS|191|19/03/2020|
-|68|Registro de Campings Turísticos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=68&_pageSize=100&_page=1)|BANCO_DATOS|179|19/03/2020|
-|70|Registro de Oficinas de Turismo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=70&_pageSize=100&_page=1)|BANCO_DATOS|178|19/03/2020|
-|167|IGEAR - Centros Educativos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=167&_pageSize=100&_page=1)|BANCO_DATOS|178|25/11/2020|
-|282|Bibliotecas - Definición de las bibliotecas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=282&_pageSize=100&_page=1)|BANCO_DATOS|171|20/02/2020|
-|72|Registro de Empresas de Turismo Activo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=72&_pageSize=100&_page=1)|BANCO_DATOS|148|19/03/2020|
-|17|Direcciones de interés|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=17&_pageSize=100&_page=1)|BANCO_DATOS|143|19/03/2020|
-|20|Datos de Entidades Singulares|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=20&_pageSize=100&_page=1)|BANCO_DATOS|135|19/03/2020|
-|12|Agrupación Secretarial|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=12&_pageSize=100&_page=1)|BANCO_DATOS|132|19/03/2020|
-|22|Datos de Fundaciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=22&_pageSize=100&_page=1)|BANCO_DATOS|129|19/03/2020|
-|71|Registro de Puntos de Información Turística|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=71&_pageSize=100&_page=1)|BANCO_DATOS|129|19/03/2020|
-|13|Consorcios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=13&_pageSize=100&_page=1)|BANCO_DATOS|114|19/03/2020|
-|28|Datos de Organizaciones Complementarias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=28&_pageSize=100&_page=1)|BANCO_DATOS|102|19/03/2020|
-|246|Responsable del tratamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=246&_pageSize=100&_page=1)|BANCO_DATOS|92|28/01/2020|
-|247|Encargado del tratamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=247&_pageSize=100&_page=1)|BANCO_DATOS|92|28/01/2020|
-|248|Delegado de protección de datos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=248&_pageSize=100&_page=1)|BANCO_DATOS|92|28/01/2020|
-|278|Información al ciudadano de protección de datos - |[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=278&_pageSize=100&_page=1)|BANCO_DATOS|92|28/01/2020|
-|27|Datos de Organismo Autónomo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=27&_pageSize=100&_page=1)E|BANCO_DATOS|85|19/03/2020|
-|19|Datos de Entidad Menor|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=19&_pageSize=100&_page=1)|BANCO_DATOS|84|19/03/2020|
-|164|IGEAR - Oficinas del Consumidor|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=164&_pageSize=100&_page=1)|BANCO_DATOS|33|14/05/2018|
-|34|Datos de Sociedad Mercantil|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=34&_pageSize=100&_page=1)| | | |
-|35|Datos de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=35&_pageSize=100&_page=1)| | | |
-|57|Relaciones de Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=57&_pageSize=100&_page=1)| | | |
-|58|Relaciones de Entidades Singulares|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=58&_pageSize=100&_page=1)| | | |
-|59|Relaciones de Fundaciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=59&_pageSize=100&_page=1)| | | |
-|60|Relaciones de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=60&_pageSize=100&_page=1)| | | |
-|61|Relaciones de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=61&_pageSize=100&_page=1)| | | |
-|143|CRA - Centros|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=143&_pageSize=100&_page=1)| | | |
-|283|Bibliotecas - Definición de las sucursales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=283&_pageSize=100&_page=1)| | | |
+104|IAF polígonos industriales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=104&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/suelo-y-poligonos-industriales-de-aragon)|1506|19/03/2020|
+24|Datos de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=24&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-mancomunidades-de-aragon)|616|19/03/2020|
+159|Entidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=159&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/organigrama-del-gobierno-de-aragon)|556|19/03/2020|
+11|Datos Municipio|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=11&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-los-municipios-de-aragon)|422|19/03/2020|
+67|Registro de Cafeterías y Restaurantes|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=67&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/cafeterias-y-restaurantes-en-la-comunidad-autonoma-de-aragon)|414|19/03/2020|
+65|Registro de Alojamientos hoteleros|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=65&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/alojamientos-hoteleros-en-la-comunidad-autonoma-de-aragon)|374|19/03/2020|
+88|SGT Agricultura, Comarcas agrarias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=88&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/comarcas-agrarias-de-aragon)|366|09/09/2015|
+64|Registro de Albergues y Refugios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=64&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/albergues-y-refugios-en-la-comunidad-de-aragon)|324|19/03/2020|
+286|IGEAR - Centros de Salud|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=286&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/sanidad)|316|14/04/2020|
+287|IGEAR - Hospitales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=287&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/sanidad)|316|14/04/2020|
+288|IGEAR - Centros de Salud Mental|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=288&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/sanidad)|316|14/04/2020|
+73|Registro de Alojamientos de Turismo Rural|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=73&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/alojamientos-de-turismo-rural-en-la-comunidad-autonoma-de-aragon)|301|19/03/2020|
+63|Registro de Agencias de Viaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=63&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/agencias-de-viaje-de-aragon)|268|19/03/2020|
+10|Datos Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=10&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-comarcas-de-aragon)|252|19/03/2020|
+16|Datos de diputación|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=16&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-diputaciones-provinciales-de-aragon)|244|19/03/2020|
+26|Datos de Núcleos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=26&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/nucleos-de-aragon)|215|19/03/2020|
+89|SGT Agricultura, Oficinas comarcales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=89&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/oficinas-comarcales-de-aragon)|209|10/09/2015|
+241|INAGA Terrenos cinegéticos y no cinegéticos de Aragón|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=241&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-terrenos-cinegeticos-de-aragon)|205|01/10/2018|
+66|Registro de Apartamentos turísticos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=66&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/apartamentos-turisticos-en-la-comunidad-autonoma-de-aragon)|191|19/03/2020|
+68|Registro de Campings Turísticos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=68&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/campings-turisticos-en-la-comunidad-autonoma-de-aragon)|179|19/03/2020|
+70|Registro de Oficinas de Turismo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=70&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/oficinas-de-turismo-en-la-comunidad-autonoma-de-aragon)|178|19/03/2020|
+167|IGEAR - Centros Educativos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=167&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/educacion-y-cultura)|178|25/11/2020|
+282|Bibliotecas - Definición de las bibliotecas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=282&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/catalogo-de-la-red-de-bibliotecas-de-aragon-en-formatos-abiertos)|171|20/02/2020|
+72|Registro de Empresas de Turismo Activo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=72&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-empresas-de-turismo-activo)|148|19/03/2020|
+17|Direcciones de interés|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=17&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-de-diferentes-organismos-aragoneses)|143|19/03/2020|
+20|Datos de Entidades Singulares|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=20&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-entidades-singulares-de-aragon)|135|19/03/2020|
+12|Agrupación Secretarial|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=12&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/agrupaciones-secretariales-de-aragon)|132|19/03/2020|
+22|Datos de Fundaciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=22&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/fundaciones-existentes-en-el-registro-de-administracion-local)|129|19/03/2020|
+71|Registro de Puntos de Información Turística|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=71&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/puntos-de-informacion-turistica-en-la-comunidad-autonoma-de-aragon)|129|19/03/2020|
+13|Consorcios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=13&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/consorcios-en-aragon)|114|19/03/2020|
+28|Datos de Organizaciones Complementarias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=28&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/organizaciones-complementarias-de-gobierno-en-las-administraciones-locales-aragonesas)|102|19/03/2020|
+246|Responsable del tratamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=246&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|92|28/01/2020|
+247|Encargado del tratamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=247&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|92|28/01/2020|
+248|Delegado de protección de datos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=248&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|92|28/01/2020|
+278|Información al ciudadano de protección de datos - |[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=278&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|92|28/01/2020|
+27|Datos de Organismo Autónomo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=27&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-diferentes-entes-vinculados-a-la-administracion-local-patronatos-medios-institutos-etc)|85|19/03/2020|
+19|Datos de Entidad Menor|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=19&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-entidades-menores-de-aragon)|84|19/03/2020|
+164|IGEAR - Oficinas del Consumidor|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=164&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/consumo)|33|14/05/2018|
+34|Datos de Sociedad Mercantil|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=34&_pageSize=100&_page=1)| | | |
+35|Datos de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=35&_pageSize=100&_page=1)| | | |
+57|Relaciones de Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=57&_pageSize=100&_page=1)| | | |
+58|Relaciones de Entidades Singulares|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=58&_pageSize=100&_page=1)| | | |
+59|Relaciones de Fundaciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=59&_pageSize=100&_page=1)| | | |
+60|Relaciones de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=60&_pageSize=100&_page=1)| | | |
+61|Relaciones de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=61&_pageSize=100&_page=1)| | | |
+143|CRA - Centros|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=143&_pageSize=100&_page=1)| | | |
+283|Bibliotecas - Definición de las sucursales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=283&_pageSize=100&_page=1)| | | |
 		
 
 Para la representación de las organizaciones destaca la vista 159 – Entidades donde encontramos la relación con las entidades de Centro y a su vez, con Lugar. También es posible encontrar la relación jerárquica entre las unidades organizativas y sus organizaciones padre. Por último, cada organización se encuentra ubicada en el tiempo gracias a la relación con la entidad Legislatura.
