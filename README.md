@@ -946,54 +946,85 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
  
 #### 6.13.3. Casos de uso
 
-Los datos del presupuesto de Aragón se modelarían del siguiente modo. En primer lugar, definimos la estructura de datos, que sería:
+Un ejemplo concreto, para entender la via por la que se pueden integrar los datos con la entidad DataCube, es el conjunto de datos que contiene la información estadística provincial del Coronavirus en la comunidad de Aragón (https://opendata.aragon.es/datos/catalogo/dataset/publicaciones-y-anuncios-relacionados-con-el-coronavirus-en-aragon)
 
-    ei2a:recurso/dsd/presupuesto2021 a qb:DataStructureDefinition
-    	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
-    	qb:component [qb:dimension ei2a:recurso/dimension/capitulo; qb:order 1];
-    	qb:component [qb:dimension ei2a:recurso/dimension/articulo; qb:order 2];
-    	qb:component [qb:dimension ei2a:recurso/dimension/concepto; qb:order 3];
-    	qb:component [qb:dimension ei2a:recurso/dimension/subconcepto; qb:order 4];
-    	qb:component [qb:measure ei2a:recurso/measure/importe];
-    ei2a:recurso/dimension/capitulo a qb:DimensionProperty
-    	rdfs:Label “Capítulo”;
-    	rdfs:range skos:concept;
-    	qb:concept ei2a:kos/capitulo;
-    ei2a:recurso/dimension/articulo a qb:DimensionProperty
-    	rdfs:Label “Artículo”;
-    	rdfs:range skos:concept;
-    	qb:concept ei2a:kos/articulo;
-    ei2a:recurso/dimension/concepto a qb:DimensionProperty
-    	rdfs:Label “Concepto”;
-    	rdfs:range skos:concept;
-    	qb:concept ei2a:kos/concepto;
-    ei2a:recurso/dimension/subconcepto a qb:DimensionProperty
-    	rdfs:Label “Subconcepto”;
-    	rdfs:range skos:concept;
-    	qb:concept ei2a:kos/subconcepto;
-    ei2a:recurso/measure/importe a qb:MeasureProperty
-    	rdfs:Label “Importe”;
+Para realizar esta integración es necesario definir una estructura que permita entender cómo leer los datos y para ello basta con identificar qué atributos concretos representan lo que denominamos "Dimesión" y los que representan "Medida":
+- Medida: Es cada una de las observaciones realizadas y contiene el dato concreto medido.
+- Dimensión: Es un concepto por el cual se pueden clasificar los datos indicados en las medidas, que permite clasificar la información y relacionarla con otras entidades.
+
+Una muestra del fichero CSV con los datos indicados es la siguiente:
+|fecha|provincia|casos_confirmados|ingresos_hospitalarios|ingresos_uci|fallecimientos|casos_personal_sanitario|altas|codigo_ine|observaciones|
+|29/03/2020|Zaragoza|1449|720|121|79|211|101|50|Fuente Aragón Hoy|
+|29/03/2020|Huesca|201|103|13|11|16|14|22|Fuente Aragón Hoy|
+|29/03/2020|Teruel|208|112|19|12|40|10|44|Fuente Aragón Hoy|
+|30/03/2020|Zaragoza|1641|843|123|81|214|141|50|Fuente Aragón Hoy|
+|30/03/2020|Huesca|215|120|13|11|16|19|22|Fuente Aragón Hoy|
+|30/03/2020|Teruel|222|131|20|12|41|14|44|Fuente Aragón Hoy|
+
+En esta muestra se identifican las siguientes dimensiones:
+- El campo "fecha" se identifica como una dimensión de tipo fecha.
+- El campo "codigo_ine" es el identificador de la provincia y representa una dimensión que permite relacionar los datos con la entidad "Organización", que es la utilizada para representar a las provincias de la comunidad de Aragón.
+
+Las medidas de esta muestra son las siguientes:
+- "casos_confirmados": Número de casos confirmados
+- "ingresos_hospitalarios": Número de ingresos hospitalarios
+- "ingresos_uci": Número de ingresos en UCI
+- "fallecimientos": Número de fallecidos
+- "casos_personal_sanitario": Número de casos confirmados en el personal sanitario
+- "altas": Número de altas
+
+Siguiendo la identificación de elementos indicada anteriormente, la estructura definida para realizar esta carga de información es la siguiente:
+    
+    ei2a:recurso/dsd/casos-coronavirus-provincia a qb:DataStructureDefinition
+    	qb:component [qb:dimension ei2a:recurso/dimension/fecha; qb:order 1];
+    	qb:component [qb:dimension ei2a:recurso/dimension/provincia; qb:order 2];
+    	qb:component [qb:measure ei2a:recurso/measure/casos_confirmados];
+    	qb:component [qb:measure ei2a:recurso/measure/ingresos_hospitalarios];
+    	qb:component [qb:measure ei2a:recurso/measure/ingresos_uci];
+    	qb:component [qb:measure ei2a:recurso/measure/fallecimientos];
+    	qb:component [qb:measure ei2a:recurso/measure/personal_sanitario];
+    	qb:component [qb:measure ei2a:recurso/measure/altas];
+    ei2a:recurso/dimension/fecha a qb:DimensionProperty
+    	rdfs:Label “Fecha”;
+    	rdfs:range xsd:datetime;
+    ei2a:recurso/dimension/provincia a qb:DimensionProperty
+    	rdfs:Label “Provincia”;
+    	rdfs:range org:Organization;
+    	qb:concept ei2a:kos/provincia;
+    ei2a:recurso/measure/casos_confirmados a qb:MeasureProperty
+    	rdfs:Label “Casos confirmados”;
+    	rdfs:Range xsd:decimal;
+    ei2a:recurso/measure/ingresos_hospitalarios a qb:MeasureProperty
+    	rdfs:Label “Ingresos hospitalarios”;
+    	rdfs:Range xsd:decimal;
+    ei2a:recurso/measure/ingresos_uci a qb:MeasureProperty
+    	rdfs:Label “Ingresos UCI”;
+    	rdfs:Range xsd:decimal;
+    ei2a:recurso/measure/fallecimientos a qb:MeasureProperty
+    	rdfs:Label “Fallecimientos”;
+    	rdfs:Range xsd:decimal;
+    ei2a:recurso/measure/personal_sanitario a qb:MeasureProperty
+    	rdfs:Label “Casos en personal sanitario”;
+    	rdfs:Range xsd:decimal;
+    ei2a:recurso/measure/altas a qb:MeasureProperty
+    	rdfs:Label “Altas”;
     	rdfs:Range xsd:decimal;
 	
-A continuación, se define el dataset de presupuesto, con los valores de importes correspondientes, por ejemplo, para el dato de gastos de personal y altos cargos, sería:
+A continuación se define el dataset concreto de los datos agregados por provincia del Coronavirus en el caso de una muestra para Zaragoza del día 29/03/2020:
 
-    ei2a:recurso/dataset/presupuesto2021 a qb:Dataset
-    	dct:title "Presupuesto del Gobierno de Aragón 2021";
-    	qb:structure ei2a:recurso/dsd/presupuesto2021;
-    ei2a:recurso/observacion/100000 a qb:Observation
-    	qb:Dataset ei2a:recurso/dataset/presupuesto2021;
-    	ei2a:recurso/dimension/capitulo ei2a:kos/capitulo-1;
-    	ei2a:recurso/dimension/articulo ei2a:kos/articulo-10;
-    	ei2a:recurso/dimension/concepto ei2a:kos/concepto-100;
-    	ei2a:recurso/dimension/subconcepto ei2a:kos/subconcepto-100000;
-    	ei2a:recurso/medida/importe 2678824.40;
-    ei2a:kos/capitulo-1 a skos:Concept
-    	rdfs:Label “Gasto de personal”;
-    	skos:Narrower ei2a:kos/articulo-10, ei2a:kos/articulo-11, ..., ei2a:kos/articulo-18;
-    ei2a:kos/articulo-10 a skos:Concept
-    	rdfs:Label “Altos cargos”;
-    	skos:Narrower ei2a:kos/concepto-100, ei2a:kos/concepto-101;
-
+	ei2a:recurso/dataset/casos-coronavirus-provincia a qb:Dataset
+		dct:title "Provincias: Datos y cifras acumuladas sobre el Coronavirus";
+		qb:structure ei2a:recurso/dsd/casos-coronavirus-provincia;
+	ei2a:recurso/observacion/casos-coronavirus-provincia/50_29/03/2020 a qb:Observation
+		qb:Dataset ei2a:recurso/dataset/casos-coronavirus-provincia;
+		ei2a:recurso/dimension/fecha 29/03/2020;
+		ei2a:recurso/dimension/provincia ei2a:recurso/sector-publico/organizacion/provincia/50;
+		ei2a:recurso/medida/casos_confirmados 1449;
+		ei2a:recurso/medida/ingresos_hospitalarios 720;
+		ei2a:recurso/medida/ingresos_uci 121;
+		ei2a:recurso/medida/fallecimientos 79;
+		ei2a:recurso/medida/personal_sanitario 211;
+		ei2a:recurso/medida/altas 101;
 
 ### 6.14. Dispositivo. Internet de las Cosas. IoT
 
