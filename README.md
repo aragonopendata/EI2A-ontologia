@@ -631,23 +631,24 @@ Las vistas más destacadas relacionadas con la normativa son las siguientes:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|7|Ordenanzas Fiscales Municipio|GA_OD_CORE|BANCO_DATOS|221|19/03/2020|
-|5|Ordenanzas Generales Municipio|GA_OD_CORE|BANCO_DATOS|202|19/03/2020|
-|6|Ordenanzas Generales Comarca|GA_OD_CORE|BANCO_DATOS|98|19/03/2020|
-|8|Ordenanzas Fiscales Comarca|GA_OD_CORE|BANCO_DATOS|76|19/03/2020|
-|38|Ordenanzas fiscales de Consorcios|GA_OD_CORE| | | |
-|39|Ordenanzas fiscales de Diputación|GA_OD_CORE| | | |
-|40|Ordenanzas fiscales de Entidad Menor|GA_OD_CORE| | | |
-|41|Ordenanzas fiscales de Mancomunidades|GA_OD_CORE| | | |
-|42|Ordenanzas fiscales de Organismos Autónomos|GA_OD_CORE| | | |
-|43|Ordenanzas fiscales de Villas y Tierras|GA_OD_CORE| | | |
-|44|Ordenanzas generales de Consorcios|GA_OD_CORE| | | |
-|45|Ordenanzas generales de Diputaciones|GA_OD_CORE| | | |
-|46|Ordenanzas generales de Entidades Menores|GA_OD_CORE| | | |
-|47|Ordenanzas generales de Mancomunidades|GA_OD_CORE| | | |
-|48|Ordenanzas generales de Núcleos|GA_OD_CORE| | | |
-|49|Ordenanzas generales de Organismos Autónomos|GA_OD_CORE| | | |
-|50|Ordenanzas generales de Villas y Tierras|GA_OD_CORE| | | |
+7|Ordenanzas Fiscales Municipio|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=7&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/ordenanzas-fiscales-municipales)|221|19/03/2020|
+5|Ordenanzas Generales Municipio|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=5&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/ordenanzas-generales-municipales)|202|19/03/2020|
+6|Ordenanzas Generales Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=6&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/ordenanzas-generales-comarcales)|98|19/03/2020|
+8|Ordenanzas Fiscales Comarca|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=8&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/ordenanzas-fiscales-comarcales)|76|19/03/2020|
+38|Ordenanzas fiscales de Consorcios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=38&_pageSize=100&_page=1)| | | |
+39|Ordenanzas fiscales de Diputación|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=39&_pageSize=100&_page=1)| | | |
+40|Ordenanzas fiscales de Entidad Menor|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=40&_pageSize=100&_page=1)| | | |
+41|Ordenanzas fiscales de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=41&_pageSize=100&_page=1)| | | |
+42|Ordenanzas fiscales de Organismos Autónomos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=42&_pageSize=100&_page=1)| | | |
+43|Ordenanzas fiscales de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=43&_pageSize=100&_page=1)| | | |
+44|Ordenanzas generales de Consorcios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=44&_pageSize=100&_page=1)| | | |
+45|Ordenanzas generales de Diputaciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=45&_pageSize=100&_page=1)| | | |
+46|Ordenanzas generales de Entidades Menores|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=46&_pageSize=100&_page=1)| | | |
+47|Ordenanzas generales de Mancomunidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=47&_pageSize=100&_page=1)| | | |
+48|Ordenanzas generales de Núcleos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=48&_pageSize=100&_page=1)| | | |
+49|Ordenanzas generales de Organismos Autónomos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=49&_pageSize=100&_page=1)| | | |
+50|Ordenanzas generales de Villas y Tierras|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=50&_pageSize=100&_page=1)| | | |
+245|Base jurídica tratamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=245&_pageSize=100&_page=1)| | | |
 
 El mapeo correspondiente a la vista 45 - Ordenanzas generales de Diputaciones se relaciona con la entidad Normativa y además con la entidad Organización de la siguiente forma (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
