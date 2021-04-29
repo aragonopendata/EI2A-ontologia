@@ -954,7 +954,7 @@ Para realizar esta integración es necesario definir una estructura que permita 
 
 Una muestra del fichero CSV con los datos indicados es la siguiente:
 |fecha|provincia|casos_confirmados|ingresos_hospitalarios|ingresos_uci|fallecimientos|casos_personal_sanitario|altas|codigo_ine|observaciones|
-|:----|:----|:----|:----|:----|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
 |29/03/2020|Zaragoza|1449|720|121|79|211|101|50|Fuente Aragón Hoy|
 |29/03/2020|Huesca|201|103|13|11|16|14|22|Fuente Aragón Hoy|
 |29/03/2020|Teruel|208|112|19|12|40|10|44|Fuente Aragón Hoy|
