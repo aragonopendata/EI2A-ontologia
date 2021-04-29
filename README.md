@@ -555,21 +555,26 @@ Las vistas más destacadas relacionadas con los documentos son las siguientes:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|77|Planeamiento General|GA_OD_CORE|BANCO_DATOS|304|25/11/2020|
-|75|Modificaciones de Planeamiento General|GA_OD_CORE|BANCO_DATOS|255|06/11/2020|
-|76|Planeamiento de Desarrollo|GA_OD_CORE|BANCO_DATOS|147|19/03/2020|
-|74|Modificaciones de Planeamiento de Desarrollo|GA_OD_CORE|BANCO_DATOS|132|19/03/2020|
-|237|ENERGIA - Cert. Data|GA_OD_CORE|BANCO_DATOS|129|06/06/2018|
-|260|Meta datos estado|GA_OD_CORE|BANCO_DATOS|94|28/01/2020|
-|103|DG Cultura y Patrimonio, Colecciones de Museos de Aragon|GA_OD_CORE|BANCO_DATOS|93|25/11/2020|
-|265|Dominios|GA_OD_CORE|BANCO_DATOS|72|30/10/2019|
-|280|Bibliotecas - Títulos existentes|GA_OD_CORE| | | |
-|281|Bibliotecas - Ejemplares|GA_OD_CORE| | | |
-|25|Datos de Noticias|GA_OD_CORE| | | |
-|30|Datos de Planeamiento|GA_OD_CORE| | | |
-|31|Datos de Plantillas|GA_OD_CORE| | | |
-|145|DARA|GA_OD_CORE| | | |
-|2|Símbolos|GA_OD_CORE| | | |
+77|Planeamiento General|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=77&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/expedientes-de-planeamiento-general-de-aragon-de-la-direccion-general-de-urbanismo)|304|25/11/2020|
+75|Modificaciones de Planeamiento General|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=75&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/expedientes-de-modificaciones-de-planeamiento-general-y-de-modificaciones-de-delimitaciones-de-suelo-urbano-de-aragon-de-la-direccion-general-de-urbanismo)|255|06/11/2020|
+76|Planeamiento de Desarrollo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=76&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/expedientes-de-planeamiento-de-desarrollo-de-aragon-de-la-direccion-general-de-urbanismo)|147|19/03/2020|
+74|Modificaciones de Planeamiento de Desarrollo|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=74&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/expedientes-de-modificaciones-de-planeamiento-de-desarrollo-de-aragon-de-la-direccion-general-de-urbanismo)|132|19/03/2020|
+237|ENERGIA - Cert. Data|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=237&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo?texto=registro%20de%20certificaci%C3%B3n)|129|06/06/2018|
+260|Meta datos estado|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=260&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|94|28/01/2020|
+103|DG Cultura y Patrimonio, Colecciones de Museos de Aragon|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=103&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/colecciones-y-recursos-de-los-museos--gestionados-por-el-gobierno-de-aragon)|93|25/11/2020|
+265|Dominios|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=265&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo?texto=subdominios)|72|30/10/2019|
+2|Símbolos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=2&_pageSize=100&_page=1)| | | |
+25|Datos de Noticias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=25&_pageSize=100&_page=1)| | | |
+30|Datos de Planeamiento|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=30&_pageSize=100&_page=1)| | | |
+31|Datos de Plantillas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=31&_pageSize=100&_page=1)| | | |
+145|DARA|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=145&_pageSize=100&_page=1)| | | |
+240|INAGA - Resoluciones publicadas boa y expedientes publicados|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=240&_pageSize=100&_page=1)| | | |
+242|Actividad de Tratamiento de datos personales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=242&_pageSize=100&_page=1)| | | |
+259|Medidas de seguridad|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=259&_pageSize=100&_page=1)| | | |
+277|Información al ciudadano de primer nivel - |[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=277&_pageSize=100&_page=1)| | | |
+279|Información al ciudadano de segundo nivel - |[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=279&_pageSize=100&_page=1)| | | |
+280|Bibliotecas - Títulos existentes|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=280&_pageSize=100&_page=1)| | | |
+281|Bibliotecas - Ejemplares|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=281&_pageSize=100&_page=1)| | | |
 
 Si revisamos en detalle la vista 77 – Planeamiento General , podemos ver un ejemplo de vinculación con otra entidad como la Organización. El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
