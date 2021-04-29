@@ -417,7 +417,7 @@ Se puede obtener una representación en la vista 159 – Entidades donde aunque 
 
 #### 6.4.1. Descripción de vocabulario y entidad seleccionada
 
-Para modelar los lugares utilizamos el vocabulario Schema:
+Para modelar los eventos utilizamos el vocabulario Schema:
 
 - ***Schema.org***. Utilizamos la clase Event con sus atributos relevantes al caso.
 
