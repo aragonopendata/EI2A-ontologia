@@ -387,11 +387,27 @@ Las vistas que podemos relacionar con Lugar son las siguientes:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|102|Turismo de Aragón, Senderos Rutas|GA_OD_CORE|BANCO_DATOS|669|19/03/2020|
-|157|IAA Depuradoras núcleos de población servidos|GA_OD_CORE|BANCO_DATOS|255|19/03/2020|
-|261|Provincias|GA_OD_CORE|BANCO_DATOS|93|28/01/2020|
-|262|Códigos de país|GA_OD_CORE|BANCO_DATOS|93|28/01/2020|
-|142|CRA - Localidades|GA_OD_CORE| | | |
+102|Turismo de Aragon, Senderos Rutas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=102&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/senderos-de-aragon)|669|19/03/2020|
+157|IAA Depuradoras núcleos de población servidos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=157&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/depuradoras-de-agua-residual-gestionadas-o-financiadas-por-la-c-a-de-aragon)|255|19/03/2020|
+261|Provincias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=261&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|93|28/01/2020|
+262|Códigos de país|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=262&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/registro-de-actividades-de-tratamiento-de-datos-de-caracter-personal-del-gobierno-de-aragon)|93|28/01/2020|
+142|CRA - Localidades|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=142&_pageSize=100&_page=1)| | | |
+168|IGEAR - Zonas Educativas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=168&_pageSize=100&_page=1)| | | |
+170|IGEAR - Suelo Industrial de Aragon|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=170&_pageSize=100&_page=1)| | | |
+185|IGEAR - Edificaciones Zonas Verdes Urbanas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=185&_pageSize=100&_page=1)| | | |
+197|IGEAR - Grandes Dominios de Paisaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=197&_pageSize=100&_page=1)| | | |
+199|IGEAR - Miradores de paisaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=199&_pageSize=100&_page=1)| | | |
+200|IGEAR - Recorridos de interes paisajistico|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=200&_pageSize=100&_page=1)| | | |
+201|IGEAR - Regiones de Paisaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=201&_pageSize=100&_page=1)| | | |
+202|IGEAR - Unidades de paisaje|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=202&_pageSize=100&_page=1)| | | |
+215|IGEAR - Instalaciones Sanitarias|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=215&_pageSize=100&_page=1)| | | |
+216|IGEAR - Otros Senderos de Aragon: Miradores|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=216&_pageSize=100&_page=1)| | | |
+217|IGEAR - Otros Senderos de Aragon: Senderos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=217&_pageSize=100&_page=1)| | | |
+218|IGEAR - Senderos Turisticos de Aragon|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=218&_pageSize=100&_page=1)| | | |
+219|IGEAR - Señaletica de Senderos Turisticos de Aragon|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=219&_pageSize=100&_page=1)| | | |
+285|IGEAR - Áreas de Salud|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=285&_pageSize=100&_page=1)| | | |
+289|IGEAR- Zonas de Salud - |[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=289&_pageSize=100&_page=1)| | | |
+290|IGEAR - Indicadores geométricos COVID-19|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=290&_pageSize=100&_page=1)| | | |
 
 Se puede obtener una representación en la vista 159 – Entidades donde aunque su entidad principal es Organización, es posible visualizar la vinculación con Lugar. El mapeo se puede revisar en el apartado 6.2.4 de este documento.
 
