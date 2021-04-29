@@ -884,7 +884,7 @@ Las vistas relacionadas con Transporte son las siguientes:
 |:----|:----|:----|:----|:----|:----|
 148|TRANSPORTE - Expediciones|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=148&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
 149|TRANSPORTE - Expedición Parada Horario|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=149&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
-150|TRANSPORTE - Paradas s|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=150&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
+150|TRANSPORTE - Paradas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=150&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
 151|TRANSPORTE - Rutas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=151&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/transporte-regular-de-viajeros-por-carretera-en-aragon)|718|19/03/2020|
 140|CRA - Datos de itinerarios de las rutas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=140&_pageSize=100&_page=1)| | | |
 141|CRA - Paradas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=141&_pageSize=100&_page=1)| | | |
