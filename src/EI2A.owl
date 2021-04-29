@@ -17,7 +17,7 @@
     xmlns:ocds="http://data.tbfy.eu/ontology/ocds#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:qb="https://www.w3.org/TR/vocab-data-cube/#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
