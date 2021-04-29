@@ -491,7 +491,7 @@ La vista relacionada con la legislatura es la siguiente:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|158|Periodo de legislatura|GA_OD_CORE|BANCO_DATOS|556|19/03/2020|
+|158|Periodo de legislatura|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=158&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/organigrama-del-gobierno-de-aragon)|556|19/03/2020|
 
 El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
 
