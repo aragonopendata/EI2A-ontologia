@@ -753,7 +753,7 @@ La vista relacionada con Licitación es la siguiente:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|284|Contratación - Licitaciones publicadas|GA_OD_CORE|BANCO_DATOS|408|11/03/2021|
+|284|Contratación - Licitaciones publicadas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=284&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/anuncios-del-perfil-del-contratante-del-gobierno-de-aragon)|408|11/03/2021|
 
 
 El mapeo correspondiente a esta vista con el nuevo modelo es el siguiente (los atributos de origen que no aparecen en la siguiente tabla no se utilizan en el mapeo con el nuevo modelo):
