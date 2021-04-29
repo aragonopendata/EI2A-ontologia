@@ -445,10 +445,10 @@ Las vistas más destacadas relacionadas con los eventos son las siguientes:
 
 |Id de vista|Descripción|Datos|Conjunto de datos |Nº de accesos|Última act.|
 |:----|:----|:----|:----|:----|:----|
-|62|Registro de llamadas|GA_OD_CORE|BANCO_DATOS|335|14/05/2018|
-|90|DG Relaciones Institucionales, Procesos Electorales|GA_OD_CORE|BANCO_DATOS|112|11/11/2020|
-|15|Datos de cursos|GA_OD_CORE| | | |
-|32|Datos de Postgrado|GA_OD_CORE| | | |
+62|Registro de llamadas|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=62&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/consulta-consumidores)|335|14/05/2018|
+90|DG Relaciones Institucionales, Procesos Electorales|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=90&_pageSize=100&_page=1)|[BANCO_DATOS](https://opendata.aragon.es/datos/catalogo/dataset/resultados-electorales-agrupados-a-escala-municipal-historico)|112|11/11/2020|
+15|Datos de cursos|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=15&_pageSize=100&_page=1)| | | |
+32|Datos de Postgrado|[GA_OD_CORE](https://opendata.aragon.es/GA_OD_Core/preview?view_id=32&_pageSize=100&_page=1)| | | |
 
 
 En la vista 62 – Registro de llamadas podemos ver un ejemplo de vinculación de Evento con otras entidades como Lugar.
