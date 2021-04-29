@@ -948,7 +948,7 @@ Para modelar datasets de observaciones y medidas utilizamos el vocabulario:
 
 Un ejemplo concreto, para entender la via por la que se pueden integrar los datos con la entidad DataCube, es el conjunto de datos que contiene la información estadística provincial del Coronavirus en la comunidad de Aragón (https://opendata.aragon.es/datos/catalogo/dataset/publicaciones-y-anuncios-relacionados-con-el-coronavirus-en-aragon)
 
-Para realizar esta integración es necesario definir una estructura que permita entender cómo leer los datos y para ello basta con identificar qué atributos concretos representan lo que denominamos "Dimesión" y los que representan "Medida":
+Para realizar esta integración es necesario definir una estructura que permita entender cómo leer los datos y para ello basta con identificar qué atributos concretos representan lo que en el modelo de Datacube se denomina "Dimensión" y los que representan una "Medida":
 - Medida: Es cada una de las observaciones realizadas y contiene el dato concreto medido.
 - Dimensión: Es un concepto por el cual se pueden clasificar los datos indicados en las medidas, que permite clasificar la información y relacionarla con otras entidades.
 
@@ -1011,21 +1011,21 @@ Siguiendo la identificación de elementos indicada anteriormente, la estructura 
     	rdfs:Label “Altas”;
     	rdfs:Range xsd:decimal;
 	
-A continuación se define el dataset concreto de los datos agregados por provincia del Coronavirus en el caso de una muestra para Zaragoza del día 29/03/2020:
+A continuación se presenta como se cargarían las observaciones del dataset concreto, para una muestra de "Zaragoza" del día "29/03/2020":
 
 	ei2a:recurso/dataset/casos-coronavirus-provincia a qb:Dataset
 		dct:title "Provincias: Datos y cifras acumuladas sobre el Coronavirus";
 		qb:structure ei2a:recurso/dsd/casos-coronavirus-provincia;
 	ei2a:recurso/observacion/casos-coronavirus-provincia/50_29/03/2020 a qb:Observation
 		qb:Dataset ei2a:recurso/dataset/casos-coronavirus-provincia;
-		ei2a:recurso/dimension/fecha 29/03/2020;
+		ei2a:recurso/dimension/fecha "29/03/2020T10:00:00"^^xsd:dateTime;
 		ei2a:recurso/dimension/provincia ei2a:recurso/sector-publico/organizacion/provincia/50;
-		ei2a:recurso/medida/casos_confirmados 1449;
-		ei2a:recurso/medida/ingresos_hospitalarios 720;
-		ei2a:recurso/medida/ingresos_uci 121;
-		ei2a:recurso/medida/fallecimientos 79;
-		ei2a:recurso/medida/personal_sanitario 211;
-		ei2a:recurso/medida/altas 101;
+		ei2a:recurso/medida/casos_confirmados 1449.0;
+		ei2a:recurso/medida/ingresos_hospitalarios 720.0;
+		ei2a:recurso/medida/ingresos_uci 121.0;
+		ei2a:recurso/medida/fallecimientos 79.0;
+		ei2a:recurso/medida/personal_sanitario 211.0;
+		ei2a:recurso/medida/altas 101.0;
 
 ### 6.14. Dispositivo. Internet de las Cosas. IoT
 
