@@ -1112,24 +1112,25 @@ Por ejemplo, los datos de un Ramal (vista 106) se representarían:
 
 Cada entidad cargada o actualizada incorporaría un triple informando del proceso de carga del que proviene (entidad actividad); y se generaría una entidad de tipo prov:Activity con información de dicho proceso. 
 Además, la actividad se enlazaría con el dataset mediante el atributo prov:wasAssociatedWith, lo que permitiría utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Este uso necesita que el servicio CKAN de Aragón Open Data se configure para guardar los metadatos de los datasets como triples en el mismo servidor de Virtuoso en el que se almacene el grafo generado según el nuevo modelo ontológico.
-Por ejemplo, estos triples (en pseudocódigo) asociarían una organización con el dataset de municipios y el proceso de carga del que provienen sus datos:
+Por ejemplo, estos triples asociarían una organización (municipio) con el dataset de municipios y el proceso de carga del que provienen sus datos:
 
-    <organizacion_1> a org:Organization
-    <organizacion_1> prov:wasUsedBy _:bnode1.
+    ei2a:recurso/sector-publico/organizacion/municipio/22037 a org:Organization
+    ei2a:recurso/sector-publico/organizacion/municipio/22037 prov:wasUsedBy _:bnode1.
     _:bnode1
         a prov:Activity;
         prov:startedAtTime "2021-04-25T01:30:00Z"^^xsd:dateTime;
         prov:endedAtTime "2021-04-25T03:40:00Z"^^xsd:dateTime;
-        prov:wasAssociatedWith <proceso_de_carga>;        
-        prov:wasAssociatedWith <dcat:municipio>;
-    <proceso_de_carga>
+        prov:wasAssociatedWith ei2a:recurso/carga/aodpoolv2;        
+        prov:wasAssociatedWith ei2a:datos/catalogo/dataset/02a7f1c1-4b4a-4ef6-b35d-bec17e495476;
+    ei2a:recurso/carga/aodpoolv2
         a prov:SoftwareAgent;
-        foaf:name "Proceso de carga del grafo de Aragón Open Data";
-    <dcat:municipio>
+        foaf:name "Proceso de carga de Aragón Open Data Pool";
+    ei2a:datos/catalogo/dataset/02a7f1c1-4b4a-4ef6-b35d-bec17e495476
         a dcat:Dataset;
-        dct:description “Dataset con los municipios de Aragón”;
-        dcat:keyword “Núcleo”;
-        dcat:keyword “Entidades de población”;
+	dc:title "Información general de los municipios de Aragón";
+        dc:description “Información general sobre los municipios de Aragón. En este archivo se encuentran los alcaldes de los Ayuntamientos, los datos de contacto de los mismos y otros datos generales municipales”;
+        dcat:keyword “Municipio”;
+        dcat:keyword “Alcalde”;
         …
 
 ## Anexo A. Organigrama del Gobierno de Aragón
