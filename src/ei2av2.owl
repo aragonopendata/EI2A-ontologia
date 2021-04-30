@@ -22,20 +22,22 @@
     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
   xml:base="http://opendata.aragon.es/def/ei2av2">
-  <owl:Ontology rdf:about="">
-    <dc:description xml:lang="es">Esta sección detalla la ontología de Información Interoperable de Aragón EI2A para describir datos básicos del dominio del Gobierno de Aragón, destinados a apoyar la interoperabilidad de datos con el objetivo de estandarizar información y explotarla en un futuro. En la descripción de la ontología se incorpora un diagrama de clases o entidades de la ontología que permiten visualizar su organización más fácilmente, el espacio de nombres utilizado y las clases, propiedades e individuos que la componen. De acuerdo a las recomendaciones de la Web Semántica, la ontología EI2A reutiliza diversas ontologías, esquemas y vocabularios para describir entidades que se adecuen al dominio del Gobierno de Aragón. Reutilizar ontologías facilita el intercambio de conocimiento y la comunicación entre personas, agentes inteligentes y sistemas. De esta forma, se consigue describir los conceptos deseados del dominio del Gobierno de Aragón introduciendo un número mínimo de nuevos elementos. A continuación se detallan las ontologías y vocabularios usados para el desarrollo de la propuesta ontológica de Información Interoperable de Aragón</dc:description>
-    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >https://github.com/aragonopendata/EI2A-ontologia/blob/2.0.0/docs/images/ei2a-diagrama.jpg</dc:description>
+  <owl:Ontology rdf:about="http://opendata.aragon.es/def/ei2av2">
     <rdfs:comment xml:lang="es">La iniciativa Aragón Open Data se inició por Acuerdo de 17 de julio de 2012 del Gobierno de Aragón. En virtud del mismo se ordenó el inicio del proyecto de apertura de datos públicos y el 6 de febrero de 2013 se implantó a través del Portal &lt;a href="http://opendata.aragon.es/"&gt;opendata.aragon.es&lt;/a&gt;. A lo largo de este tiempo se han realizado numerosos trabajos para conseguir la automatización en la publicación de la información para asegurar que terceros puedan reutilizarla de la mejor manera. Dado el volumen de datos que empieza a existir, dentro de la línea de trabajo de la automatización en la gestión de la información, están empezando a tener una especial relevancia todos aquellos elementos que ayuden en la mejora de la &lt;b&gt;estructuración de la información&lt;/b&gt; y en la &lt;b&gt;estandarización de los datos &lt;/b&gt;que contienen las bases de datos. En base a esto, dentro de la Dirección General de Administración Electrónica y Sociedad de la Información, surge la idea de generar un conjunto de reglas técnicas y legales que permitan profundizar en esa estandarización y que llevan a pensar en la creación del Esquema de Información Interoperable de Aragón (E2IA). El E2IA surge así como el marco en el que los datos abiertos y en general la información del Gobierno de Aragón pueden comenzar a automatizarse de una manera mucho más profunda. El E2IA ha de contar con una serie de elementos técnicos, organizativos y legales que es necesario desarrollar. Por ello, se ha encomendado al Instituto Tecnológico de Aragón (ITAINNOVA) llevar a cabo actuaciones consistentes en identificar, estudiar y analizar las tendencias de investigación actuales y desarrollo tecnológico en relación a ontologías y diccionarios de interoperabilidad de datos, definir la propuesta ontológica, realizar las pruebas necesarias para validar la propuesta ontológica y generar las versiones texto y web de la ontología.</rdfs:comment>
-    <dc:creator xml:lang="es">M.E. Alvarado, E. Sota, F. Martínez, U. Rudiez, J. Valer (GNOSS)</dc:creator>
     <rdfs:comment xml:lang="en">The initiative Aragón Open Data was initiated by agreement of 17 of July of 2012 of the Government of Aragon. Under the same was ordered the start of the project to open public data and on February 6, 2013 was implemented through the Portal &lt;a href="http://opendata.aragon.es/"&gt; opendata.aragon.es &lt;/a&gt;. Throughout this time there have been numerous works to achieve automation in the publication of information to ensure that third parties can reuse it in the best way. Given the volume of data that begins to exist, within the line of work of automation in information management, all those elements that help in the improvement of the &lt;b&gt; structuring of information &lt;/b&gt; and the &lt;b&gt; standardization of the data &lt;/b&gt; contained in the databases are beginning to have a special relevance. Based on this, within the General Directorate of Electronic Administration and Information Society, the idea arises of generating a set of technical and legal rules that allow to deepen in that standardization and that lead to think in the creation of the Interoperable Information Scheme Of Aragon (E2IA). The E2IA thus emerges as the framework in which the open data and in general the information of the Government of Aragon can begin to be automated in a much more profound way. The E2IA has to have a number of technical, organizational and legal elements that need to be developed. For this reason, the Technological Institute of Aragon (ITAINNOVA) has been entrusted with carrying out actions consisting in identifying, studying and analyzing current research trends and technological development in relation to ontologies and dictionaries of data interoperability, defining the ontological proposal, performing The necessary tests to validate the ontological proposal and generate the text and web versions of the ontology.</rdfs:comment>
-    <dc:creator xml:lang="es">J. Moyano (Administración electrónica y Sociedad de la Información, Gobierno de Aragón) </dc:creator>
+    <dc:creator xml:lang="es">Administración electrónica y Sociedad de la Información, Gobierno de Aragón</dc:creator>
     <dc:rights xml:lang="en">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</dc:rights>
-    <rdfs:label xml:lang="en">Aragon Interoperable Information Structure Ontology EI2A v.2</rdfs:label>
+    <rdfs:label xml:lang="en">Estructura de Información Interoperable de Aragón EI2A v.2</rdfs:label>
     <owl:versionInfo xml:lang="es">2.0.0</owl:versionInfo>
+	<dc:description xml:lang="es">Esta sección detalla la ontología de Información Interoperable de Aragón EI2A para describir datos básicos del dominio del Gobierno de Aragón, destinados a apoyar la interoperabilidad de datos con el objetivo de estandarizar información y explotarla en un futuro. En la descripción de la ontología se incorpora un diagrama de clases o entidades de la ontología que permiten visualizar su organización más fácilmente, el espacio de nombres utilizado y las clases, propiedades e individuos que la componen. De acuerdo a las recomendaciones de la Web Semántica, la ontología EI2A reutiliza diversas ontologías, esquemas y vocabularios para describir entidades que se adecuen al dominio del Gobierno de Aragón. Reutilizar ontologías facilita el intercambio de conocimiento y la comunicación entre personas, agentes inteligentes y sistemas. De esta forma, se consigue describir los conceptos deseados del dominio del Gobierno de Aragón introduciendo un número mínimo de nuevos elementos. A continuación se detallan las ontologías y vocabularios usados para el desarrollo de la propuesta ontológica de Información Interoperable de Aragón</dc:description>
+    <dc:description>https://github.com/aragonopendata/EI2A-ontologia/blob/2.0.0/docs/images/ei2a-diagrama.jpg</dc:description>
   </owl:Ontology>
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
   <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalResource">
+    <rdfs:label xml:lang="es">Recurso legal</rdfs:label>
+	<rdfs:label xml:lang="en">Legal resource</rdfs:label>
+	<rdfs:comment xml:lang="es">Normas modeladas según la ontología ELI</rdfs:comment>
+	<rdfs:comment xml:lang="en">Laws modeled according the ELI ontology</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -111,6 +113,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://schema.org/Event">
+    <rdfs:label xml:lang="es">Evento</rdfs:label>
+	<rdfs:label xml:lang="en">Event</rdfs:label>
+	<rdfs:comment xml:lang="es">Modela eventos como los días festivos</rdfs:comment>
+	<rdfs:comment xml:lang="en">It models events such as holidays</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -198,6 +204,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://schema.org/ItemList">
+    <rdfs:label xml:lang="es">Lista de Item</rdfs:label>
+	<rdfs:label xml:lang="en">Item List</rdfs:label>
+	<rdfs:comment xml:lang="es">Una lista de ítems de cualquier tipo, como los pasos de un trámite administrativo</rdfs:comment>
+	<rdfs:comment xml:lang="en">A list of items of any sort, sucha as the steps of an administrative process</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -246,6 +256,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://vocab.gtfs.org/terms#Stop">
+    <rdfs:label xml:lang="es">Parada</rdfs:label>
+	<rdfs:label xml:lang="en">Stop</rdfs:label>
+	<rdfs:comment xml:lang="es">Un lugar donde los pasajeros suben o bajan de un vehículo de transporte público</rdfs:comment>
+	<rdfs:comment xml:lang="en">A location where passengers board or disembark from a transit vehicle</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -320,17 +334,32 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Tender"/>
+  <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Tender">
+    <rdfs:label xml:lang="es">Licitación</rdfs:label>
+	<rdfs:label xml:lang="en">Tender</rdfs:label>
+	<rdfs:comment xml:lang="es">Modelado de licitación publica</rdfs:comment>
+	<rdfs:comment xml:lang="en">Model for public tender</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#MeasureProperty">
+    <rdfs:label xml:lang="es">Medida</rdfs:label>
+	<rdfs:label xml:lang="en">Measure</rdfs:label>
+	<rdfs:comment xml:lang="es">Representa el valor medido para el fenómeno observado</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represent the measured value of the phenomenon being observed</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#ComponentProperty"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#ComponentProperty">
-    <rdfs:label xml:lang="es">Nombre del la Dimensión o Valor</rdfs:label>
-    <rdfs:comment xml:lang="es">El rdfs:Range indica el tipo de objeto. Ejemplo org:organizatión</rdfs:comment>
+	<rdfs:label xml:lang="es">Componente</rdfs:label>
+	<rdfs:label xml:lang="en">Component</rdfs:label>
+	<rdfs:comment xml:lang="es">Indica una propiedad de un Dataset Cube. rdfs:Range indica el tipo de objeto. Ejemplo org:organization</rdfs:comment>
+	<rdfs:comment xml:lang="en">Indicates a property on a Dataset Cube. rdfs:Range indicates the object type. E.g.: org:organization</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Location">
+    <rdfs:label xml:lang="es">Lugar</rdfs:label>
+	<rdfs:label xml:lang="en">Location</rdfs:label>
+	<rdfs:comment xml:lang="es">Un objeto que representa un sitio geográfico</rdfs:comment>
+	<rdfs:comment xml:lang="en">An object representing a named geographical place</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -388,6 +417,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-dcat-2/Dataset">
+    <rdfs:label xml:lang="es">DCAT Dataset</rdfs:label>
+	<rdfs:label xml:lang="en">DCAT Dataset</rdfs:label>
+	<rdfs:comment xml:lang="es">Una colección de datos, publicado o curado por un agente y disponible para ser accedio o descargado en una o más representaciones (de CKAN)</rdfs:comment>
+	<rdfs:comment xml:lang="en">A collection of data, published or curated by a single agent, and available for access or download in one or more representations (from CKAN)</rdfs:comment>  
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -409,6 +442,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Contract">
+    <rdfs:label xml:lang="es">Contrato</rdfs:label>
+	<rdfs:label xml:lang="en">Contract</rdfs:label>
+	<rdfs:comment xml:lang="es">Modela el contrato y su proceso</rdfs:comment>
+	<rdfs:comment xml:lang="en">It models the contract and its process</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -447,9 +484,23 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-  <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent"/>
+  <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdfs:label xml:lang="es">Concepto</rdfs:label>
+	<rdfs:label xml:lang="en">Concept</rdfs:label>
+	<rdfs:comment xml:lang="es">Utilizado para clasificar entidades, como los tipos de organizaciones</rdfs:comment>
+	<rdfs:comment xml:lang="en">Used to classify entities, such as the organization types</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+    <rdfs:label xml:lang="es">Agente de software</rdfs:label>
+	<rdfs:label xml:lang="en">Software Agent</rdfs:label>
+	<rdfs:comment xml:lang="es">Es un software en ejecución que proporciona datos al grafo</rdfs:comment>
+	<rdfs:comment xml:lang="en">A software agent is running software that provides data to the graph</rdfs:comment>
+  </owl:Class>  
   <owl:Class rdf:about="http://vocab.gtfs.org/terms#Route">
+    <rdfs:label xml:lang="es">Ruta</rdfs:label>
+	<rdfs:label xml:lang="en">Route</rdfs:label>
+	<rdfs:comment xml:lang="es">Es un grupo de viajes (gtfs:Trips) que se muestran a los usuarios como servicio independiente</rdfs:comment>
+	<rdfs:comment xml:lang="en">It is a commercial route followed entirely or partly by gtfs:Trips</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -462,6 +513,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation">
+    <rdfs:label xml:lang="es">Observación</rdfs:label>
+	<rdfs:label xml:lang="en">Observation</rdfs:label>
+	<rdfs:comment xml:lang="es">Acto de llevar a cabo una observación. Procedimiento para estimar o calcular el valor de una propiedad de un FeatureOfInterest. Enlaza con un Sensor para describir que hizo la Observación y cómo, enlaza con una ObservableProperty para describir de que estimación es el resultado y con un FeatureOfInterest para detallar con que propiedad estaba asociada</rdfs:comment>
+	<rdfs:comment xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -474,6 +529,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+    <rdfs:label xml:lang="es">Organización</rdfs:label>
+	<rdfs:label xml:lang="en">Organization</rdfs:label>
+	<rdfs:comment xml:lang="es">Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como Agente. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -558,6 +617,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#DataStructureDefinition">
+    <rdfs:label xml:lang="es">Definición de la estructura de datos</rdfs:label>
+	<rdfs:label xml:lang="en">Data Structure Definition</rdfs:label>
+	<rdfs:comment xml:lang="es">Define la estructura de un Dataset</rdfs:comment>
+	<rdfs:comment xml:lang="en">Defines the structure of a DataSet</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -570,6 +633,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#DataSet">
+    <rdfs:label xml:lang="es">Cube Dataset</rdfs:label>
+	<rdfs:label xml:lang="en">Cube Dataset</rdfs:label>
+	<rdfs:comment xml:lang="es">Representa una colección de observaciones, conforme a una estructura de dimensiones común</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represents a collection of observations, conforming to some common dimensional structure</rdfs:comment>
     <rdfs:isDefinedBy>
       <skos:Concept rdf:ID="Concept">
         <rdfs:comment xml:lang="es">Enlace con la categoría correspondiente</rdfs:comment>
@@ -597,6 +664,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/org#ChangeEvent">
+   <rdfs:label xml:lang="es">Evento de cambio</rdfs:label>
+	<rdfs:label xml:lang="en">Change Event</rdfs:label>
+	<rdfs:comment xml:lang="es">Evento que da como resultado un cambio sustancial en la organización, por ejemplo, una fusión o una reestructuración total. Está pensado para situaciones en las que la organización resultante es lo suficientemente distinta de las organizaciones originales, tiene una identidad distinta y una URI también distinta. Se deberían definir subtipos de eventos mediante vocabularios específicos (Extension vocabularies) para referirse a categorías de eventos específicos. El momento o periodo en el que el evento ocurre se debería expresar mediante las propiedades prov:startAtTime y prov:endedAtTime, y una descripción del mismo se debería incluir mediante el uso de la propiedad dct:description</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represents an event which resulted in a major change to an organization such as a merger or complete restructuring. It is intended for situations where the resulting organization is sufficient distinct from the original organizations that it has a distinct identity and distinct URI. Extension vocabularies should define sub-classes of this to denote particular categories of event. The instant or interval at which the event occurred should be given by prov:startAtTime and prov:endedAtTime, a description should be given by dct:description</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -626,8 +697,17 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Period"/>
+  <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Period">
+    <rdfs:label xml:lang="es">Periodo del contrato</rdfs:label>
+	<rdfs:label xml:lang="en">Contract period</rdfs:label>
+	<rdfs:comment xml:lang="es">Indica cuando comienza y termina un contrato</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represents the beginning and end of a contract</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/sosa/Featureofinterest">
+    <rdfs:label xml:lang="es">Característica de interés</rdfs:label>
+	<rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
+	<rdfs:comment xml:lang="es">La entidad cuya propiedad está siendo estimada o calculada en el curso de una Observation como parte de una recogida de datos</rdfs:comment>
+	<rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -703,6 +783,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://vocab.gtfs.org/terms#StopTime">
+    <rdfs:label xml:lang="es">Hora de parada</rdfs:label>
+	<rdfs:label xml:lang="en">Stop time</rdfs:label>
+	<rdfs:comment xml:lang="es">Describe una hora de parada como parte de un viaje</rdfs:comment>
+	<rdfs:comment xml:lang="en">Describes a stop time as part of a trip</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -724,6 +808,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.europa.eu/eli/ontology/Agent">
+    <rdfs:label xml:lang="es">ELI Agent</rdfs:label>
+	<rdfs:label xml:lang="en">ELI Agent</rdfs:label>
+	<rdfs:comment xml:lang="es">Organización que genera una norma</rdfs:comment>
+	<rdfs:comment xml:lang="en">Organization that generates a law</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -745,6 +833,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://vocab.gtfs.org/terms#Trip">
+    <rdfs:label xml:lang="es">Viaje</rdfs:label>
+	<rdfs:label xml:lang="en">Trip</rdfs:label>
+	<rdfs:comment xml:lang="es">Trayecto de dos o más paradas realizadas por un vehículo que se produce a una gtfs:StopTime</rdfs:comment>
+	<rdfs:comment xml:lang="en">A collection of gtfs:StopTimes followed by a transit vehicle</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -756,8 +848,17 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
-  <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+  <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+    <rdfs:label xml:lang="es">Entidad temporal</rdfs:label>
+	<rdfs:label xml:lang="en">Temporal entity</rdfs:label>
+	<rdfs:comment xml:lang="es">Un instante o intervalo temporal</rdfs:comment>
+	<rdfs:comment xml:lang="en">A temporal interval or instant</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="http://vocab.gtfs.org/terms#Agency">
+    <rdfs:label xml:lang="es">Empresa</rdfs:label>
+	<rdfs:label xml:lang="en">Agency</rdfs:label>
+	<rdfs:comment xml:lang="es">Una empresa opera un cierto modo de transporte de manera programada</rdfs:comment>
+	<rdfs:comment xml:lang="en">An agency operates a certain schedule based transport mode</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -779,6 +880,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#DimensionProperty">
+    <rdfs:label xml:lang="es">Propiedad dimensión</rdfs:label>
+	<rdfs:label xml:lang="en">Dimension property</rdfs:label>
+	<rdfs:comment xml:lang="es">Representa las dimensiones de un cubo</rdfs:comment>
+	<rdfs:comment xml:lang="en">It represents the dimensions of the cube</rdfs:comment>
     <rdfs:subClassOf rdf:resource="https://www.w3.org/TR/vocab-data-cube/#ComponentProperty"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -791,6 +896,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/org#Role">
+    <rdfs:label xml:lang="es">Rol</rdfs:label>
+	<rdfs:label xml:lang="en">Role</rdfs:label>
+	<rdfs:comment xml:lang="es">Función que una persona o agente desempeña en el seno de una organización. Las instancias de esta clase describen la actividad en abstracto; si lo que se pretende es incluir una instancia que refleje la función o actividad que desempeña una persona en concreto en una organización específica, se indica el uso de instancias de la clase org:Membership. Es común que dichas actividades se representen en una estructura taxonómica mediante SKOS</rdfs:comment>
+	<rdfs:comment xml:lang="en">Denotes a role that a Person or other Agent can take in an organization. Instances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of `org:Membership`. It is common for roles to be arranged in some taxonomic structure and we use SKOS to represent that</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -830,9 +939,17 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:ID="Legislature">
+    <rdfs:label xml:lang="es">Legislatura</rdfs:label>
+	<rdfs:label xml:lang="en">Legislature</rdfs:label>
+	<rdfs:comment xml:lang="es">Evento que identifica a una legislatura del Gobierno de Aragón</rdfs:comment>
+	<rdfs:comment xml:lang="en">Event that identifies a legislature of Aragon Government</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#ComponentSpecification">
+    <rdfs:label xml:lang="es">Especificación de componente</rdfs:label>
+	<rdfs:label xml:lang="en">Component specification</rdfs:label>
+	<rdfs:comment xml:lang="es">Se usa para definir propiedades de un componente (atributo, dimensión, etc.) que son específicas de su uso en DataStructureDefinition</rdfs:comment>
+	<rdfs:comment xml:lang="en">Used to define properties of a component (attribute, dimension etc) which are specific to its usage in a DSD</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -855,6 +972,10 @@
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
   <owl:Class rdf:about="http://schema.org/ListItem">
+    <rdfs:label xml:lang="es">Ítem de una lista</rdfs:label>
+	<rdfs:label xml:lang="en">List item</rdfs:label>
+	<rdfs:comment xml:lang="es">Un ítem de una lista, por ejemplo el paso de un trámite</rdfs:comment>
+	<rdfs:comment xml:lang="en">An list item, e.g. a step in an administrative process</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -911,8 +1032,17 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/ResourceType"/>
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/ResourceType">
+    <rdfs:label xml:lang="es">ELI Tipo de recurso</rdfs:label>
+	<rdfs:label xml:lang="en">ELI Resource type</rdfs:label>
+	<rdfs:comment xml:lang="es">Representa el tipo de norma</rdfs:comment>
+	<rdfs:comment xml:lang="en">Represents the law type</rdfs:comment>
+  </owl:Class>
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Post">
+    <rdfs:label xml:lang="es">Puesto</rdfs:label>
+	<rdfs:label xml:lang="en">Post</rdfs:label>
+	<rdfs:comment xml:lang="es">Puesto con las fechas de inicio y fin</rdfs:comment>
+	<rdfs:comment xml:lang="en">Post with the beginning and ending dates</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -952,6 +1082,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://schema.org/CreativeWork">
+    <rdfs:label xml:lang="es">Trabajo creativo</rdfs:label>
+	<rdfs:label xml:lang="en">Creative work</rdfs:label>
+	<rdfs:comment xml:lang="es">Tipo genérico de trabajo creativo, incluyendo libros, obras de artes, etc.</rdfs:comment>
+	<rdfs:comment xml:lang="en">The most generic kind of creative work, including books, movies, photographs, software programs, etc</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1144,6 +1278,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://www.w3.org/TR/vocab-data-cube/#Observation">
+    <rdfs:label xml:lang="es">Observación</rdfs:label>
+	<rdfs:label xml:lang="en">Observation</rdfs:label>
+	<rdfs:comment xml:lang="es">Una observación individual del cubo, puede tener una o más medidas asociadas</rdfs:comment>
+	<rdfs:comment xml:lang="en">A single observation in the cube, may have one or more associated measured values</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1156,6 +1294,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+    <rdfs:label xml:lang="es">PROV Actividad</rdfs:label>
+	<rdfs:label xml:lang="en">PROV Activity</rdfs:label>
+	<rdfs:comment xml:lang="es">Una actividad ocurre en un periodo de tiempo y actúa con o sobre entidades; puede incluir consumir, procesar, transformar, modificar, mover, usar o generar entidades del grafo</rdfs:comment>
+	<rdfs:comment xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -1168,6 +1310,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:label xml:lang="es">Persona</rdfs:label>
+	<rdfs:label xml:lang="en">Person</rdfs:label>
+	<rdfs:comment xml:lang="es">La clase Persona representa gente, con la condición de que sean personas, con independencia de que estén vivas o muertas, o reales o imaginarias. Es una subclase de Agent</rdfs:comment>
+	<rdfs:comment xml:lang="en">The Person class represents people. Something is a Person if it is a person. We don't nitpic about whether they're alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered agents in FOAF</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -1207,7 +1353,10 @@
     </rdfs:subClassOf>
   </owl:Class>
   <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#siteAddress">
-    <rdfs:label xml:lang="es">Lugar</rdfs:label>
+    <rdfs:label xml:lang="es">Dirección de la sede</rdfs:label>
+	<rdfs:label xml:lang="en">Site address</rdfs:label>
+	<rdfs:comment xml:lang="es">Dirección de la sede según una codificación adecuada. Se recomienda el uso de vCard (que utiliza el vocabulario en vcard), pero el rango no se restringe únicamente al uso de este vocabulario sino que se permite el uso de otros códigos. La dirección puede constar de una dirección de correo electrónico, un número de teléfono o información de geo-localización, y no se limita a una dirección postal física</rdfs:comment>
+	<rdfs:comment xml:lang="en">Indicates an address for the site in a suitable encoding. Use of vCard (using the vcard vocabulary) is encouraged but the range is left open to allow other encodings to be used. The address may include email, telephone, and geo-location information and is not restricted to a physical address</rdfs:comment>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
