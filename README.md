@@ -119,9 +119,9 @@ Para el mantenimiento del modelo ontológico proponemos usar el presente reposit
 - Generación de una rama para trabajar sobre los cambios.
   - Rama de versión cuando sea un cambio mayor.
   - Rama relacionada con el issue cuando se trate de solucionar un error o un cambio menor.
-- Generación de una release correspondiente a cambios mayores.
+- Generación de una release correspondiente a cambios mayores. Podrá incluir cambios en el documento OWL, documento HTML, diagramas y el presente documento.
 
-Además de la documentación de GitHub, generaremos una documentación HTML mediante WiDoCo, al estilo de la existente actualmente, en la que se describirán las entidades, atributos, propiedades y relaciones de todos los objetos.
+Además de la documentación de GitHub, generamos una documentación HTML usando [LODE](https://essepuntato.it/lode/), al estilo de la existente actualmente, en la que se describirán las entidades, atributos, propiedades y relaciones de todos los objetos.
 
 ## 6. Descripción de las entidades principales
 
