@@ -263,7 +263,7 @@ Centro y Lugar
 | |vcard:email|Email|string|0..1|
 | |vcard:tel|Teléfono|int |0..1|
 | |vcard:org|Enlace con organización|org:Organization|1|
-| |vcard:hasGeo|Enlace con geo|geo|0..* |
+| |vcard:hasGeo|Enlace con una entidad geoespacial (long, lat, shape, height)|geo:SpatialThing|0..* |
 | |wgs84_pos:lat|Latitud|Double|0..1|
 | |wgs84_pos:long|Longitud|Double |0..1|
 | |org:siteAddress|Enlace con lugar|org:Site|0..1|
