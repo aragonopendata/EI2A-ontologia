@@ -228,7 +228,7 @@ Organización
 |org:Organization|dc:identifier|Identificador|String|0..1|
 | |org:identifier|Identificador de la organización|String|1|
 | |dc:title|Nombre |String|1|
-| |org:subOrganizationOf|Enlace con Organización padre|org:Organization|0..1|
+| |org:subOrganizationOf|Enlace con Organización padre|org:Organization|0..*|
 | |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|1|
 | |dc:description|Observaciones|String |0..1|
 | |ei2a:order|Orden|int|0..1|
@@ -239,6 +239,7 @@ Organización
 | |org:hasPost|Inversa de org:postIn|org:Post|0..* |
 | |org:classification|Enlace categoría|Skos:Concept|1|
 | |org:resultedFrom|Enlace a evento  creación de organización|Org:ChangeEvent|0..1|
+| |org:linkedTo|Enlace con Organización relacionada|org:Organization|0..*|
 | |org:changedBy|Enlace con evento  modificación de organización|Org:ChangeEvent|0..1|
 |org:ChangeEvent|org:originalOrganization|Organización que ha sido creada tras un evento, inversa org:resultedFrom|org:Organization|0..1|
 | |org:resultingOrganization|Organización que ha sido modificada tras un evento, inversa org:changedBy|org:Organization|0..1|
