@@ -938,9 +938,9 @@ Tema
 |:----|:----|:----|:----|:----|
 |skos:Concept|skos:prefLabel|Etiqueta|String|1|
 | |dc:identifier|Identificador|String|1|
-| |skos:broader|Enlace al concept padre|skos:Concept|1..* |
-| |skos:narrower|Elementos hijos|skos:Concept|1|
-| |skos:related|Enlace con concept relacionado|skos:Concept|1|
+| |skos:broader|Enlace al concept padre|skos:Concept|0..* |
+| |skos:narrower|Elementos hijos|skos:Concept|0..*|
+| |skos:related|Enlace con concept relacionado|skos:Concept|0..*|
 | |dc:source|Origen|string|1|
 | |skos:symbol|Nivel|string|1|
 |skos:Collection|dc:source|Fuente|string|1|
