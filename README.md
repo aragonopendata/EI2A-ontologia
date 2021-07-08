@@ -1116,7 +1116,8 @@ Por ejemplo, los datos de un Ramal (vista 106) se representarían:
 #### 6.15.2. Casos de uso
 
 Cada entidad cargada o actualizada incorpora un triple informando del proceso de carga del que proviene (entidad actividad); y se genera una entidad de tipo prov:Activity con información de dicho proceso. 
-Además, la actividad se enlaza con el dataset mediante el atributo prov:wasAssociatedWith, lo que permite utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Para conseguir esto se ha preparado un proceso que exporta y carga en triples los metadatos de los datasets del [Banco de Datos](https://opendata.aragon.es/datos/catalogo).
+Además, la actividad se enlaza con el dataset mediante el atributo prov:wasAssociatedWith, lo que permite utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Para conseguir esto se ha preparado un proceso que exporta y carga en en el grafo de EI2Av2 los triples de los metadatos de los datasets del [Banco de Datos](https://opendata.aragon.es/datos/catalogo). El vocabulario que modela la carga de estos triples es DCAT.
+
 Por ejemplo, estos triples asociarían una organización (comarca) con el dataset de comarcas (en GA-OD-CORE y en CKAN) y con el proceso de carga del que provienen sus datos:
 
     http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 a org:Organization.
@@ -1143,7 +1144,7 @@ Por ejemplo, estos triples asociarían una organización (comarca) con el datase
         dct:identifier "http://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-comarcas-de-aragon";
 	...
 
-En el caso de datos cargados directamente desde el [Banco de Datos](https://opendata.aragon.es/datos/catalogo) (mediante CKAN), los datos de procedencia serían un poco diferentes, ya que no contarían con el dataset de GA-OD-CORE. Por ejemplo:
+En el caso de datos cargados directamente desde el [Banco de Datos](https://opendata.aragon.es/datos/catalogo), los datos de procedencia serían un poco diferentes, ya que no contarían con el dataset de GA-OD-CORE. Por ejemplo:
 
     http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 a qb:Observation.
     http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 prov:wasUsedBy http://opendata.aragon.es/recurso/procedencia/E8B10C55-06BA-8F51-2379-2DB6EF32014F.
