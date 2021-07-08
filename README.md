@@ -1116,8 +1116,8 @@ Por ejemplo, los datos de un Ramal (vista 106) se representarían:
 #### 6.15.2. Casos de uso
 
 Cada entidad cargada o actualizada incorpora un triple informando del proceso de carga del que proviene (entidad actividad); y se genera una entidad de tipo prov:Activity con información de dicho proceso. 
-Además, la actividad se enlaza con el dataset mediante el atributo prov:wasAssociatedWith, lo que permite utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Para conseguir esto se ha preparado un proceso que exporta y carga en triples los metadatos de los datasets de CKAN.
-Por ejemplo, estos triples asociarían una organización (comarca) con el dataset de comarcas (en GA-OD_CORE y en CKAN) y con el proceso de carga del que provienen sus datos:
+Además, la actividad se enlaza con el dataset mediante el atributo prov:wasAssociatedWith, lo que permite utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Para conseguir esto se ha preparado un proceso que exporta y carga en triples los metadatos de los datasets del [Banco de Datos](https://opendata.aragon.es/datos/catalogo).
+Por ejemplo, estos triples asociarían una organización (comarca) con el dataset de comarcas (en GA-OD-CORE y en CKAN) y con el proceso de carga del que provienen sus datos:
 
     http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 a org:Organization.
     http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 prov:wasUsedBy http://opendata.aragon.es/recurso/procedencia/BE669411-8147-1BF0-18D9-E81CAF9D86C8.
@@ -1131,17 +1131,17 @@ Por ejemplo, estos triples asociarían una organización (comarca) con el datase
         foaf:name "Proceso de carga de Aragón Open Data Pool";
     http://opendata.aragon.es/datos/catalogo/dataset/ga-od-core/10
         a dcat:Dataset;
-	dc:title "10 region";
+        dc:title "10 region";
         dcat:distribution http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306;
     http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306
         a dcat:Distribution;
-	dc:title "Información general de las comarcas de Aragón";
+        dc:title "Información general de las comarcas de Aragón";
 	...
     http://opendata.aragon.es/datos/catalogo/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53
         a dcat:Dataset;
-	dcat:distribution http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306;
-	dct:identifier "http://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-comarcas-de-aragon";
-        …
+        dcat:distribution http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306;
+        dct:identifier "http://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-comarcas-de-aragon";
+	...
 
 En el caso de datos cargados directamente desde el [Banco de Datos](https://opendata.aragon.es/datos/catalogo) (mediante CKAN), los datos de procedencia serían un poco diferentes, ya que no contarían con el dataset de GA-OD-CORE. Por ejemplo:
 
@@ -1157,13 +1157,13 @@ En el caso de datos cargados directamente desde el [Banco de Datos](https://open
         foaf:name "Proceso de carga de Aragón Open Data Pool";
     http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e
         a dcat:Distribution;
-	dc:title "Datos acumulados de Centros y aulas afectadas por coronavirus en Aragón";
-	...
+        dc:title "Datos acumulados de Centros y aulas afectadas por coronavirus en Aragón";
+        ...
     http://opendata.aragon.es/datos/catalogo/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556
         a dcat:Dataset;
-	dcat:distribution http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e;
-	dct:identifier "https://opendata.aragon.es/datos/catalogo/dataset/publicaciones-y-anuncios-relacionados-con-el-coronavirus-en-aragon";
-        …
+        dcat:distribution http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e;
+        dct:identifier "https://opendata.aragon.es/datos/catalogo/dataset/publicaciones-y-anuncios-relacionados-con-el-coronavirus-en-aragon";
+        ...
 
 
 ## Anexo A. Organigrama del Gobierno de Aragón
