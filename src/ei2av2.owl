@@ -30,7 +30,7 @@
     <dc:description xml:lang="es">La iniciativa Aragón Open Data se inició por Acuerdo de 17 de julio de 2012 del Gobierno de Aragón. En virtud del mismo se ordenó el inicio del proyecto de apertura de datos públicos y el 6 de febrero de 2013 se implantó a través del Portal opendata.aragon.es. Uno de los resultados de la iniciativa es el modelo ontológico EI2A, que se presenta en su versión 2, simplificando la versión anterior para facilitar su reutilización y mantenimiento. En este sentido, el nuevo modelo reutiliza vocabularios y ontologías de referencia, minimizado las soluciones particulares. Este modelo se ha desarrollado en el ámbito del Proyecto de Evolución de la infraestructura semántica de la Aragón Open Data (2020-21)</dc:description>
     <dc:creator xml:lang="es">Dirección General de Administración Electrónica y Sociedad de la Información. Departamento de Ciencia, Universidad y Sociedad del Conocimiento. Gobierno de Aragón</dc:creator>
     <dc:rights xml:lang="en">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</dc:rights>
-    <owl:versionInfo xml:lang="es">2.0.0</owl:versionInfo>
+    <owl:versionInfo xml:lang="es">2.0.1</owl:versionInfo>
     <rdfs:label xml:lang="en">Estructura de Información Interoperable de Aragón EI2A v.2</rdfs:label>
   </owl:Ontology>
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
