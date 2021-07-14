@@ -1,5 +1,7 @@
 ![](./docs/images/logo_gobiernodearagon_fondosocialeuropeo.png)
 
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 # EI2A. Estructura de Información Interoperable de Aragón
 
 1. [Introducción](#1-introducción)
