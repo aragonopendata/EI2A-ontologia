@@ -3,7 +3,7 @@
 Los cambios de cada versión de la ontología se documentarán en este fichero.
 
 
-## [2.0.1] - 2021-07
+## [2.0.2] - 2021-07
 
 - Explicación de datos de procedencia
 - Fichero de licencia para Creative Commons Attribution-ShareAlike 4.0 International
