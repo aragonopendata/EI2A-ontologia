@@ -161,7 +161,7 @@ Persona
 | |org:role|Enlace con Rol|org:Role|1|
 | |time:hasBeginning|Fecha de inicio|Date|0..1|
 | |time:hasEnd|Fecha de Final|Date|0..1|
-| |org:postIn|Enlace con Organización|org:Organization|1|
+| |org:postIn|Enlace con Organización|org:Organization|0..*|
 | |org:heldBy|Inversa de org:holds|org:Person|1|
 
 
@@ -231,7 +231,7 @@ Organización
 | |org:identifier|Identificador de la organización|String|1|
 | |dc:title|Nombre |String|1|
 | |org:subOrganizationOf|Enlace con Organización padre|org:Organization|0..*|
-| |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|1|
+| |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|0..1|
 | |dc:description|Observaciones|String |0..1|
 | |ei2a:order|Orden|int|0..1|
 | |org:hasSite|Enlace con Centro|org:Site|0..* |
@@ -259,13 +259,13 @@ Centro y Lugar
 | |dc:title|Nombre|string|0..1|
 | |org:siteAddress|Enlace con lugar|vcard:Location|0..1|
 |vcard:Location|vcard:fn|Nombre|string|0..1|
-| |vcard:region|Provincia|string|1|
-| |vcard:locality|Localidad |String|1|
-| |vcard:postal-code|Código postal|int |1|
-| |vcard:street-address|Dirección  |String |1|
+| |vcard:region|Provincia|string|0..1|
+| |vcard:locality|Localidad |String|0..1|
+| |vcard:postal-code|Código postal|int |0..1|
+| |vcard:street-address|Dirección  |String |0..1|
 | |vcard:email|Email|string|0..1|
 | |vcard:tel|Teléfono|int |0..1|
-| |vcard:org|Enlace con organización|org:Organization|1|
+| |vcard:org|Enlace con organización|org:Organization|0..1|
 | |vcard:hasGeo|Enlace con una entidad geoespacial (long, lat, shape, height)|geo:SpatialThing|0..* |
 | |wgs84_pos:lat|Latitud|Double|0..1|
 | |wgs84_pos:long|Longitud|Double |0..1|
