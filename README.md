@@ -161,7 +161,7 @@ Persona
 | |org:role|Enlace con Rol|org:Role|1|
 | |time:hasBeginning|Fecha de inicio|Date|0..1|
 | |time:hasEnd|Fecha de Final|Date|0..1|
-| |org:postIn|Enlace con Organización|org:Organization|1|
+| |org:postIn|Enlace con Organización|org:Organization|0..*|
 | |org:heldBy|Inversa de org:holds|org:Person|1|
 
 
@@ -231,7 +231,7 @@ Organización
 | |org:identifier|Identificador de la organización|String|1|
 | |dc:title|Nombre |String|1|
 | |org:subOrganizationOf|Enlace con Organización padre|org:Organization|0..*|
-| |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|1|
+| |ei2a:legislature|Enlace con legislatura|ei2a:Legislature|0..1|
 | |dc:description|Observaciones|String |0..1|
 | |ei2a:order|Orden|int|0..1|
 | |org:hasSite|Enlace con Centro|org:Site|0..* |
@@ -259,13 +259,13 @@ Centro y Lugar
 | |dc:title|Nombre|string|0..1|
 | |org:siteAddress|Enlace con lugar|vcard:Location|0..1|
 |vcard:Location|vcard:fn|Nombre|string|0..1|
-| |vcard:region|Provincia|string|1|
-| |vcard:locality|Localidad |String|1|
-| |vcard:postal-code|Código postal|int |1|
-| |vcard:street-address|Dirección  |String |1|
+| |vcard:region|Provincia|string|0..1|
+| |vcard:locality|Localidad |String|0..1|
+| |vcard:postal-code|Código postal|int |0..1|
+| |vcard:street-address|Dirección  |String |0..1|
 | |vcard:email|Email|string|0..1|
 | |vcard:tel|Teléfono|int |0..1|
-| |vcard:org|Enlace con organización|org:Organization|1|
+| |vcard:org|Enlace con organización|org:Organization|0..1|
 | |vcard:hasGeo|Enlace con una entidad geoespacial (long, lat, shape, height)|geo:SpatialThing|0..* |
 | |wgs84_pos:lat|Latitud|Double|0..1|
 | |wgs84_pos:long|Longitud|Double |0..1|
@@ -1115,28 +1115,57 @@ Por ejemplo, los datos de un Ramal (vista 106) se representarían:
 
 #### 6.15.2. Casos de uso
 
-Cada entidad cargada o actualizada incorporaría un triple informando del proceso de carga del que proviene (entidad actividad); y se generaría una entidad de tipo prov:Activity con información de dicho proceso. 
-Además, la actividad se enlazaría con el dataset mediante el atributo prov:wasAssociatedWith, lo que permitiría utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Este uso necesita que el servicio CKAN de Aragón Open Data se configure para guardar los metadatos de los datasets como triples en el mismo servidor de Virtuoso en el que se almacene el grafo generado según el nuevo modelo ontológico.
-Por ejemplo, estos triples asociarían una organización (municipio) con el dataset de municipios y el proceso de carga del que provienen sus datos:
+Cada entidad cargada o actualizada incorpora un triple informando del proceso de carga del que proviene (entidad actividad); y se genera una entidad de tipo prov:Activity con información de dicho proceso. 
+Además, la actividad se enlaza con el dataset mediante el atributo prov:wasAssociatedWith, lo que permite utilizar la información descriptiva del dataset, proveniente de CKAN, para explicar la información de la entidad cargada. Para conseguir esto se ha preparado un proceso que exporta y carga en en el grafo de EI2Av2 los triples de los metadatos de los datasets del [Banco de Datos](https://opendata.aragon.es/datos/catalogo). El vocabulario que modela la carga de estos triples es DCAT.
 
-    ei2a:recurso/sector-publico/organizacion/municipio/22037 a org:Organization
-    ei2a:recurso/sector-publico/organizacion/municipio/22037 prov:wasUsedBy _:bnode1.
-    _:bnode1
+Por ejemplo, estos triples asociarían una organización (comarca) con el dataset de comarcas (en GA-OD-CORE y en CKAN) y con el proceso de carga del que provienen sus datos:
+
+    http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 a org:Organization.
+    http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 prov:wasUsedBy http://opendata.aragon.es/recurso/procedencia/BE669411-8147-1BF0-18D9-E81CAF9D86C8.
+    http://opendata.aragon.es/recurso/procedencia/BE669411-8147-1BF0-18D9-E81CAF9D86C8
         a prov:Activity;
         prov:startedAtTime "2021-04-25T01:30:00Z"^^xsd:dateTime;
-        prov:endedAtTime "2021-04-25T03:40:00Z"^^xsd:dateTime;
-        prov:wasAssociatedWith ei2a:recurso/carga/aodpoolv2;        
-        prov:wasAssociatedWith ei2a:datos/catalogo/dataset/02a7f1c1-4b4a-4ef6-b35d-bec17e495476;
-    ei2a:recurso/carga/aodpoolv2
+        prov:wasAssociatedWith http://opendata.aragon.es/recurso/carga/aodpoolv2;        
+        prov:wasAssociatedWith http://opendata.aragon.es/datos/catalogo/dataset/ga-od-core/10;
+    http://opendata.aragon.es/recurso/carga/aodpoolv2
         a prov:SoftwareAgent;
         foaf:name "Proceso de carga de Aragón Open Data Pool";
-    ei2a:datos/catalogo/dataset/02a7f1c1-4b4a-4ef6-b35d-bec17e495476
+    http://opendata.aragon.es/datos/catalogo/dataset/ga-od-core/10
         a dcat:Dataset;
-	dc:title "Información general de los municipios de Aragón";
-        dc:description “Información general sobre los municipios de Aragón. En este archivo se encuentran los alcaldes de los Ayuntamientos, los datos de contacto de los mismos y otros datos generales municipales”;
-        dcat:keyword “Municipio”;
-        dcat:keyword “Alcalde”;
-        …
+        dc:title "10 region";
+        dcat:distribution http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306;
+    http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306
+        a dcat:Distribution;
+        dc:title "Información general de las comarcas de Aragón";
+	...
+    http://opendata.aragon.es/datos/catalogo/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53
+        a dcat:Dataset;
+        dcat:distribution http://opendata.aragon.es/dataset/e7c5d011-9a12-423b-a2c5-d0443a298e53/resource/1a489f66-89ba-40ab-8d8c-9a42dd7fd306;
+        dct:identifier "http://opendata.aragon.es/datos/catalogo/dataset/informacion-general-de-las-comarcas-de-aragon";
+	...
+
+En el caso de datos cargados directamente desde el [Banco de Datos](https://opendata.aragon.es/datos/catalogo), los datos de procedencia serían un poco diferentes, ya que no contarían con el dataset de GA-OD-CORE. Por ejemplo:
+
+    http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 a qb:Observation.
+    http://opendata.aragon.es/recurso/sector-publico/organizacion/comarca/10 prov:wasUsedBy http://opendata.aragon.es/recurso/procedencia/E8B10C55-06BA-8F51-2379-2DB6EF32014F.
+    http://opendata.aragon.es/recurso/procedencia/E8B10C55-06BA-8F51-2379-2DB6EF32014FC8
+        a prov:Activity;
+        prov:startedAtTime "2021-04-25T01:30:00Z"^^xsd:dateTime;
+        prov:wasAssociatedWith http://opendata.aragon.es/recurso/carga/aodpoolv2;        
+        prov:wasAssociatedWith http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e;
+    http://opendata.aragon.es/recurso/carga/aodpoolv2
+        a prov:SoftwareAgent;
+        foaf:name "Proceso de carga de Aragón Open Data Pool";
+    http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e
+        a dcat:Distribution;
+        dc:title "Datos acumulados de Centros y aulas afectadas por coronavirus en Aragón";
+        ...
+    http://opendata.aragon.es/datos/catalogo/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556
+        a dcat:Dataset;
+        dcat:distribution http://opendata.aragon.es/dataset/3a34f30b-2568-4f85-bbcc-04d6c5932556/resource/52d26a9f-523c-4b5b-8194-107655ffaf3e;
+        dct:identifier "https://opendata.aragon.es/datos/catalogo/dataset/publicaciones-y-anuncios-relacionados-con-el-coronavirus-en-aragon";
+        ...
+
 
 ## Anexo A. Organigrama del Gobierno de Aragón
 
