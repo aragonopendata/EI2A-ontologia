@@ -689,13 +689,15 @@ Contrato
 
 |Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
 |:----|:----|:----|:----|:----|
-|ocds:Contract|ocds:id|Identificador|Int|1|
+|ocds:Contract|ocds:contractId|Identificador|Int|1|
 | |ocds:description|Descripción|string|1|
-| |org:organization|Enlace con Organización|org:Organization|1|
 | |dc:title|Título|string|1|
+| |org:organization|Enlace con Organización|org:Organization|1|
 | |ocds:hasContractPeriod|Enlace con Periodo|ocds:Period|0..* |
+| |ocds:hasContractValue|Enlace con Valor|ocds:Value|0..* |
 |ocds:Period|ocds:startDate|Fecha de inicio|Date|1|
 | |ocds:endDate|Fecha de final|Date|0..1|
+|ocds:Value|ocds:valueAmount|Total|Double|1|
 
 #### 6.8.4. Casos de uso
 
@@ -713,7 +715,7 @@ El mapeo correspondiente a la vista 152 – IAA - Contratos con el nuevo modelo 
 
 |Atributo de origen|Entidad principal|Propiedad |Entidad relacionada|Propiedad|
 |:----|:----|:----|:----|:----|
-|CONTRATO|ocds:Contract|ocds:id| | |
+|CONTRATO|ocds:Contract|ocds:contractId| | |
 |TITULO|ocds:Contract|dc:title| | |
 |FECHA_INICIO|ocds:Contract|ocds:hasContractPeriod|ocds:Period|ocds:startDate|
 |FECHA_FIN|ocds:Contract|ocds:hasContractPeriod|ocds:Period|ocds:endDate|
@@ -941,11 +943,10 @@ Tema
 |skos:Concept|skos:prefLabel|Etiqueta|String|1|
 | |dc:identifier|Identificador|String|1|
 | |skos:broader|Enlace al concept padre|skos:Concept|0..* |
-| |skos:narrower|Elementos hijos|skos:Concept|0..*|
-| |skos:related|Enlace con concept relacionado|skos:Concept|0..*|
+| |skos:broadMatch|Enlace con concept relacionado|skos:Concept|0..*|
 | |dc:source|Origen|string|1|
-| |skos:symbol|Nivel|string|1|
 |skos:Collection|dc:source|Fuente|string|1|
+| |dc:source|Origen|string|1|
 | |skos:scopeNote|Nota de alcance|string|1|
 | |skos:member|Relación con los miembros|skos:Concept|1..* |
 
