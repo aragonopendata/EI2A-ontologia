@@ -626,8 +626,16 @@ Normativa
 | |eli:amends|Enlace con normativa a la cual modifica|eli:LegalResource|0..1|
 | |eli:amended_by|Enlace inversa con normativa que modifica|eli:LegalResource|0..1|
 | |eli:type_document|Enlace con tipo documento|eli:ResourceType|1|
+| |eli:is_member_of|Indica que este recurso está incluido|eli:LegalResource|0..1|
+| |eli:date_document|Fecha de firma|Date|0..1|
 |eli:ResourceType|skos:inScheme|Tipo de documento|string|1|
 |eli:Agent|org:organization|Enlace con organización|org:Organizacion|1|
+|eli:Format|eli:format|formato de archivo|String|0..1|
+| |eli:rightsholder|Una persona u organización que posee o administra derechos sobre el recurso|String|1|
+| |eli:license|Un documento legal que otorga permiso oficial|String|1|
+|eli:LegalExpression|eli:title|Título|String|0..1|
+| |eli:language|Idioma|String|1|
+| |eli:realizes|Relaciona una expresión legal con el recurso legal|eli:LegalResource|1|
 
 
 #### 6.7.4. Casos de uso
