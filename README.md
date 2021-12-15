@@ -551,6 +551,8 @@ Documento
 | |schema:publisher|Editorial |String|0..1|
 | |schema:creator|Creador|String|0..1|
 | |schema:inLanguage|Idioma|String|0..1|
+| |schema:sdPublisher|ente que obtiene la información|org:Organization|0..1|
+| |schema:sdDatePublished|fecha en la que se obtiene la información|Date|0..1|
 | |schema:expires|Fecha de suspensión|Date|0..1|
 
 
@@ -616,19 +618,20 @@ Normativa
 
 |Entidad|Atributo|Descriptor|Tipo|Multiplicidad|
 |:----|:----|:----|:----|:----|
-|eli:LegalResource|eli:number|Identificador de la normativa|String|0..1|
-| |eli:description|Texto|String|1|
-| |eli:id_local|Tipo|String|1|
-| |eli:date_applicability|Fecha de aplicación|Date|0..1|
-| |eli:first_date_entry_in_force|Fecha de acuerdo |Date|1|
+|eli:LegalResource|eli:date_document|Fecha del documento|Date|0..1|
 | |eli:date_publication|Fecha de aplicación|Date|1|
-| |eli:passed_by|Enlace con agente|eli:Agent|1|
-| |eli:amends|Enlace con normativa a la cual modifica|eli:LegalResource|0..1|
-| |eli:amended_by|Enlace inversa con normativa que modifica|eli:LegalResource|0..1|
 | |eli:type_document|Enlace con tipo documento|eli:ResourceType|1|
-|eli:ResourceType|skos:inScheme|Tipo de documento|string|1|
-|eli:Agent|org:organization|Enlace con organización|org:Organizacion|1|
-
+| |eli:is_member_of|Enlace a normativa |eli:LegalResource|1|
+| |eli:is_realized_by|Enlace a la expresión legal|eli:LegalExpression|1|
+|eli:LegalExpression|eli:title|Título|String|1|
+| |eli:language|Enlace al Lenguaje del recurso legal|eli:Language|1|
+| |eli:realizes|Enlace inversa con normativa que modifica|eli:LegalResource|1|
+| |eli:publisher_agent|Enlace con organización|org:Oganization|1|
+| |eli:is_embodied_by|Enlace formato|eli:Format|1|
+|eli:Format|eli:rightsholder_agent|Enlace con organización|org:Organizacion|1|
+| |eli:format|Enlace al formato|objeto|1|
+| |eli:license|Enlace a la Licencia|objeto|1|
+| |eli:embodies|Enlace inversa de eli:is_embodied_by|eli:LegalExpression|1|
 
 #### 6.7.4. Casos de uso
 
