@@ -3,7 +3,7 @@
     xmlns:gtfs="http://vocab.gtfs.org/terms#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:prov="http://www.w3.org/ns/prov#"
-    xmlns:eli="http://data.europa.eu/eli/ontology/"
+    xmlns:eli="http://data.europa.eu/eli/ontology#"
     xmlns:sosa="http://www.w3.org/ns/sosa/"
     xmlns:org="http://www.w3.org/ns/org#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -35,13 +35,13 @@
     <rdfs:label xml:lang="en">Estructura de Información Interoperable de Aragón EI2A v.2</rdfs:label>
   </owl:Ontology>
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalResource">
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource">
     <rdfs:comment xml:lang="en">Laws modeled according the ELI ontology</rdfs:comment>
     <rdfs:comment xml:lang="es">Normas modeladas según la ontología ELI</rdfs:comment>
     <rdfs:label xml:lang="es">Recurso legal</rdfs:label>
     <rdfs:label xml:lang="en">Legal resource</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/Language"/>
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Language"/>
   <owl:Class rdf:about="http://purl.org/linked-data/cube#ComponentSpecification">
     <rdfs:comment xml:lang="en">Used to define properties of a component (attribute, dimension etc) which are specific to its usage in a DSD</rdfs:comment>
     <rdfs:comment xml:lang="es">Se usa para definir propiedades de un componente (atributo, dimensión, etc.) que son específicas de su uso en DataStructureDefinition</rdfs:comment>
@@ -296,7 +296,7 @@
     <rdfs:label xml:lang="en">Tender</rdfs:label>
     <rdfs:label xml:lang="es">Licitación</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/Format"/>
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Format"/>
   <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Location">
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -446,7 +446,7 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalExpression">
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalExpression">
     <rdfs:comment xml:lang="en">Legal Expression</rdfs:comment>
     <rdfs:comment xml:lang="es">Expresión legal</rdfs:comment>
     <rdfs:label xml:lang="en">Legal expression</rdfs:label>
@@ -497,7 +497,7 @@
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:minCardinality>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -506,7 +506,7 @@
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:maxCardinality>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -831,7 +831,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent"/>
         </owl:onProperty>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:maxCardinality>
@@ -842,7 +842,7 @@
         <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:minCardinality>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -990,7 +990,7 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://data.europa.eu/eli/ontology/ResourceType">
+  <owl:Class rdf:about="http://data.europa.eu/eli/ontology#ResourceType">
     <rdfs:comment xml:lang="en">Represents the law type</rdfs:comment>
     <rdfs:comment xml:lang="es">Representa el tipo de norma</rdfs:comment>
     <rdfs:label xml:lang="es">Tipo de recurso Eli</rdfs:label>
@@ -1053,7 +1053,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/date_document"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#date_document"/>
         </owl:onProperty>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:maxCardinality>
@@ -1099,7 +1099,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent"/>
         </owl:onProperty>
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:maxCardinality>
@@ -1182,7 +1182,7 @@
         <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:maxCardinality>
         <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/date_publication"/>
+          <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#date_publication"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -1483,9 +1483,9 @@
     <rdfs:range rdf:resource="http://schema.org/ListItem"/>
     <rdfs:domain rdf:resource="http://schema.org/ListItem"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology/related_to">
+  <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#related_to">
     <rdfs:domain rdf:resource="http://schema.org/ListItem"/>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://data.tbfy.eu/ontology/ocds#isTendererFor">
     <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
@@ -1968,7 +1968,7 @@
     <rdfs:comment xml:lang="es">Indentificador</rdfs:comment>
     <rdfs:label xml:lang="es">Indentificador</rdfs:label>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/date_publication">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#date_publication">
     <rdfs:label xml:lang="es">Fecha de publicación</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <rdfs:comment xml:lang="es">Fecha de publicación</rdfs:comment>
@@ -1976,20 +1976,20 @@
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="http://schema.org/CreativeWork"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalResource"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/publisher_agent">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#publisher_agent">
     <rdfs:comment xml:lang="es">Enlace con organización</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="http://schema.org/CreativeWork"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalExpression"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalExpression"/>
           <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Contract"/>
           <owl:Class rdf:about="http://vocab.gtfs.org/terms#Agency"/>
           <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Tender"/>
@@ -2000,10 +2000,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="es">Organización</rdfs:label>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/is_embodied_by">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#is_embodied_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/Format"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://xmlns.com/foaf/0.1/familyName">
     <rdfs:label xml:lang="es">Apellidos</rdfs:label>
@@ -2062,12 +2062,12 @@
     <rdfs:comment xml:lang="es">Nombre persona</rdfs:comment>
     <rdfs:label xml:lang="es">Nombre persona</rdfs:label>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/date_document">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#date_document">
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="http://schema.org/CreativeWork"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalResource"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
@@ -2076,12 +2076,12 @@
     <rdfs:comment xml:lang="es">Fecha del documento</rdfs:comment>
     <rdfs:label xml:lang="es">Fecha del documento</rdfs:label>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/is_realized_by">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#is_realized_by">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
     <rdfs:comment xml:lang="es">Enlace a la expresión legal</rdfs:comment>
     <rdfs:label xml:lang="es">Enlace a la expresión legal</rdfs:label>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://www.w3.org/ns/org#classification">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -2091,7 +2091,7 @@
     <rdfs:label xml:lang="es">Categoría</rdfs:label>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/ResourceType"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
     <rdfs:comment xml:lang="es">Tipo de documento</rdfs:comment>
     <rdfs:label xml:lang="es">Tipo de documento</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -2111,9 +2111,9 @@
     <rdfs:label xml:lang="es">Identificador</rdfs:label>
     <rdfs:comment xml:lang="es">Identificador</rdfs:comment>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/title">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://schema.org/startDate">
@@ -2157,24 +2157,24 @@
     <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/license">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#license">
     <rdfs:label xml:lang="es">Enlace a la Licencia</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/Format"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
     <rdfs:comment xml:lang="es">Enlace a la Licencia</rdfs:comment>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/format">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#format">
     <rdfs:comment xml:lang="es">Enlace al formato</rdfs:comment>
     <rdfs:label xml:lang="es">Enlace al formato</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/Format"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/is_member_of">
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#is_member_of">
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="es">Enlace inversa con normativa</rdfs:label>
     <rdfs:comment xml:lang="es">Enlace a normativa</rdfs:comment>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:ID="range">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -2205,9 +2205,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="es">Destino</rdfs:comment>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/language">
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/Language"/>
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#language">
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Language"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime">
@@ -2266,9 +2266,9 @@
           <owl:Class rdf:about="http://schema.org/Event"/>
           <owl:Class rdf:about="http://schema.org/CreativeWork"/>
           <owl:Class rdf:about="http://data.tbfy.eu/ontology/ocds#Period"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalResource"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/LegalExpression"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/ResourceType"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalExpression"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#ResourceType"/>
           <owl:Class rdf:about="http://www.w3.org/ns/org#ChangeEvent"/>
           <owl:Class rdf:about="http://www.w3.org/ns/org#Role"/>
           <owl:Class rdf:about="http://www.w3.org/ns/org#Site"/>
@@ -2278,7 +2278,7 @@
           <owl:Class rdf:about="http://purl.org/linked-data/cube#ComponentSpecification"/>
           <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
           <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
-          <owl:Class rdf:about="http://data.europa.eu/eli/ontology/Format"/>
+          <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Format"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
@@ -2292,17 +2292,17 @@
     <rdfs:comment xml:lang="es">Inversa de org:holds de persona</rdfs:comment>
     <rdfs:label xml:lang="es">Enlace inverso a persona</rdfs:label>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/type_document">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#type_document">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="es">Enlace con tipo documento</rdfs:label>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/ResourceType"/>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
     <rdfs:comment xml:lang="es">Enlace con tipo documento</rdfs:comment>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/realizes">
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#realizes">
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/LegalResource"/>
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://schema.org/description">
     <rdfs:label xml:lang="es">Descripción</rdfs:label>
@@ -2388,11 +2388,11 @@
     </rdfs:domain>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/rightsholder_agent">
+  <owl:FunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#rightsholder_agent">
     <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="es">Enlace con organización</rdfs:label>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/Format"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
     <rdfs:comment xml:lang="es">Enlace con organización</rdfs:comment>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:about="http://purl.org/linked-data/cube#structure">
@@ -2402,11 +2402,11 @@
     <rdfs:label xml:lang="es">Definición de estructura</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:FunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="http://data.europa.eu/eli/ontology/embodies">
-    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology/LegalExpression"/>
+  <owl:InverseFunctionalProperty rdf:about="http://data.europa.eu/eli/ontology#embodies">
+    <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
     <rdfs:label xml:lang="es">Enlace a expresión legal</rdfs:label>
     <rdfs:comment xml:lang="es">Enlace inversa de eli:is_embodied_by</rdfs:comment>
-    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology/Format"/>
+    <rdfs:domain rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:InverseFunctionalProperty>
   <owl:Thing rdf:ID="Thing_2"/>
