@@ -533,7 +533,6 @@ Documento
 | |org:siteAddress|Enlace con lugar|vcard:Location|0..1|
 | |eli:first_date_entry_in_force|Fecha de entrada en vigor|Date|0..1|
 | |eli:date_applicability|Fecha de aplicación|Date|0..1|
-| |eli:date_publication|Fecha de publicación|Date|0..1|
 | |schema:abstract|Descripción|String|0..* |
 | |schema:image|Imagen |String|0..1|
 | |schema:license|Licencia |String|0..1|
@@ -553,6 +552,7 @@ Documento
 | |schema:inLanguage|Idioma|String|0..1|
 | |schema:sdPublisher|ente que obtiene la información|org:Organization|0..1|
 | |schema:sdDatePublished|fecha en la que se obtiene la información|Date|0..1|
+| |schema:datePublished|fecha de primera publicación|Date|0..1|
 | |schema:expires|Fecha de suspensión|Date|0..1|
 
 
