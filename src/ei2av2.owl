@@ -1204,7 +1204,7 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Creative work</rdfs:label>
-    <rdfs:label xml:lang="es">Trabajo creativo</rdfs:label>
+    <rdfs:label xml:lang="es">Documento</rdfs:label>
     <rdfs:comment xml:lang="en">The most generic kind of creative work, including books, movies, photographs, software programs, etc</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Restriction>
