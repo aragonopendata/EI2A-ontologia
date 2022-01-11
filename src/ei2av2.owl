@@ -10,7 +10,7 @@
     xmlns:qb="http://purl.org/linked-data/cube#"
     xmlns:virtrdf="http://www.openlinksw.com/schemas/virtrdf#"
     xmlns:bio="http://purl.org/vocab/bio/0.1/"
-    xmlns:dcat="https://www.w3.org/TR/vocab-dcat-2/"
+    xmlns:dcat="https://www.w3.org/ns/dcat#"
     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
     xmlns="http://opendata.aragon.es/def/ei2av2#"
     xmlns:schema="http://schema.org/"
@@ -2445,3 +2445,4 @@
     <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </owl:AnnotationProperty>
 </rdf:RDF>
+
