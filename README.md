@@ -122,8 +122,13 @@ Para el mantenimiento del modelo ontológico proponemos usar el presente reposit
   - Rama de versión cuando sea un cambio mayor.
   - Rama relacionada con el issue cuando se trate de solucionar un error o un cambio menor.
 - Generación de una release correspondiente a cambios mayores. Podrá incluir cambios en el documento OWL, documento HTML, diagramas y el presente documento.
+- Actualización de la ontología en virtuoso (http://opendata.aragon.es/def/ei2av2.owl). Para ello se necesita:
+  - Comprobar que se ha actualizado el owl en gitHub https://raw.githubusercontent.com/aragonopendata/EI2A-ontologia/master/src/ei2av2.owl
+  - Borrado del grafo: _sparql clear graph  <http://opendata.aragon.es/def/ei2av2.owl>_;
+  - Cargar de la nueva versión de la ontología: _sparql load <https://raw.githubusercontent.com/aragonopendata/EI2A-ontologia/master/src/ei2av2.owl> into <http://opendata.aragon.es/def/ei2av2.owl>_;
 
 Además de la documentación de GitHub, generamos una documentación HTML usando [LODE](https://essepuntato.it/lode/), al estilo de la existente actualmente, en la que se describirán las entidades, atributos, propiedades y relaciones de todos los objetos.
+
 
 ## 6. Descripción de las entidades principales
 
