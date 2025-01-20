@@ -1351,7 +1351,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Format"/>
 
-  <owl:Class rdf:about="http://opendata.aragon.es/def/ei2av2#Pet">
+  <owl:Class rdf:ID="Pet">
     <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
     <rdfs:label xml:lang="es">Animal doméstico</rdfs:label>
     <rdfs:label xml:lang="en">Pet</rdfs:label>
