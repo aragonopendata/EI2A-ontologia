@@ -2015,7 +2015,7 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://opendata.aragon.es/def/ei2av2#petName">
     <rdfs:subPropertyOf rdf:resource="http://schema.org/name"/>
-    <rdfs:label xml:lang="es">Nombre del animal de compañía</rdfs:label>
+    <rdfs:label xml:lang="es">Nombre</rdfs:label>
     <rdfs:domain rdf:resource="http://opendata.aragon.es/def/ei2av2#Pet"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
